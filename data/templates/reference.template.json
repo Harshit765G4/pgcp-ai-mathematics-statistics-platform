@@ -1,0 +1,20 @@
+{
+  "id": "new-topic-id-ref",
+  "topicId": "new-topic-id",
+  "title": "Topic reference title",
+  "sessions": "Session or session range",
+  "overview": "Explain the topic in plain language and establish where it fits.",
+  "definitions": [
+    ["Term", "Clear definition."],
+    ["Related term", "Explain how it differs from nearby concepts."]
+  ],
+  "keyPoints": [
+    "Important property or rule.",
+    "Another important property or condition."
+  ],
+  "example": "Provide a worked numerical example or practical application.",
+  "commonMistakes": [
+    "Describe a common misconception and how to avoid it."
+  ],
+  "examNotes": "Summarise what a learner should remember for an assessment."
+}

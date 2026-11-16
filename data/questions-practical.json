@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "PRACTICAL-001",
+    "number": 60,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "numerical",
+    "question": "Let a=(3,4). What is its Euclidean norm?",
+    "options": [
+      "12",
+      "25",
+      "5",
+      "7"
+    ],
+    "correctAnswer": 2,
+    "explanation": "||a||₂=√(3²+4²)=√25=5. The norm is the non-negative length of the vector.",
+    "optionExplanations": [
+      "12 is not obtained by the Euclidean norm formula.",
+      "25 is the squared norm, before taking the square root.",
+      "Correct. ||a||₂=√(3²+4²)=√25=5. The norm is the non-negative length of the vector.",
+      "7 is the sum of the components, not the Euclidean norm."
+    ],
+    "hint": "Square the components, add them and take the square root.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-002",
+    "number": 61,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "For a=(2,−1,3) and b=(1,4,2), calculate a·b.",
+    "options": [
+      "−4",
+      "9",
+      "4",
+      "8"
+    ],
+    "correctAnswer": 2,
+    "explanation": "a·b=2(1)+(−1)(4)+3(2)=2−4+6=4.",
+    "optionExplanations": [
+      "−4 does not follow from the signed sum.",
+      "9 is the sum of selected components rather than all pairwise products.",
+      "Correct. a·b=2(1)+(−1)(4)+3(2)=2−4+6=4.",
+      "8 omits the negative middle product."
+    ],
+    "hint": "Multiply corresponding coordinates and sum the three products.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-003",
+    "number": 62,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "For a=(4,2) and b=(2,0), calculate proj_b(a).",
+    "options": [
+      "(0,2)",
+      "(4,2)",
+      "(4,0)",
+      "(2,0)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "proj_b(a)=((a·b)/(b·b))b=(8/4)(2,0)=(4,0). The projection lies along b.",
+    "optionExplanations": [
+      "This is perpendicular to b, not the component along b.",
+      "This returns the original vector instead of its component along b.",
+      "Correct. proj_b(a)=((a·b)/(b·b))b=(8/4)(2,0)=(4,0). The projection lies along b.",
+      "(2,0) is the vector b itself, not the projection of a."
+    ],
+    "hint": "Compute the scalar coefficient first, then multiply b by it.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-004",
+    "number": 63,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "What is the cosine similarity between a=(1,0) and b=(0,1)?",
+    "options": [
+      "−1",
+      "Undefined",
+      "0",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The dot product is zero and both norms are one, so cosine similarity is 0. The vectors are perpendicular.",
+    "optionExplanations": [
+      "A value of −1 would mean they point in opposite directions.",
+      "Both vectors are non-zero, so the similarity is defined.",
+      "Correct. The dot product is zero and both norms are one, so cosine similarity is 0. The vectors are perpendicular.",
+      "A value of 1 would mean the vectors point in the same direction."
+    ],
+    "hint": "Use cosine similarity = dot product divided by the product of norms.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-005",
+    "number": 64,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Do the vectors v₁=(1,2) and v₂=(2,4) form a linearly independent set in ℝ²?",
+    "options": [
+      "Yes; two vectors always form a basis of ℝ²",
+      "No; because every pair of vectors in ℝ² is dependent",
+      "No; v₂=2v₁, so the set is dependent",
+      "Yes; both vectors are non-zero"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The second vector is exactly twice the first, so one vector is redundant and a non-trivial zero combination exists.",
+    "optionExplanations": [
+      "Two independent vectors form a basis, but not every pair is independent.",
+      "Some pairs, such as (1,0) and (0,1), are independent.",
+      "Correct. The second vector is exactly twice the first, so one vector is redundant and a non-trivial zero combination exists.",
+      "Non-zero vectors can still be scalar multiples and dependent."
+    ],
+    "hint": "Check whether one vector is a scalar multiple of the other.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-006",
+    "number": 65,
+    "bank": "practical",
+    "topicId": "linear-maps",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "A 4×3 matrix has rank 2. What is the nullity of the associated map from ℝ³?",
+    "options": [
+      "3",
+      "5",
+      "1",
+      "2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Rank–nullity gives 3=rank+nullity=2+nullity, so nullity is 1.",
+    "optionExplanations": [
+      "Three is the input dimension before subtracting rank.",
+      "Five is not compatible with rank–nullity for a 3-dimensional domain.",
+      "Correct. Rank–nullity gives 3=rank+nullity=2+nullity, so nullity is 1.",
+      "Two is the rank, not the nullity."
+    ],
+    "hint": "Use the dimension of the input space, not the number of rows.",
+    "referenceId": "linear-maps-ref"
+  },
+  {
+    "id": "PRACTICAL-007",
+    "number": 66,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "What is the rank of A=[[1,2,3],[2,4,6]]?",
+    "options": [
+      "3",
+      "0",
+      "1",
+      "2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The second row is twice the first, so only one row is linearly independent and rank(A)=1.",
+    "optionExplanations": [
+      "A 2×3 matrix cannot have rank three because it has only two rows.",
+      "The matrix contains nonzero rows, so its rank is not zero.",
+      "Correct. The second row is twice the first, so only one row is linearly independent and rank(A)=1.",
+      "Two rows do not imply rank two when one is redundant."
+    ],
+    "hint": "Check whether one row is a scalar multiple of the other.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-008",
+    "number": 67,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "Let A=[[1,2],[3,4]] and B=[[0,5],[6,1]]. What is the (1,1) entry of AB using 1-based indexing?",
+    "options": [
+      "18",
+      "1",
+      "12",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The (1,1) entry is the first row of A dotted with the first column of B: 1·0+2·6=12.",
+    "optionExplanations": [
+      "18 comes from mixing a different row or column.",
+      "1 is the first entry of A, not the product entry.",
+      "Correct. The (1,1) entry is the first row of A dotted with the first column of B: 1·0+2·6=12.",
+      "6 is only the second product before the row–column sum."
+    ],
+    "hint": "Use row 1 of A and column 1 of B.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-009",
+    "number": 68,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "For A=[[2,0],[0,3]], what is det(A)?",
+    "options": [
+      "0",
+      "−6",
+      "6",
+      "5"
+    ],
+    "correctAnswer": 2,
+    "explanation": "For a 2×2 matrix [[a,b],[c,d]], det=ad−bc. Here 2·3−0=6.",
+    "optionExplanations": [
+      "A diagonal matrix with non-zero diagonal entries has non-zero determinant.",
+      "The product of positive diagonal entries is positive.",
+      "Correct. For a 2×2 matrix [[a,b],[c,d]], det=ad−bc. Here 2·3−0=6.",
+      "5 is the trace, not the determinant."
+    ],
+    "hint": "For a diagonal 2×2 matrix, multiply its diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-010",
+    "number": 69,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "For A=[[1,2],[3,4]], what is Aᵀ?",
+    "options": [
+      "[[3,1],[4,2]]",
+      "[[1,3],[2,4]]",
+      "[[1,2],[3,4]]",
+      "[[4,2],[3,1]]"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Transpose swaps rows and columns: the first row (1,2) becomes the first column, and the second row (3,4) becomes the second column.",
+    "optionExplanations": [
+      "This rearrangement does not swap rows and columns correctly.",
+      "Correct. Transpose swaps rows and columns: the first row (1,2) becomes the first column, and the second row (3,4) becomes the second column.",
+      "This is A unchanged, not its transpose.",
+      "This is a 180-degree rotation of entries, not a transpose."
+    ],
+    "hint": "Exchange the row and column indices.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-011",
+    "number": 70,
+    "bank": "practical",
+    "topicId": "matrix-properties",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "For M=[[2,1],[1,2]], what is tr(M)?",
+    "options": [
+      "2",
+      "4",
+      "3",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The trace is the sum of diagonal entries: 2+2=4. Off-diagonal entries are ignored.",
+    "optionExplanations": [
+      "2 is one diagonal entry, not their sum.",
+      "Correct. The trace is the sum of diagonal entries: 2+2=4. Off-diagonal entries are ignored.",
+      "3 is a row sum, not the trace.",
+      "5 adds all entries."
+    ],
+    "hint": "Add only the main diagonal.",
+    "referenceId": "matrix-properties-ref"
+  },
+  {
+    "id": "PRACTICAL-012",
+    "number": 71,
+    "bank": "practical",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "For A=diag(5,2), what is the eigenvalue associated with eigenvector (1,0)?",
+    "options": [
+      "7",
+      "5",
+      "2",
+      "0"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A(1,0)=(5,0)=5(1,0), so the eigenvalue is 5.",
+    "optionExplanations": [
+      "7 is the sum of diagonal entries, not this eigenvalue.",
+      "Correct. A(1,0)=(5,0)=5(1,0), so the eigenvalue is 5.",
+      "2 is the eigenvalue for direction (0,1).",
+      "The transformed vector is not zero."
+    ],
+    "hint": "Multiply the matrix by the proposed eigenvector.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "PRACTICAL-013",
+    "number": 72,
+    "bank": "practical",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "The eigenvalues of a covariance matrix are 9, 4 and 1. What proportion of total variance is explained by the first principal component?",
+    "options": [
+      "1/14 ≈ 7.1%",
+      "9/14 ≈ 64.3%",
+      "9/10 = 90%",
+      "4/14 ≈ 28.6%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Total variance is the sum of eigenvalues: 9+4+1=14. The first component explains 9/14≈0.6429, or 64.3%.",
+    "optionExplanations": [
+      "1/14 is the third component’s share.",
+      "Correct. Total variance is the sum of eigenvalues: 9+4+1=14. The first component explains 9/14≈0.6429, or 64.3%.",
+      "9/10 omits the eigenvalue 4 from total variance.",
+      "4/14 is the second component’s share."
+    ],
+    "hint": "Divide the largest eigenvalue by the sum of all eigenvalues.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "PRACTICAL-014",
+    "number": 73,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "basic",
+    "type": "numerical",
+    "question": "Differentiate f(x)=x³−4x+7.",
+    "options": [
+      "x³−4",
+      "3x²−4",
+      "x²−4",
+      "3x²+7"
+    ],
+    "correctAnswer": 1,
+    "explanation": "By the power rule, d(x³)/dx=3x², d(−4x)/dx=−4 and the constant differentiates to zero.",
+    "optionExplanations": [
+      "The expression is missing the derivative of the cubic term.",
+      "Correct. By the power rule, d(x³)/dx=3x², d(−4x)/dx=−4 and the constant differentiates to zero.",
+      "The power rule reduces the exponent by one and multiplies by the old exponent.",
+      "The constant 7 differentiates to zero, not 7."
+    ],
+    "hint": "Apply the power rule term by term; constants vanish.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-015",
+    "number": 74,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "For f(x)=(2x+3)⁴, what is f′(x)?",
+    "options": [
+      "4(2x+3)⁵",
+      "8(2x+3)³",
+      "4(2x+3)³",
+      "2(2x+3)⁴"
+    ],
+    "correctAnswer": 1,
+    "explanation": "By the chain rule, f′=4(2x+3)³·2=8(2x+3)³.",
+    "optionExplanations": [
+      "This leaves the power unchanged and multiplies by 2 incorrectly.",
+      "Correct. By the chain rule, f′=4(2x+3)³·2=8(2x+3)³.",
+      "This omits the inner derivative factor of 2.",
+      "This differentiates only the outside function and misses the chain factor."
+    ],
+    "hint": "Differentiate the outer fourth power, then multiply by the derivative of 2x+3.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-016",
+    "number": 75,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "If f(x)=x² sin(x), what is f′(x)?",
+    "options": [
+      "2x sin(x)",
+      "2x sin(x)+x² cos(x)",
+      "2x cos(x)+x² sin(x)",
+      "x² cos(x)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The product rule gives (x²)′sin x+x²(sin x)′=2x sin x+x² cos x.",
+    "optionExplanations": [
+      "This omits the derivative of the sine factor.",
+      "Correct. The product rule gives (x²)′sin x+x²(sin x)′=2x sin x+x² cos x.",
+      "This incorrectly swaps the derivative of sine and the original factor.",
+      "This omits the derivative of x²."
+    ],
+    "hint": "Treat x² and sin x as the two factors in the product rule.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-017",
+    "number": 76,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "For f(x,y)=x²+3xy+2y², calculate ∂f/∂x.",
+    "options": [
+      "2x+3xy",
+      "2x+3y",
+      "2x+3x+4y",
+      "x²+3y+2y²"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x, ∂(3xy)/∂x=3y and ∂(2y²)/∂x=0.",
+    "optionExplanations": [
+      "The derivative of 3xy with respect to x is 3y, not 3xy.",
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x, ∂(3xy)/∂x=3y and ∂(2y²)/∂x=0.",
+      "This differentiates the last term with respect to y and mishandles 3xy.",
+      "This leaves an x² term unchanged and is not a partial derivative."
+    ],
+    "hint": "Differentiate only terms that depend on x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-018",
+    "number": 77,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For f(x,y)=x²+xy, what is ∇f at (1,2) using components (∂f/∂x, ∂f/∂y)?",
+    "options": [
+      "(3,1)",
+      "(4,1)",
+      "(2,1)",
+      "(4,2)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "∂f/∂x=2x+y and ∂f/∂y=x. At (1,2), the gradient is (4,1).",
+    "optionExplanations": [
+      "(3,1) adds x and y incorrectly in the first partial.",
+      "Correct. ∂f/∂x=2x+y and ∂f/∂y=x. At (1,2), the gradient is (4,1).",
+      "(2,1) omits the y contribution in the x partial.",
+      "(4,2) uses the coordinate y for the second partial instead of x."
+    ],
+    "hint": "Differentiate with respect to each variable separately, then substitute the point.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-019",
+    "number": 78,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "At a point, ∇f=(3,4). What is the directional derivative in the unit direction u=(0.6,0.8)?",
+    "options": [
+      "0",
+      "5",
+      "3.2",
+      "7"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Dᵤf=∇f·u=3(0.6)+4(0.8)=1.8+3.2=5.",
+    "optionExplanations": [
+      "The vectors are aligned, not perpendicular.",
+      "Correct. Dᵤf=∇f·u=3(0.6)+4(0.8)=1.8+3.2=5.",
+      "3.2 includes only the second component’s contribution.",
+      "7 is the sum of gradient components, not the directional derivative."
+    ],
+    "hint": "Take the dot product of the gradient with the given unit direction.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-020",
+    "number": 79,
+    "bank": "practical",
+    "topicId": "gradients-autodiff",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Let L(x,y)=x²y+3y. What is ∂L/∂y?",
+    "options": [
+      "x²+3",
+      "2xy+3",
+      "x²y",
+      "2x+y"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Differentiate with respect to y while treating x as constant: x²y gives x² and 3y gives 3.",
+    "optionExplanations": [
+      "Correct. Differentiate with respect to y while treating x as constant: x²y gives x² and 3y gives 3.",
+      "2xy+3 is the derivative with respect to x, not y.",
+      "This repeats the original product term without differentiating.",
+      "This expression is not obtained from the partial derivative."
+    ],
+    "hint": "Treat x² as a constant multiplier when differentiating with respect to y.",
+    "referenceId": "gradients-autodiff-ref"
+  },
+  {
+    "id": "PRACTICAL-021",
+    "number": 80,
+    "bank": "practical",
+    "topicId": "vector-matrix-calculus",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For f(x,y)=(x+y, xy), what is the Jacobian under the output-by-input convention?",
+    "options": [
+      "[[1,1],[y,x]]",
+      "[[1,y],[1,x]]",
+      "[[x,y],[1,1]]",
+      "[[1,1],[x,y]]"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The first output x+y has partials (1,1). The second output xy has partials (y,x). Place outputs in rows and inputs in columns.",
+    "optionExplanations": [
+      "Correct. The first output x+y has partials (1,1). The second output xy has partials (y,x). Place outputs in rows and inputs in columns.",
+      "This places some derivatives in the wrong input columns.",
+      "This is not the required row-by-output arrangement.",
+      "This uses function values where partial derivatives are needed."
+    ],
+    "hint": "Differentiate each output component with respect to x and y.",
+    "referenceId": "vector-matrix-calculus-ref"
+  },
+  {
+    "id": "PRACTICAL-022",
+    "number": 81,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "For f(x)=x² and learning rate η=0.1, one gradient-descent step from x₀=3 gives what x₁?",
+    "options": [
+      "2.4",
+      "3.6",
+      "2.9",
+      "0.3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "f′(x)=2x, so ∇f(3)=6. Update x₁=3−0.1(6)=2.4.",
+    "optionExplanations": [
+      "Correct. f′(x)=2x, so ∇f(3)=6. Update x₁=3−0.1(6)=2.4.",
+      "3.6 moves in the positive-gradient direction.",
+      "2.9 subtracts 0.1 rather than 0.1 times the gradient.",
+      "0.3 is the learning-rate times the input, not the updated parameter."
+    ],
+    "hint": "Compute the derivative at the current point before applying the update.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-023",
+    "number": 82,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Minimise f(x,y)=x²+y² subject to x+y=2. By symmetry, which point is the constrained minimiser?",
+    "options": [
+      "(1,1)",
+      "(0,2)",
+      "(2,0)",
+      "(−1,3)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The constraint line is symmetric in x and y and the squared distance to the origin is minimised at the point on x+y=2 closest to the origin: (1,1). It gives objective 2, less than the alternatives.",
+    "optionExplanations": [
+      "Correct. The constraint line is symmetric in x and y and the squared distance to the origin is minimised at the point on x+y=2 closest to the origin: (1,1). It gives objective 2, less than the alternatives.",
+      "(0,2) gives objective 4, which is larger than 2.",
+      "(2,0) also gives objective 4.",
+      "(−1,3) gives objective 10 and is farther from the origin."
+    ],
+    "hint": "The nearest point on the line to the origin lies along its normal direction (1,1).",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-024",
+    "number": 83,
+    "bank": "practical",
+    "topicId": "optimization-algorithms",
+    "difficulty": "medium",
+    "type": "scenario",
+    "question": "A mini-batch contains 32 examples. With 1,024 training examples and no dropped remainder, how many updates are needed for one epoch if every mini-batch produces one update?",
+    "options": [
+      "32",
+      "16",
+      "1,024",
+      "64"
+    ],
+    "correctAnswer": 0,
+    "explanation": "1,024 ÷ 32 = 32 mini-batches, hence 32 updates in one epoch.",
+    "optionExplanations": [
+      "Correct. 1,024 ÷ 32 = 32 mini-batches, hence 32 updates in one epoch.",
+      "16 would correspond to batches of 64.",
+      "An update is not performed for every individual example in mini-batch training.",
+      "64 would correspond to batches of 16."
+    ],
+    "hint": "Divide the dataset size by the mini-batch size.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "PRACTICAL-025",
+    "number": 84,
+    "bank": "practical",
+    "topicId": "optimization-algorithms",
+    "difficulty": "hard",
+    "type": "scenario",
+    "question": "Training loss oscillates and often increases after each update. Which first adjustment is most directly motivated by the gradient-descent update rule?",
+    "options": [
+      "Reduce the learning rate",
+      "Increase the learning rate substantially",
+      "Remove the gradient and update randomly",
+      "Replace the objective with its trace"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A learning rate that is too large can overshoot minima and cause oscillation or divergence. Reducing it is a direct first diagnostic adjustment, alongside checking gradient scale and implementation.",
+    "optionExplanations": [
+      "Correct. A learning rate that is too large can overshoot minima and cause oscillation or divergence. Reducing it is a direct first diagnostic adjustment, alongside checking gradient scale and implementation.",
+      "A larger step can worsen overshooting.",
+      "Random updates do not implement gradient descent.",
+      "Trace is a matrix quantity and is not a generic replacement objective."
+    ],
+    "hint": "Consider the size of each step relative to the local curvature.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "PRACTICAL-026",
+    "number": 85,
+    "bank": "practical",
+    "topicId": "search",
+    "difficulty": "medium",
+    "type": "scenario",
+    "question": "A maze has equal cost for every move, and the objective is the path with the fewest moves. Which method is a natural choice?",
+    "options": [
+      "Breadth-first search",
+      "Depth-first search with arbitrary branch order",
+      "Uniform random search",
+      "Backward chaining over predicate rules"
+    ],
+    "correctAnswer": 0,
+    "explanation": "With equal step costs, BFS expands by depth and finds a shallowest goal, hence a minimum-number-of-moves path.",
+    "optionExplanations": [
+      "Correct. With equal step costs, BFS expands by depth and finds a shallowest goal, hence a minimum-number-of-moves path.",
+      "DFS does not guarantee the shallowest solution.",
+      "Random search offers no shortest-path guarantee.",
+      "Backward chaining is a logic reasoning strategy rather than the natural maze-path algorithm."
+    ],
+    "hint": "Equal move costs mean the fewest edges is also the least-cost path.",
+    "referenceId": "search-ref"
+  },
+  {
+    "id": "PRACTICAL-027",
+    "number": 86,
+    "bank": "practical",
+    "topicId": "agents-csp",
+    "difficulty": "hard",
+    "type": "scenario",
+    "question": "A timetable assigns each exam a time slot. Two exams taken by the same student cannot overlap. In CSP terms, the “cannot overlap” rule is:",
+    "options": [
+      "A constraint relating the time-slot variables of those exams",
+      "A domain value for every student",
+      "The objective function that maximises the number of exams",
+      "A transition model describing a search tree"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The rule restricts which pairs of variable assignments are allowed, so it is a constraint. Each exam is a variable and its possible slots form its domain.",
+    "optionExplanations": [
+      "Correct. The rule restricts which pairs of variable assignments are allowed, so it is a constraint. Each exam is a variable and its possible slots form its domain.",
+      "The domain is the list of allowed time slots, not the compatibility rule.",
+      "Maximising a count is a different optimisation objective.",
+      "A transition model describes state changes, not the CSP rule itself."
+    ],
+    "hint": "Identify which statement rules out combinations of assignments.",
+    "referenceId": "agents-csp-ref"
+  },
+  {
+    "id": "PRACTICAL-028",
+    "number": 87,
+    "bank": "practical",
+    "topicId": "logic",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "If P is true and Q is false, what is the truth value of P → Q?",
+    "options": [
+      "False",
+      "True",
+      "Both true and false",
+      "Undefined"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Material implication is false only when the antecedent is true and the consequent is false.",
+    "optionExplanations": [
+      "Correct. Material implication is false only when the antecedent is true and the consequent is false.",
+      "This is the exact false row of implication.",
+      "It would be true if P were false or Q were true.",
+      "Classical propositional logic assigns a definite truth value."
+    ],
+    "hint": "Check the one counterexample row in the implication truth table.",
+    "referenceId": "logic-ref"
+  },
+  {
+    "id": "PRACTICAL-029",
+    "number": 88,
+    "bank": "practical",
+    "topicId": "reasoning-planning",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Resolve (P ∨ Q) with (¬P ∨ R) on the complementary pair P and ¬P. What is the result?",
+    "options": [
+      "Q ∨ R",
+      "P ∧ R",
+      "¬Q ∨ ¬R",
+      "P ∨ ¬P"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Remove P and ¬P, then combine the remaining literals Q and R to produce Q ∨ R.",
+    "optionExplanations": [
+      "Correct. Remove P and ¬P, then combine the remaining literals Q and R to produce Q ∨ R.",
+      "The resolvent is a disjunction of remaining literals, not a conjunction.",
+      "Negating the remaining literals is not part of the rule.",
+      "P ∨ ¬P is a tautology and not the computed resolvent."
+    ],
+    "hint": "Resolution removes the chosen complementary literals.",
+    "referenceId": "reasoning-planning-ref"
+  },
+  {
+    "id": "PRACTICAL-030",
+    "number": 109,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For A=[[1,2],[3,4]], calculate det(A).",
+    "options": [
+      "2",
+      "10",
+      "−10",
+      "−2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "det(A)=1·4−2·3=4−6=−2. The negative sign indicates orientation reversal for this two-dimensional linear map.",
+    "optionExplanations": [
+      "2 has the wrong sign because the cross-product term is larger.",
+      "10 is the sum of all entries.",
+      "−10 is not the determinant calculation.",
+      "Correct. det(A)=1·4−2·3=4−6=−2. The negative sign indicates orientation reversal for this two-dimensional linear map."
+    ],
+    "hint": "For a 2×2 matrix use ad−bc.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-031",
+    "number": 110,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For A=[[2,0],[0,4]], what is A⁻¹?",
+    "options": [
+      "[[2,0],[0,4]]",
+      "[[4,0],[0,2]]",
+      "[[−2,0],[0,−4]]",
+      "[[1/2,0],[0,1/4]]"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The inverse of an invertible diagonal matrix is diagonal with reciprocal diagonal entries.",
+    "optionExplanations": [
+      "This is A itself, and A·A is not the identity.",
+      "Swapping diagonal entries does not create the inverse.",
+      "Negating entries is not the inverse operation.",
+      "Correct. The inverse of an invertible diagonal matrix is diagonal with reciprocal diagonal entries."
+    ],
+    "hint": "Find the matrix that multiplies A to give the identity.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-032",
+    "number": 111,
+    "bank": "practical",
+    "topicId": "matrix-properties",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "A matrix has eigenvalues 3, 3 and 0. What is its rank if it is diagonalizable and is a 3×3 matrix?",
+    "options": [
+      "1",
+      "3",
+      "0",
+      "2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For a diagonalizable matrix, the algebraic multiplicity pattern gives two nonzero eigen-directions and one zero eigen-direction, so the rank is 2.",
+    "optionExplanations": [
+      "One is the nullity, not the rank.",
+      "The zero eigenvalue does not make the matrix full rank.",
+      "Two nonzero eigenvalues mean the matrix is not rank zero.",
+      "Correct. For a diagonalizable matrix, the algebraic multiplicity pattern gives two nonzero eigen-directions and one zero eigen-direction, so the rank is 2."
+    ],
+    "hint": "For a diagonalizable matrix, rank equals the number of nonzero eigenvalues counted with multiplicity.",
+    "referenceId": "matrix-properties-ref"
+  },
+  {
+    "id": "PRACTICAL-033",
+    "number": 112,
+    "bank": "practical",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For A=[[2,0],[0,5]], which polynomial equation gives its eigenvalues?",
+    "options": [
+      "(2+λ)(5+λ)=0",
+      "λ²+7=0",
+      "(2−λ)+(5−λ)=0",
+      "(2−λ)(5−λ)=0"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The characteristic equation is det(A−λI)=0, which for this diagonal matrix is (2−λ)(5−λ)=0.",
+    "optionExplanations": [
+      "The sign in A−λI is not plus.",
+      "The determinant gives a quadratic with real roots 2 and 5.",
+      "The determinant of a diagonal matrix is the product of its diagonal entries, not their sum.",
+      "Correct. The characteristic equation is det(A−λI)=0, which for this diagonal matrix is (2−λ)(5−λ)=0."
+    ],
+    "hint": "Subtract λ from each diagonal entry and take the determinant.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "PRACTICAL-034",
+    "number": 113,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For f(x)=(x²+1)/x with x≠0, which simplified derivative is correct?",
+    "options": [
+      "1+1/x²",
+      "2x/x",
+      "x²−1",
+      "1−1/x²"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Rewrite f(x)=x+x⁻¹. Then f′(x)=1−x⁻²=1−1/x².",
+    "optionExplanations": [
+      "The derivative of x⁻¹ is negative x⁻².",
+      "The derivative of x⁻¹ is not positive x⁻².",
+      "2x/x simplifies to 2 and is not the derivative.",
+      "Correct. Rewrite f(x)=x+x⁻¹. Then f′(x)=1−x⁻²=1−1/x²."
+    ],
+    "hint": "Simplify the quotient before differentiating.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-035",
+    "number": 114,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For f(x,y)=x²+y², calculate the directional derivative at (1,1) in direction u=(1/√2,1/√2).",
+    "options": [
+      "2",
+      "√2",
+      "0",
+      "2√2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The gradient at (1,1) is (2,2). Its dot product with the unit direction is 2/√2+2/√2=2√2.",
+    "optionExplanations": [
+      "2 omits the combined contribution from both coordinates.",
+      "√2 is half the correct dot product.",
+      "The gradient and direction point the same way, so the derivative is not zero.",
+      "Correct. The gradient at (1,1) is (2,2). Its dot product with the unit direction is 2/√2+2/√2=2√2."
+    ],
+    "hint": "Evaluate the gradient at the point and dot it with the unit direction.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-036",
+    "number": 115,
+    "bank": "practical",
+    "topicId": "gradients-autodiff",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For f(x,y)=x²+4y², what is the Hessian matrix?",
+    "options": [
+      "[[2,0],[0,4]]",
+      "[[x,0],[0,y]]",
+      "[[0,0],[0,0]]",
+      "[[2,0],[0,8]]"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The first partials are 2x and 8y. Differentiating again gives fxx=2, fxy=0, fyx=0 and fyy=8.",
+    "optionExplanations": [
+      "The y² term differentiates twice to 8, not 4.",
+      "A Hessian contains second derivatives, not the input coordinates.",
+      "The second derivatives are not all zero for this quadratic.",
+      "Correct. The first partials are 2x and 8y. Differentiating again gives fxx=2, fxy=0, fyx=0 and fyy=8."
+    ],
+    "hint": "Differentiate twice and arrange second partial derivatives by variable.",
+    "referenceId": "gradients-autodiff-ref"
+  },
+  {
+    "id": "PRACTICAL-037",
+    "number": 116,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For f(x)=x²−6x+10, at what x-value is the unconstrained minimum attained?",
+    "options": [
+      "−3",
+      "6",
+      "0",
+      "3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Set f′(x)=2x−6=0, giving x=3. Since f″(x)=2>0, this stationary point is a minimum.",
+    "optionExplanations": [
+      "The negative root solves 2x+6=0, not the actual derivative equation.",
+      "6 is the coefficient of x, not the minimiser.",
+      "The derivative at zero is −6, so zero is not stationary.",
+      "Correct. Set f′(x)=2x−6=0, giving x=3. Since f″(x)=2>0, this stationary point is a minimum."
+    ],
+    "hint": "Set the first derivative to zero, then check the second derivative.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-038",
+    "number": 117,
+    "bank": "practical",
+    "topicId": "optimization-algorithms",
+    "difficulty": "medium",
+    "type": "scenario",
+    "question": "A convex differentiable objective has a feasible local minimiser. What can be concluded about that minimiser?",
+    "options": [
+      "It must be a saddle point",
+      "It must be the only feasible point",
+      "Its gradient must be non-zero",
+      "It is also a global minimiser"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For a convex objective over a convex feasible set, every local minimum is global. The minimum need not be unique unless stronger assumptions hold.",
+    "optionExplanations": [
+      "A local minimiser is not a saddle point by definition.",
+      "The feasible set can contain many points.",
+      "At an unconstrained differentiable interior minimum the gradient is zero; constrained conditions require more care.",
+      "Correct. For a convex objective over a convex feasible set, every local minimum is global. The minimum need not be unique unless stronger assumptions hold."
+    ],
+    "hint": "Recall the local-to-global property of convex optimisation.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "PRACTICAL-039",
+    "number": 118,
+    "bank": "practical",
+    "topicId": "agents-csp",
+    "difficulty": "hard",
+    "type": "scenario",
+    "question": "In a CSP, a variable has domain {1,2,3}. After assigning a neighbouring variable, a constraint rules out value 2. What is the remaining domain?",
+    "options": [
+      "{2}",
+      "{1,2,3}",
+      "The empty set",
+      "{1,3}"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Constraint propagation removes inconsistent values from the domain, leaving 1 and 3.",
+    "optionExplanations": [
+      "The ruled-out value cannot remain by itself.",
+      "The domain is not unchanged because value 2 is inconsistent.",
+      "There are still two remaining legal values, so the domain is not empty.",
+      "Correct. Constraint propagation removes inconsistent values from the domain, leaving 1 and 3."
+    ],
+    "hint": "Remove only the value explicitly ruled out by the constraint.",
+    "referenceId": "agents-csp-ref"
+  },
+  {
+    "id": "PRACTICAL-040",
+    "number": 119,
+    "bank": "practical",
+    "topicId": "big-data",
+    "difficulty": "medium",
+    "type": "scenario",
+    "question": "A data file contains rows with fixed columns (timestamp, sensor_id, temperature). How is it classified in the syllabus distinction?",
+    "options": [
+      "A rule base",
+      "A state-space transition model",
+      "Structured data",
+      "Unstructured data"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The data have a regular schema with named fields and consistent records, so they are structured data.",
+    "optionExplanations": [
+      "A rule base stores logic rules, not sensor observations in tabular records.",
+      "A transition model describes state changes in a search problem.",
+      "Correct. The data have a regular schema with named fields and consistent records, so they are structured data.",
+      "Free-form text, images and audio are common examples of unstructured data."
+    ],
+    "hint": "Check whether the values follow a predefined tabular schema.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "PRACTICAL-041",
+    "number": 129,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "numerical",
+    "question": "For v=(2,−2), what is the unit vector in the direction of v?",
+    "options": [
+      "(−1/√2, 1/√2)",
+      "(1/√2, −1/√2)",
+      "(2,−2)",
+      "(1/2,−1/2)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The norm is √(4+4)=2√2. Dividing v by its norm gives (1/√2,−1/√2).",
+    "optionExplanations": [
+      "This points in the opposite direction.",
+      "Correct. The norm is √(4+4)=2√2. Dividing v by its norm gives (1/√2,−1/√2).",
+      "This vector has norm 2√2, not 1.",
+      "Dividing by 2 gives a vector of norm √2, not 1."
+    ],
+    "hint": "A unit vector is the original vector divided by its Euclidean norm.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-042",
+    "number": 130,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "The columns of a 3×3 matrix are linearly independent. What is the dimension of their span?",
+    "options": [
+      "0",
+      "3",
+      "2",
+      "1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Three linearly independent vectors in ℝ³ form a basis of ℝ³, so their span has dimension 3.",
+    "optionExplanations": [
+      "Non-zero independent columns do not span only the zero vector.",
+      "Correct. Three linearly independent vectors in ℝ³ form a basis of ℝ³, so their span has dimension 3.",
+      "Two would mean one of the three independent directions is missing.",
+      "One would describe three collinear vectors, which are not independent."
+    ],
+    "hint": "The dimension of a span equals the number of independent vectors in a basis for that span.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-043",
+    "number": 131,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "Let A=[[1,0],[0,2]] and B=[[0,1],[1,0]]. What is AB?",
+    "options": [
+      "[[0,1],[1,0]]",
+      "[[0,1],[2,0]]",
+      "[[0,2],[1,0]]",
+      "[[1,0],[0,2]]"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Multiply rows of A by columns of B: AB=[[0,1],[2,0]]. The result differs from BA, illustrating non-commutativity.",
+    "optionExplanations": [
+      "This is B, not the product.",
+      "Correct. Multiply rows of A by columns of B: AB=[[0,1],[2,0]]. The result differs from BA, illustrating non-commutativity.",
+      "This is BA, not AB.",
+      "This is A, not the product."
+    ],
+    "hint": "Compute each entry using row-by-column multiplication, preserving the order A then B.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-044",
+    "number": 132,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For f(x,y)=3x²y−y³, what is ∂f/∂x at (2,1)?",
+    "options": [
+      "3",
+      "12",
+      "11",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "explanation": "∂f/∂x=6xy. At (2,1), the value is 6·2·1=12.",
+    "optionExplanations": [
+      "3 is a coefficient, not the evaluated partial derivative.",
+      "Correct. ∂f/∂x=6xy. At (2,1), the value is 6·2·1=12.",
+      "11 incorrectly includes the derivative of the y-only term.",
+      "6 omits the x=2 factor."
+    ],
+    "hint": "Treat y as constant and differentiate only with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-045",
+    "number": 133,
+    "bank": "practical",
+    "topicId": "optimization-algorithms",
+    "difficulty": "hard",
+    "type": "numerical",
+    "question": "For f(x)=x², starting at x₀=−2 with η=0.25, what is one gradient-descent update?",
+    "options": [
+      "0",
+      "−1",
+      "−3",
+      "−2.5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "f′(−2)=−4. The update is x₁=−2−0.25(−4)=−1.",
+    "optionExplanations": [
+      "One step does not reach the minimum exactly in this case.",
+      "Correct. f′(−2)=−4. The update is x₁=−2−0.25(−4)=−1.",
+      "−3 moves opposite to the correct update direction.",
+      "−2.5 uses only part of the gradient incorrectly."
+    ],
+    "hint": "A negative gradient means subtracting it moves x in the positive direction.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "PRACTICAL-046",
+    "number": 134,
+    "bank": "practical",
+    "topicId": "reasoning-planning",
+    "difficulty": "hard",
+    "type": "scenario",
+    "question": "A planner can apply action “open door” only when “door unlocked” is true. After the action, “door open” becomes true. Which pair is correct?",
+    "options": [
+      "Precondition: door open; effect: no state change",
+      "Precondition: door unlocked; effect: door open",
+      "Precondition: door open; effect: door unlocked",
+      "Precondition: door unlocked; effect: door remains locked"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The unlocked condition must hold before the action, and the action changes the state so that the door is open.",
+    "optionExplanations": [
+      "The action’s stated outcome is not that the door remains locked.",
+      "Correct. The unlocked condition must hold before the action, and the action changes the state so that the door is open.",
+      "This reverses the precondition and effect.",
+      "The effect should represent the change caused by the action."
+    ],
+    "hint": "Separate what must already hold from what the action makes true.",
+    "referenceId": "reasoning-planning-ref"
+  }
+]

@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#eef2f8" />
+  <meta name="description" content="PGCP-AI Mathematics and Statistics for AI learning and MCQ practice platform." />
+  <title>Mathematics & Statistics for AI | PGCP-AI</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234f6bed'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle' fill='white' font-family='Arial'%3E%E2%88%91%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body>
+  <div class="app-shell" id="appShell">
+    <header class="topbar">
+      <div class="brand-lockup">
+        <div class="brand-mark">∑</div>
+        <div class="brand-copy"><strong>PGCP-AI Learning Lab</strong><span>ACTS Pune · August 2026</span></div>
+      </div>
+      <div class="topbar-actions">
+        <label class="candidate-field"><span>Candidate</span><input id="candidateName" type="text" value="Learner" maxlength="40" aria-label="Candidate name" /></label>
+        <select id="themeSelect" class="compact-select" aria-label="Theme preference">
+          <option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option>
+        </select>
+        <button class="icon-button" id="timerOpen" title="Timer" aria-label="Open timer">◷</button>
+        <button class="icon-button" id="focusToggle" title="Focus mode" aria-label="Toggle focus mode">⛶</button>
+        <button class="icon-button mobile-only" id="mobileNavOpen" title="Question navigator" aria-label="Open question navigator">☰</button>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="page-heading">
+        <div>
+          <div class="eyebrow">SUBJECT-WISE PRACTICE WORKSPACE</div>
+          <h1>Mathematics and Statistics for AI</h1>
+          <p>Build concepts. Solve problems. Track mastery.</p>
+        </div>
+        <div class="heading-actions">
+          <button class="btn btn-quiet" id="resultsOpen">View analytics</button>
+          <button class="btn btn-primary" id="nextUnanswered">Next unanswered <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+
+      <section class="stats-grid" aria-label="Practice dashboard">
+        <article class="stat-card"><span class="stat-label">Question bank</span><strong id="statTotal">135</strong><span class="stat-foot">Available questions</span></article>
+        <article class="stat-card"><span class="stat-label">Attempted</span><strong id="statAttempted">0</strong><span class="stat-foot" id="statAttemptedFoot">0% completed</span></article>
+        <article class="stat-card"><span class="stat-label">Correct</span><strong id="statCorrect">0</strong><span class="stat-foot">Checked answers</span></article>
+        <article class="stat-card"><span class="stat-label">Accuracy</span><strong id="statAccuracy">—</strong><span class="stat-foot">Of checked answers</span></article>
+        <article class="stat-card progress-stat"><div class="stat-label-row"><span class="stat-label">Overall progress</span><strong id="statProgress">0%</strong></div><div class="progress-track"><div id="progressBar" class="progress-fill"></div></div><span class="stat-foot" id="statRemaining">135 questions remaining</span></article>
+      </section>
+
+      <section class="filter-bar" aria-label="Question filters">
+        <label><span>Practice mode</span><select id="modeSelect"><option value="all">All questions</option><option value="topic">Topic practice</option><option value="random">Random practice</option><option value="incorrect">Incorrect revision</option><option value="flagged">Flagged revision</option><option value="unanswered">Unattempted practice</option><option value="mock">Timed mock exam</option></select></label>
+        <label><span>Question bank</span><select id="bankSelect"><option value="all">All banks</option><option value="core">Core syllabus</option><option value="practical">Practical / Maths</option><option value="extension">Beyond syllabus</option></select></label>
+        <label class="topic-filter"><span>Topic</span><select id="topicSelect"><option value="all">All topics</option></select></label>
+        <label><span>Difficulty</span><select id="difficultySelect"><option value="all">All levels</option><option value="basic">Basic</option><option value="medium">Medium</option><option value="hard">Hard</option><option value="expert">Expert</option></select></label>
+        <label class="search-filter"><span>Search</span><input id="searchInput" type="search" placeholder="Search concepts or questions…" /></label>
+        <label><span>Status</span><select id="statusSelect"><option value="all">All statuses</option><option value="incorrect">Incorrect</option><option value="unanswered">Unanswered</option><option value="flagged">Flagged</option></select></label>
+      </section>
+
+      <div class="workspace" id="workspace">
+        <aside class="navigator-panel panel" id="navigatorPanel" aria-label="Question navigator">
+          <div class="panel-heading">
+            <div><h2>Navigator</h2><p><span id="visibleCount">135</span> questions in view</p></div>
+            <button class="text-button" id="clearFilters">Clear</button>
+          </div>
+          <div class="bank-summary" id="bankSummary"></div>
+          <div class="navigator-legend">
+            <span><i class="legend-dot dot-neutral"></i>New</span><span><i class="legend-dot dot-correct"></i>Correct</span><span><i class="legend-dot dot-wrong"></i>Incorrect</span><span><i class="legend-dot dot-flag"></i>Flagged</span>
+          </div>
+          <div class="question-grid" id="questionGrid" aria-label="Question numbers"></div>
+          <div class="navigator-footer"><span id="navigatorAttempted">0 attempted</span><span id="navigatorFlagged">0 flagged</span></div>
+        </aside>
+
+        <section class="question-column">
+          <article class="question-card panel" id="questionCard">
+            <div class="question-topline">
+              <div class="question-ident"><span class="question-number-label" id="questionNumber">QUESTION 1</span><span class="dot-separator">·</span><span id="questionTopic">Topic</span></div>
+              <div class="question-badges"><span class="bank-badge" id="questionBank">Core syllabus</span><span class="difficulty-badge medium" id="questionDifficulty">Medium</span></div>
+            </div>
+            <div class="question-progress"><div class="progress-track"><div id="questionProgressBar" class="progress-fill"></div></div><span id="questionPosition">1 of 135</span></div>
+            <div class="question-stem" id="questionStem">Loading questions…</div>
+            <div class="answer-prompt"><span>Select one answer</span><span id="selectedLabel">No option selected</span></div>
+            <div class="answer-options" id="answerOptions" role="radiogroup" aria-label="Answer options"></div>
+            <div class="answer-feedback" id="answerFeedback" aria-live="polite" hidden></div>
+            <div class="question-controls">
+              <div class="control-group"><button class="btn btn-quiet" id="previousButton">← Previous</button><button class="btn btn-quiet" id="nextButton">Next →</button></div>
+              <div class="control-group"><button class="btn btn-quiet" id="flagButton">⚑ Flag for review</button><button class="btn btn-primary" id="checkButton">Check answer</button></div>
+            </div>
+            <div class="question-utility-row">
+              <button class="text-button" id="hintButton">✦ Reveal hint</button>
+              <button class="text-button" id="referenceButton">▤ Open topic reference</button>
+              <button class="text-button danger-text" id="resetQuestionButton">Reset question</button>
+              <span class="keyboard-note">Keys: 1–4 answer · ← → navigate · H hint · F flag</span>
+            </div>
+          </article>
+          <div class="empty-state panel" id="emptyState" hidden>
+            <div class="empty-icon">⌕</div><h2>No questions match these filters</h2><p>Try changing the bank, topic, difficulty or status filter.</p><button class="btn btn-primary" id="emptyClear">Clear filters</button>
+          </div>
+        </section>
+
+        <aside class="learning-panel panel" id="learningPanel">
+          <div class="learning-tabs" role="tablist"><button class="learning-tab active" id="hintTab" role="tab" aria-selected="true">Hint</button><button class="learning-tab" id="referenceTab" role="tab" aria-selected="false">Study reference</button></div>
+          <div class="learning-content" id="learningContent">
+            <div class="panel-empty"><div class="panel-empty-icon">✦</div><h3>Learn as you practise</h3><p>Reveal a hint for a gentle clue, or open the topic reference for definitions, explanations and examples.</p></div>
+          </div>
+        </aside>
+      </div>
+
+      <footer class="app-footer"><span>PGCP-AI · Mathematics and Statistics for AI</span><span id="saveStatus">Progress saves automatically on this browser</span><span>Local profile storage · No account required</span></footer>
+    </main>
+  </div>
+
+  <div class="scrim" id="scrim"></div>
+
+  <section class="overlay-card timer-dialog" id="timerDialog" role="dialog" aria-modal="true" aria-labelledby="timerTitle" hidden>
+    <div class="overlay-header"><div><span class="eyebrow">FOCUS SESSION</span><h2 id="timerTitle">Study timer</h2></div><button class="icon-button close-overlay" data-close="timerDialog" aria-label="Close timer">×</button></div>
+    <div class="timer-display" id="timerDisplay">30:00</div>
+    <div class="timer-settings"><label>Duration (minutes)<input type="number" id="timerMinutes" min="1" max="240" value="30" /></label></div>
+    <div class="timer-status" id="timerStatus">Ready when you are.</div>
+    <div class="dialog-actions"><button class="btn btn-quiet" id="timerReset">Reset</button><button class="btn btn-quiet" id="timerPause">Pause</button><button class="btn btn-primary" id="timerStart">Start timer</button></div>
+  </section>
+
+  <section class="overlay-card results-dialog" id="resultsDialog" role="dialog" aria-modal="true" aria-labelledby="resultsTitle" hidden>
+    <div class="overlay-header"><div><span class="eyebrow">LEARNING ANALYTICS</span><h2 id="resultsTitle">Your practice report</h2><p id="resultsSubtitle">Performance for this candidate profile</p></div><button class="icon-button close-overlay" data-close="resultsDialog" aria-label="Close analytics">×</button></div>
+    <div class="result-metrics" id="resultMetrics"></div>
+    <div class="analytics-columns"><section><h3>Topic performance</h3><div id="topicAnalytics" class="analytics-list"></div></section><section><h3>Difficulty performance</h3><div id="difficultyAnalytics" class="analytics-list"></div></section></div>
+    <div class="review-suggestions" id="reviewSuggestions"></div>
+    <div class="dialog-actions"><button class="btn btn-quiet" id="exportButton">Export progress JSON</button><button class="btn btn-primary" id="closeResults">Close report</button></div>
+  </section>
+
+  <section class="overlay-card settings-dialog" id="settingsDialog" role="dialog" aria-modal="true" aria-labelledby="settingsTitle" hidden>
+    <div class="overlay-header"><div><span class="eyebrow">PROFILE & DATA</span><h2 id="settingsTitle">Session settings</h2></div><button class="icon-button close-overlay" data-close="settingsDialog" aria-label="Close settings">×</button></div>
+    <p class="dialog-copy">Progress is saved separately for each candidate name in this browser. Export a backup before importing or resetting data.</p>
+    <div class="settings-actions"><button class="btn btn-quiet" id="settingsExport">Export progress JSON</button><button class="btn btn-quiet" id="importButton">Import progress JSON</button><input type="file" id="importFile" accept="application/json,.json" hidden /><button class="btn btn-danger" id="resetAllButton">Reset this profile</button></div>
+    <div class="settings-footnote">Local browser storage does not synchronise progress between devices. Use Export and Import to move a profile manually.</div>
+  </section>
+
+  <button class="settings-fab" id="settingsOpen" title="Settings" aria-label="Open settings">⚙</button>
+  <div class="toast-region" id="toastRegion" aria-live="polite"></div>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1015 @@
+[
+  {
+    "id": "ai-foundations-ref",
+    "topicId": "ai-foundations",
+    "title": "Definition, Scope and Structure of AI",
+    "overview": "Artificial Intelligence (AI) is the study and engineering of systems that perform tasks associated with intelligent behaviour, such as perceiving, reasoning, learning, planning and acting. AI is not one single algorithm; it is a broad collection of representations, methods and systems.",
+    "definitions": [
+      [
+        "Artificial Intelligence",
+        "The capability of an engineered system to perform tasks that normally require aspects of human intelligence."
+      ],
+      [
+        "AI system",
+        "A system that receives inputs from an environment, processes them using data, knowledge or models, and produces predictions, decisions or actions."
+      ],
+      [
+        "Perception",
+        "Extracting useful information from inputs such as images, audio or sensor signals."
+      ],
+      [
+        "Reasoning",
+        "Deriving conclusions or selecting actions from facts, rules or models."
+      ]
+    ],
+    "keyPoints": [
+      "An AI system can combine perception, representation, learning, reasoning, planning and action.",
+      "The appropriate technique depends on the task: rule-based reasoning is not interchangeable with statistical learning.",
+      "A complete system also needs data pipelines, evaluation, deployment, monitoring and human oversight.",
+      "AI applications include recommendation, forecasting, language processing, robotics, vision, optimisation and decision support."
+    ],
+    "example": "A visual inspection system receives an image, detects relevant features, classifies whether a defect is present, and sends a result to an operator or production controller.",
+    "commonMistakes": [
+      "Treating AI and machine learning as synonyms. Machine learning is one family of AI methods.",
+      "Assuming an AI model alone is the whole AI product. Production systems also require data, interfaces, monitoring and governance."
+    ],
+    "examNotes": "Distinguish capability from implementation: AI describes the problem-solving capability; an AI system is the engineered arrangement that delivers it."
+  },
+  {
+    "id": "ai-history-ref",
+    "topicId": "ai-history",
+    "title": "AI History, Turing and Artificial Life",
+    "overview": "AI developed through periods of symbolic reasoning, knowledge-based systems, statistical learning and data-intensive deep learning. Alan Turing made foundational contributions to computation and proposed an imitation-game approach to discussing machine intelligence.",
+    "definitions": [
+      [
+        "Turing Machine",
+        "An abstract mathematical model of computation with a tape, a read/write head and a finite set of states and transition rules."
+      ],
+      [
+        "Turing Test",
+        "A conversational imitation game in which an evaluator judges whether a hidden participant is a human or a machine based on responses."
+      ],
+      [
+        "Artificial life",
+        "The study or simulation of life-like processes and behaviours in artificial or computational systems."
+      ],
+      [
+        "Emergent behaviour",
+        "A system-level pattern arising from interactions among simpler components, without being explicitly specified as one central behaviour."
+      ]
+    ],
+    "keyPoints": [
+      "The Turing Machine is a theoretical model used to reason about computation; it is not a physical machine design.",
+      "The Turing Test evaluates human-indistinguishability in a specified interaction, not consciousness or general intelligence in every sense.",
+      "AI history includes symbolic methods, expert systems, statistical approaches and modern neural methods.",
+      "Artificial-life simulations can show collective or emergent patterns from local interaction rules."
+    ],
+    "example": "In a simple flocking simulation, each agent follows local separation, alignment and cohesion rules. A coherent flock can emerge without a leader controlling every movement.",
+    "commonMistakes": [
+      "Confusing the Turing Machine with the Turing Test.",
+      "Assuming passing a conversation test proves consciousness.",
+      "Calling any complicated behaviour emergent; emergence specifically concerns system-level patterns arising from interactions."
+    ],
+    "examNotes": "Remember the distinct roles: Turing Machine models computation; Turing Test frames an imitation game; artificial life studies life-like processes."
+  },
+  {
+    "id": "ai-ethics-ref",
+    "topicId": "ai-ethics",
+    "title": "Ethics and Responsible AI",
+    "overview": "Responsible AI considers how AI systems affect people and society throughout their lifecycle: problem selection, data collection, design, deployment and monitoring. Technical performance alone is insufficient to establish that a system is acceptable.",
+    "definitions": [
+      [
+        "Fairness",
+        "The extent to which system outcomes and error rates avoid unjustified disadvantage across relevant groups."
+      ],
+      [
+        "Transparency",
+        "Making a system's purpose, operation, limitations and decision basis sufficiently understandable to relevant stakeholders."
+      ],
+      [
+        "Accountability",
+        "Assigning responsibility for system design, deployment, oversight and consequences."
+      ],
+      [
+        "Privacy",
+        "Protecting personal information and limiting collection, use, retention and disclosure to appropriate purposes."
+      ],
+      [
+        "Human oversight",
+        "Meaningful ability for people to review, intervene in or override system behaviour where appropriate."
+      ]
+    ],
+    "keyPoints": [
+      "Bias can enter through historical data, sampling, labels, measurement, model design and deployment context.",
+      "A model can be accurate overall while performing poorly for a particular group.",
+      "Responsible practices include data minimisation, access controls, impact assessment, monitoring, documentation and appeal paths.",
+      "Legal compliance is necessary where applicable but is not the whole of ethical responsibility.",
+      "Human oversight must be practical: the reviewer needs information, authority and time to act."
+    ],
+    "example": "A hiring-screening model should be tested for disparate error rates, use job-relevant features, provide an appeal route and remain subject to accountable human review.",
+    "commonMistakes": [
+      "Assuming removing a sensitive column eliminates all bias; proxy variables may remain.",
+      "Equating an explanation with proof that a decision is fair.",
+      "Treating deployment as the end of governance; data and populations can change."
+    ],
+    "examNotes": "For scenario questions, examine fairness, privacy, transparency, safety, accountability and human agency together."
+  },
+  {
+    "id": "ai-systems-ref",
+    "topicId": "ai-systems",
+    "title": "AI Systems, Rule-Based Systems and Expert Systems",
+    "overview": "An AI system usually connects inputs, internal representations or models, an inference or decision component and outputs or actions. Rule-based and expert systems encode domain knowledge explicitly, often as condition–action rules.",
+    "definitions": [
+      [
+        "Rule-based system",
+        "A system that applies explicit rules, commonly written as IF condition THEN conclusion/action."
+      ],
+      [
+        "Expert system",
+        "A knowledge-based program designed to emulate parts of a human expert's decision process in a defined domain."
+      ],
+      [
+        "Knowledge base",
+        "A store of domain facts, rules and relationships used by a reasoning component."
+      ],
+      [
+        "Inference engine",
+        "The component that applies rules to known facts to derive conclusions or recommendations."
+      ]
+    ],
+    "keyPoints": [
+      "A common expert-system architecture separates the knowledge base from the inference engine.",
+      "Forward chaining starts from known facts and applies rules to derive consequences.",
+      "Backward chaining starts from a goal or hypothesis and seeks supporting facts or rules.",
+      "Rule systems are interpretable when rules are clear, but can be brittle when the domain changes or rules conflict.",
+      "Learning from data and reasoning from explicit rules can be combined in hybrid systems."
+    ],
+    "example": "IF temperature is high AND pressure is low THEN flag a possible cooling-system fault. The rule engine checks the conditions against current sensor facts.",
+    "commonMistakes": [
+      "Confusing the knowledge base with the inference engine.",
+      "Assuming expert systems automatically learn new rules from examples.",
+      "Assuming every rule-based system is an expert system; expert systems specifically encode domain expertise."
+    ],
+    "examNotes": "When asked to trace a rule-based system, identify initial facts, matching rules, firing order and any conflict-resolution strategy."
+  },
+  {
+    "id": "ml-learning-ref",
+    "topicId": "ml-learning",
+    "title": "Supervised and Unsupervised Learning",
+    "overview": "Machine learning builds models from data. The learning paradigm is primarily distinguished by the information available during training and the objective being optimised.",
+    "definitions": [
+      [
+        "Supervised learning",
+        "Learning a mapping from inputs to known target labels or numerical values using labelled examples."
+      ],
+      [
+        "Unsupervised learning",
+        "Finding structure or patterns in data without supplied target labels."
+      ],
+      [
+        "Classification",
+        "Predicting a discrete class or category."
+      ],
+      [
+        "Regression",
+        "Predicting a numerical quantity."
+      ],
+      [
+        "Clustering",
+        "Grouping examples based on similarity or a distance/similarity measure."
+      ]
+    ],
+    "keyPoints": [
+      "Supervised tasks include classification and regression; labels provide a training signal.",
+      "Unsupervised tasks include clustering, dimensionality reduction and density or structure discovery.",
+      "A labelled dataset contains target values for examples; an unlabelled dataset does not provide those targets.",
+      "Evaluation must match the task and consider generalisation to unseen data.",
+      "The presence of labels does not guarantee high-quality labels; noisy targets can mislead a model."
+    ],
+    "example": "Predicting house prices from historical homes with known prices is supervised regression. Grouping customers by purchasing behaviour without predefined customer categories is unsupervised clustering.",
+    "commonMistakes": [
+      "Calling all prediction tasks classification; numerical targets usually indicate regression.",
+      "Assuming unsupervised learning has no objective; it optimises criteria such as within-cluster compactness or reconstruction error.",
+      "Confusing the training labels with model predictions."
+    ],
+    "examNotes": "First ask whether target labels are provided. Then identify whether the target is categorical or numerical, or whether the task seeks structure without labels."
+  },
+  {
+    "id": "knowledge-representation-ref",
+    "topicId": "knowledge-representation",
+    "title": "Knowledge Representation and State-Space Modelling",
+    "overview": "Knowledge representation encodes facts, objects, relations and rules in a form that a system can reason with. A state-space model expresses a problem as states connected by actions or transitions.",
+    "definitions": [
+      [
+        "State",
+        "A representation of the relevant situation at a particular point in problem solving."
+      ],
+      [
+        "Initial state",
+        "The state from which the search or planning process begins."
+      ],
+      [
+        "Goal test",
+        "A test that determines whether a state satisfies the required goal condition."
+      ],
+      [
+        "Transition model",
+        "A description of the result of applying an action to a state."
+      ],
+      [
+        "State space",
+        "The set of reachable or considered states and the transitions connecting them."
+      ]
+    ],
+    "keyPoints": [
+      "A search problem is commonly specified by an initial state, available actions, transition model, goal test and path-cost function.",
+      "The state representation should include information needed to determine legal actions and goal satisfaction.",
+      "A poor representation can create unnecessary state explosion or omit information needed to solve the task.",
+      "Knowledge can be represented as facts, relations, logical formulas, rules, graphs or other structured forms."
+    ],
+    "example": "In a route-finding problem, a state may be the current city. Actions are road choices, the transition moves to a neighbouring city, and the goal test checks whether the destination has been reached.",
+    "commonMistakes": [
+      "Treating the state space as only the initial and goal states.",
+      "Confusing the goal test with the transition model.",
+      "Using a state representation that omits a variable needed to decide future actions."
+    ],
+    "examNotes": "Be able to identify initial state, action set, transition model, goal test and path cost in a problem statement."
+  },
+  {
+    "id": "search-ref",
+    "topicId": "search",
+    "title": "Search Strategies and Adversarial Search",
+    "overview": "Search explores candidate states or action sequences to find a path or solution. Uninformed strategies use the problem definition without heuristic estimates; informed strategies may use extra estimates of distance to a goal.",
+    "definitions": [
+      [
+        "Breadth-first search (BFS)",
+        "Expands the shallowest frontier nodes first, typically using a FIFO queue."
+      ],
+      [
+        "Depth-first search (DFS)",
+        "Expands the deepest frontier node first, typically using a stack or recursion."
+      ],
+      [
+        "Uniform-cost search",
+        "Expands the frontier path with the lowest accumulated path cost."
+      ],
+      [
+        "Adversarial search",
+        "Search in environments where agents have opposing goals, commonly modelled with game trees."
+      ],
+      [
+        "Minimax",
+        "A decision rule that chooses a move assuming an optimal opponent who minimises the maximiser's outcome."
+      ]
+    ],
+    "keyPoints": [
+      "BFS is complete for finite branching and finds a shallowest solution; it is optimal when all step costs are equal.",
+      "DFS can use less memory but may follow a very deep or infinite branch and is not generally optimal.",
+      "Uniform-cost search accounts for path costs and is optimal under non-negative step costs with the usual conditions.",
+      "Parallel search distributes exploration work but requires coordination and does not automatically guarantee speedup.",
+      "Search engines retrieve and rank documents; this is distinct from the general state-space search algorithms taught in AI.",
+      "In minimax, MAX chooses the maximum backed-up value and MIN chooses the minimum."
+    ],
+    "example": "For an unweighted maze where each move costs one, BFS finds a path with the fewest moves. For roads with different travel costs, uniform-cost search is more appropriate.",
+    "commonMistakes": [
+      "Claiming BFS is always lowest-cost optimal when edge costs differ.",
+      "Assuming DFS always finds a solution in an infinite-depth space.",
+      "Confusing a heuristic estimate with the exact accumulated path cost."
+    ],
+    "examNotes": "Compare a search method by completeness, optimality, time and memory, while stating the conditions under which each property holds."
+  },
+  {
+    "id": "agents-csp-ref",
+    "topicId": "agents-csp",
+    "title": "Intelligent Agents and Constraint Satisfaction",
+    "overview": "An intelligent agent perceives its environment and selects actions. Constraint satisfaction problems (CSPs) express a solution as assignments to variables that satisfy specified constraints.",
+    "definitions": [
+      [
+        "Agent",
+        "An entity that perceives its environment through sensors or inputs and acts through actuators or outputs."
+      ],
+      [
+        "Rational agent",
+        "An agent that selects actions expected to maximise a performance measure given its percept sequence and available knowledge."
+      ],
+      [
+        "CSP",
+        "A problem defined by variables, domains of possible values and constraints restricting allowed combinations."
+      ],
+      [
+        "Constraint",
+        "A condition that one or more variable assignments must satisfy."
+      ],
+      [
+        "Combinatorial optimisation",
+        "Finding a best feasible solution among a finite or structured set of combinations."
+      ]
+    ],
+    "keyPoints": [
+      "Rationality is relative to the performance measure, available information and computational limitations; it does not imply omniscience.",
+      "A CSP assignment may be partial or complete. A complete assignment satisfying all constraints is a solution.",
+      "Backtracking search assigns values and retreats when a partial assignment violates a constraint or cannot be extended.",
+      "Variable-ordering and value-ordering heuristics can reduce the search required.",
+      "Optimisation distinguishes feasibility (satisfying constraints) from optimality (best objective value among feasible solutions)."
+    ],
+    "example": "In exam timetabling, variables represent exams, domains represent time slots, and constraints prevent a student from having two exams at the same time.",
+    "commonMistakes": [
+      "Equating a rational agent with an agent that always knows the future.",
+      "Calling any valid CSP assignment optimal; a CSP may only require feasibility.",
+      "Confusing a variable's domain with the set of constraints."
+    ],
+    "examNotes": "For a CSP, explicitly list variables, domains and constraints before choosing a search strategy."
+  },
+  {
+    "id": "logic-ref",
+    "topicId": "logic",
+    "title": "Propositional Logic, Predicate Logic and Logic Programming",
+    "overview": "Logic provides formal languages for representing statements and deriving conclusions. Propositional logic treats complete statements as truth-valued units, while predicate logic represents objects, properties and relations.",
+    "definitions": [
+      [
+        "Proposition",
+        "A declarative statement that has a truth value, true or false, under an interpretation."
+      ],
+      [
+        "Predicate",
+        "A relation or property applied to one or more objects, such as Human(x)."
+      ],
+      [
+        "Universal quantifier (∀)",
+        "States that a predicate holds for every object in the specified domain."
+      ],
+      [
+        "Existential quantifier (∃)",
+        "States that at least one object in the specified domain satisfies a predicate."
+      ],
+      [
+        "Logical implication (P → Q)",
+        "False only when P is true and Q is false."
+      ],
+      [
+        "Logic programming",
+        "A programming paradigm in which relations and rules are expressed declaratively and queried through logical inference."
+      ]
+    ],
+    "keyPoints": [
+      "Propositional connectives include NOT, AND, OR and implication.",
+      "Predicate logic adds variables, predicates and quantifiers, making it more expressive for object-level relationships.",
+      "Quantifier scope matters: ∀x P(x) is not equivalent to ∃x P(x).",
+      "A statement and its converse are not generally equivalent: P → Q does not imply Q → P.",
+      "Logic programming describes what relationships hold rather than listing every procedural step."
+    ],
+    "example": "∀x (Human(x) → Mortal(x)) together with Human(Socrates) allows the conclusion Mortal(Socrates).",
+    "commonMistakes": [
+      "Interpreting implication as a causal relationship.",
+      "Confusing a universal statement with an existential statement.",
+      "Assuming the converse of an implication follows automatically."
+    ],
+    "examNotes": "Translate natural-language claims carefully and check quantifier order, variable scope and implication direction."
+  },
+  {
+    "id": "reasoning-planning-ref",
+    "topicId": "reasoning-planning",
+    "title": "Inference, Resolution and Planning",
+    "overview": "Inference derives conclusions from premises and rules. Resolution is a refutation-based inference rule often used after formulas have been converted into conjunctive normal form (CNF). Planning constructs a sequence or partial order of actions to achieve a goal.",
+    "definitions": [
+      [
+        "Inference",
+        "Deriving a conclusion from known premises using valid rules."
+      ],
+      [
+        "Resolution",
+        "An inference rule that combines clauses containing complementary literals to produce a resolvent."
+      ],
+      [
+        "CNF",
+        "A conjunction of clauses, where each clause is a disjunction of literals."
+      ],
+      [
+        "Planning",
+        "Selecting actions and ordering them so that an initial state can be transformed into a goal state."
+      ],
+      [
+        "Action precondition",
+        "A condition that must hold before an action can be applied."
+      ],
+      [
+        "Action effect",
+        "A change to the state caused by applying an action."
+      ]
+    ],
+    "keyPoints": [
+      "For clauses (A ∨ P) and (B ∨ ¬P), resolving on P gives (A ∨ B).",
+      "To prove a goal by refutation, add its negation to the knowledge base and derive a contradiction (the empty clause).",
+      "Planning requires action descriptions, preconditions, effects, an initial state and a goal specification.",
+      "A plan may be sequential or partially ordered, depending on dependencies and concurrency.",
+      "Resolution is a sound inference rule; proof completeness depends on the logic and procedure used."
+    ],
+    "example": "If the knowledge base entails G, a refutation proof attempts to show that KB ∧ ¬G is unsatisfiable by deriving the empty clause.",
+    "commonMistakes": [
+      "Resolving clauses on non-complementary literals.",
+      "Confusing a clause (OR) with a conjunction of clauses (AND).",
+      "Treating a plan as merely a list of actions without checking preconditions and effects."
+    ],
+    "examNotes": "For resolution problems, convert to CNF, standardise variables where required, identify complementary literals and record each resolvent."
+  },
+  {
+    "id": "big-data-ref",
+    "topicId": "big-data",
+    "title": "Big Data, Data Types and Analytics",
+    "overview": "Big data refers to datasets whose scale, speed, diversity or complexity challenge traditional data-management approaches. AI systems rely on data pipelines and analysis to train, evaluate and operate models.",
+    "definitions": [
+      [
+        "Structured data",
+        "Data organised according to a predefined schema, often in rows and columns."
+      ],
+      [
+        "Unstructured data",
+        "Data without a fixed tabular schema, such as free text, images, audio and video."
+      ],
+      [
+        "Data analytics",
+        "The process of inspecting and analysing data to find patterns, answer questions or support decisions."
+      ],
+      [
+        "Big data",
+        "Data assets whose volume, velocity, variety and other characteristics require scalable storage and processing approaches."
+      ]
+    ],
+    "keyPoints": [
+      "Volume concerns amount; velocity concerns speed of generation or processing; variety concerns data forms and sources.",
+      "Structured data is usually easier to query with a fixed schema, while unstructured data often needs feature extraction or specialised processing.",
+      "Data quality, provenance, permissions and representativeness affect model reliability.",
+      "Big-data infrastructure can support distributed storage and parallel computation, but scale alone does not guarantee useful insight.",
+      "Analytics can be descriptive, diagnostic, predictive or prescriptive."
+    ],
+    "example": "A retailer may analyse structured transaction records together with unstructured product reviews to forecast demand and understand customer feedback.",
+    "commonMistakes": [
+      "Assuming every large dataset is automatically useful or unbiased.",
+      "Calling an image unstructured only because it is stored in a file; the pixel array still has structure but lacks a conventional relational schema.",
+      "Confusing data volume with data quality."
+    ],
+    "examNotes": "When asked to classify data, explain the schema and representation, not just the file extension."
+  },
+  {
+    "id": "vectors-ref",
+    "topicId": "vectors",
+    "title": "Vectors, Dot Products, Projections and Similarity",
+    "overview": "A vector is an ordered collection of components in a vector space. Vector operations are fundamental to representing points, directions, features and learned embeddings.",
+    "definitions": [
+      [
+        "Scalar multiplication",
+        "Multiplying every component of a vector by the same scalar."
+      ],
+      [
+        "Dot product",
+        "For real vectors a and b, a·b = Σᵢ aᵢbᵢ."
+      ],
+      [
+        "Vector norm",
+        "A measure of vector length; the Euclidean norm is ||x||₂ = √(Σᵢxᵢ²)."
+      ],
+      [
+        "Projection of a onto b",
+        "proj_b(a) = ((a·b)/(b·b))b, provided b is non-zero."
+      ],
+      [
+        "Cosine similarity",
+        "cos(θ) = (a·b)/(||a|| ||b||), for non-zero vectors."
+      ],
+      [
+        "Orthogonal vectors",
+        "Vectors whose dot product is zero."
+      ]
+    ],
+    "keyPoints": [
+      "Vector addition is component-wise and requires equal dimensions.",
+      "The dot product is a scalar, not a vector.",
+      "The projection formula depends on the vector being projected onto; proj_b(a) lies along b.",
+      "Cosine similarity measures orientation and is insensitive to positive rescaling of either vector.",
+      "For non-zero real vectors, a·b = 0 means they are orthogonal.",
+      "The zero vector has no defined cosine similarity because its norm is zero."
+    ],
+    "example": "For a=(3,4), ||a||₂=5. For b=(1,0), proj_b(a)=(3,0), because the component of a along the x-axis is 3.",
+    "commonMistakes": [
+      "Confusing dot product with element-wise (Hadamard) multiplication.",
+      "Reversing the projection target and projected vector.",
+      "Computing cosine similarity for a zero vector."
+    ],
+    "examNotes": "Check vector dimensions and whether the requested answer is a scalar, vector or unitless similarity."
+  },
+  {
+    "id": "vector-spaces-ref",
+    "topicId": "vector-spaces",
+    "title": "Vector Spaces, Span, Independence and Basis",
+    "overview": "A vector space is a set equipped with vector addition and scalar multiplication satisfying the vector-space axioms. Spans and bases describe which vectors can be represented by linear combinations.",
+    "definitions": [
+      [
+        "Linear combination",
+        "An expression c₁v₁ + … + cₖvₖ using scalar coefficients."
+      ],
+      [
+        "Span",
+        "The set of every linear combination of a given collection of vectors."
+      ],
+      [
+        "Linear independence",
+        "A set is independent when the zero vector can be expressed as a linear combination only with all coefficients zero."
+      ],
+      [
+        "Basis",
+        "A linearly independent set that spans the vector space."
+      ],
+      [
+        "Dimension",
+        "The number of vectors in any basis of a finite-dimensional vector space."
+      ]
+    ],
+    "keyPoints": [
+      "A set containing the zero vector is linearly dependent.",
+      "In ℝⁿ, more than n vectors must be linearly dependent.",
+      "A basis is both spanning and linearly independent; either property alone is insufficient.",
+      "The standard basis of ℝ³ is {(1,0,0),(0,1,0),(0,0,1)}.",
+      "The span of a single nonzero vector in ℝ² is a line through the origin."
+    ],
+    "example": "The vectors (1,0) and (0,1) form a basis of ℝ²: they are independent and span every (x,y)=x(1,0)+y(0,1).",
+    "commonMistakes": [
+      "Assuming two nonzero vectors are always independent; scalar multiples are dependent.",
+      "Treating a spanning set with redundant vectors as a basis.",
+      "Confusing the dimension of a space with the number of vectors in an arbitrary spanning list."
+    ],
+    "examNotes": "To test independence, solve A c = 0. Only the trivial solution means the columns are independent."
+  },
+  {
+    "id": "linear-maps-ref",
+    "topicId": "linear-maps",
+    "title": "Rank, Linear Independence, Linear Maps and Affine Spaces",
+    "overview": "Linear maps preserve vector addition and scalar multiplication. Matrix rank measures the dimension of the image (column space), revealing how many independent output directions a transformation can produce.",
+    "definitions": [
+      [
+        "Linear map",
+        "A transformation T satisfying T(u+v)=T(u)+T(v) and T(cu)=cT(u)."
+      ],
+      [
+        "Rank",
+        "The dimension of the column space of a matrix, equivalently the dimension of the image of the associated linear map."
+      ],
+      [
+        "Null space",
+        "The set of input vectors mapped to the zero vector."
+      ],
+      [
+        "Affine space",
+        "A translated vector space or flat set; it may not contain the origin."
+      ],
+      [
+        "Rank–nullity theorem",
+        "For T: V→W with finite-dimensional V, dim(V)=rank(T)+nullity(T)."
+      ]
+    ],
+    "keyPoints": [
+      "Every linear map sends the zero vector to the zero vector.",
+      "A translation x ↦ Ax+b with nonzero b is generally affine, not linear.",
+      "Column rank equals row rank.",
+      "A matrix with n columns has rank at most n; its rank also cannot exceed its number of rows.",
+      "A full column rank matrix has a trivial null space."
+    ],
+    "example": "T(x,y)=(2x,2y) is linear. T(x,y)=(2x+1,2y) is not linear because T(0,0)=(1,0), not the zero vector.",
+    "commonMistakes": [
+      "Calling every matrix-related transformation linear even when a translation term is added.",
+      "Confusing rank with the number of nonzero entries.",
+      "Assuming full row rank and full column rank are the same for rectangular matrices."
+    ],
+    "examNotes": "Check T(0)=0 first when testing linearity; then verify additivity and homogeneity if needed."
+  },
+  {
+    "id": "matrices-ref",
+    "topicId": "matrices",
+    "title": "Matrices and Matrix Operations",
+    "overview": "A matrix is a rectangular array of scalars. Matrices represent linear transformations, systems of equations, data tables and many operations in machine learning.",
+    "definitions": [
+      [
+        "Transpose",
+        "Aᵀ is formed by exchanging rows and columns."
+      ],
+      [
+        "Matrix product",
+        "For A (m×n) and B (n×p), AB is defined and has shape m×p."
+      ],
+      [
+        "Hadamard product",
+        "Element-wise multiplication of matrices with the same shape."
+      ],
+      [
+        "Identity matrix",
+        "A square matrix I satisfying IA=AI=A whenever dimensions are compatible."
+      ],
+      [
+        "Determinant",
+        "A scalar associated with a square matrix that indicates invertibility and signed volume scaling."
+      ],
+      [
+        "Inverse",
+        "A⁻¹ satisfying AA⁻¹=A⁻¹A=I when the square matrix is nonsingular."
+      ]
+    ],
+    "keyPoints": [
+      "Matrix addition requires equal dimensions.",
+      "Matrix multiplication is generally not commutative: AB may differ from BA, or one product may not be defined.",
+      "The (i,j) entry of AB is the dot product of row i of A and column j of B.",
+      "(AB)ᵀ=BᵀAᵀ; the order reverses.",
+      "A square matrix is invertible exactly when its determinant is nonzero.",
+      "The determinant of a product satisfies det(AB)=det(A)det(B) for square matrices of the same order."
+    ],
+    "example": "If A is 2×3 and B is 3×4, AB is defined and has shape 2×4. BA is not defined because the inner dimensions 4 and 2 do not match.",
+    "commonMistakes": [
+      "Multiplying matrices element by element when standard matrix multiplication was requested.",
+      "Assuming AB=BA.",
+      "Trying to invert a non-square or singular matrix."
+    ],
+    "examNotes": "Write dimensions beside matrices before multiplying. Use the identity and determinant tests when reasoning about inverses."
+  },
+  {
+    "id": "matrix-properties-ref",
+    "topicId": "matrix-properties",
+    "title": "Matrix Types, Trace, Rank and Approximation",
+    "overview": "Matrix properties encode symmetry, geometric behaviour and numerical structure. These properties are important for optimisation, covariance matrices and stable numerical computation.",
+    "definitions": [
+      [
+        "Symmetric matrix",
+        "A square real matrix satisfying Aᵀ=A."
+      ],
+      [
+        "Diagonal matrix",
+        "A square matrix whose off-diagonal entries are zero."
+      ],
+      [
+        "Orthogonal matrix",
+        "A real square matrix Q satisfying QᵀQ=I; its columns are orthonormal."
+      ],
+      [
+        "Positive-definite matrix",
+        "A real symmetric matrix A for which xᵀAx>0 for every nonzero x."
+      ],
+      [
+        "Trace",
+        "The sum of the diagonal entries of a square matrix."
+      ],
+      [
+        "Rank",
+        "The number of linearly independent columns (or rows)."
+      ]
+    ],
+    "keyPoints": [
+      "For an orthogonal matrix Q, Q⁻¹=Qᵀ and Euclidean lengths are preserved.",
+      "A real symmetric matrix has real eigenvalues and an orthonormal eigenbasis.",
+      "A positive-definite matrix has positive eigenvalues and positive determinant.",
+      "For compatible square matrices, tr(AB)=tr(BA), although AB and BA need not be equal.",
+      "Low-rank approximation represents a matrix using fewer independent directions; truncated SVD is a standard construction."
+    ],
+    "example": "For Q=[[0,-1],[1,0]], QᵀQ=I. It represents a 90° rotation and preserves vector lengths.",
+    "commonMistakes": [
+      "Calling a matrix orthogonal because its entries are perpendicular-looking; verify QᵀQ=I.",
+      "Confusing positive definite with element-wise positive entries.",
+      "Assuming trace is defined for a non-square matrix."
+    ],
+    "examNotes": "For a property question, state the defining algebraic test rather than relying on appearance."
+  },
+  {
+    "id": "eigen-pca-svd-ref",
+    "topicId": "eigen-pca-svd",
+    "title": "Eigenvalues, PCA and Singular Value Decomposition",
+    "overview": "Eigenvectors identify directions that a square linear transformation scales without changing their direction. PCA and SVD use related decompositions to describe dominant variation and low-dimensional structure.",
+    "definitions": [
+      [
+        "Eigenvector",
+        "A nonzero vector v satisfying Av=λv for a square matrix A."
+      ],
+      [
+        "Eigenvalue",
+        "The scalar λ associated with an eigenvector in Av=λv."
+      ],
+      [
+        "Characteristic equation",
+        "det(A−λI)=0, whose roots are eigenvalues of A."
+      ],
+      [
+        "PCA",
+        "A method that projects centred data onto directions of maximum variance, usually derived from a covariance matrix or SVD."
+      ],
+      [
+        "SVD",
+        "A factorisation A=UΣVᵀ, where U and V have orthonormal columns and Σ contains nonnegative singular values."
+      ]
+    ],
+    "keyPoints": [
+      "The zero vector is not an eigenvector.",
+      "Eigenvalues of a triangular matrix are its diagonal entries.",
+      "For a real symmetric matrix, eigenvectors corresponding to distinct eigenvalues are orthogonal.",
+      "PCA requires attention to centring and often scaling, depending on feature units and the analysis goal.",
+      "Singular values are nonnegative; their squares are eigenvalues of AᵀA.",
+      "Truncated SVD gives a best low-rank approximation under the standard Frobenius and spectral norm criteria."
+    ],
+    "example": "For A=diag(3,2), the coordinate axes are eigenvectors with eigenvalues 3 and 2. A vector along the first axis is scaled by 3 without changing direction.",
+    "commonMistakes": [
+      "Treating singular values and eigenvalues as identical for every matrix.",
+      "Using a zero vector as an eigenvector.",
+      "Assuming PCA components are original features; components are directions formed from feature combinations."
+    ],
+    "examNotes": "For a small matrix, solve det(A−λI)=0, then solve (A−λI)v=0 for each eigenvalue."
+  },
+  {
+    "id": "derivatives-ref",
+    "topicId": "derivatives",
+    "title": "Functions and Single-Variable Derivatives",
+    "overview": "A derivative measures the instantaneous rate of change of a function with respect to its input. It is also the slope of the tangent line where the derivative exists.",
+    "definitions": [
+      [
+        "Derivative",
+        "f′(x)=limₕ→₀ [f(x+h)−f(x)]/h, when the limit exists."
+      ],
+      [
+        "Power rule",
+        "d(xⁿ)/dx = n xⁿ⁻¹ for suitable real x and exponent n."
+      ],
+      [
+        "Product rule",
+        "(uv)′=u′v+uv′."
+      ],
+      [
+        "Quotient rule",
+        "(u/v)′=(u′v−uv′)/v², where v≠0."
+      ],
+      [
+        "Chain rule",
+        "d f(g(x))/dx=f′(g(x))g′(x)."
+      ]
+    ],
+    "keyPoints": [
+      "Differentiability implies continuity, but continuity does not imply differentiability.",
+      "A derivative can be negative, positive or zero depending on local change.",
+      "The chain rule differentiates a composition from outside to inside, multiplying by the inner derivative.",
+      "A stationary point has derivative zero, but it may be a maximum, minimum or neither.",
+      "Units of a derivative are output-units per input-unit."
+    ],
+    "example": "For f(x)= (3x+1)², f′(x)=2(3x+1)·3=18x+6.",
+    "commonMistakes": [
+      "Forgetting the derivative of the inner function in the chain rule.",
+      "Assuming f′(x)=0 always identifies a local minimum.",
+      "Confusing the value f(x) with its rate of change f′(x)."
+    ],
+    "examNotes": "Identify the outer and inner functions before applying the chain rule; simplify only after differentiation."
+  },
+  {
+    "id": "multivariable-ref",
+    "topicId": "multivariable",
+    "title": "Partial Derivatives, Gradients and Directional Derivatives",
+    "overview": "For a multivariable function, partial derivatives measure change with respect to one input while holding other inputs fixed. The gradient collects first-order partial derivatives and points in the direction of steepest local increase.",
+    "definitions": [
+      [
+        "Partial derivative",
+        "The derivative with respect to one variable while treating other independent variables as constants."
+      ],
+      [
+        "Gradient",
+        "For scalar f(x₁,…,xₙ), ∇f is the vector of its first partial derivatives."
+      ],
+      [
+        "Directional derivative",
+        "The rate of change in a specified direction; Dᵤf=∇f·u for a unit direction u when f is differentiable."
+      ],
+      [
+        "Level set",
+        "The set of points where a function has a constant value."
+      ]
+    ],
+    "keyPoints": [
+      "The gradient is defined for a scalar-valued function and has one component per input variable.",
+      "The gradient is perpendicular to a smooth level set at regular points.",
+      "The directional derivative depends on direction; use a unit vector when the convention asks for rate per unit distance.",
+      "A partial derivative holds the other variables constant; it does not mean those variables are globally fixed.",
+      "A zero gradient is a necessary condition for an interior differentiable local extremum, but not sufficient."
+    ],
+    "example": "For f(x,y)=x²+3xy, ∂f/∂x=2x+3y and ∂f/∂y=3x. At (1,2), ∇f=(8,3).",
+    "commonMistakes": [
+      "Differentiating with respect to x while changing y as well.",
+      "Using a non-unit direction vector without accounting for its length.",
+      "Treating a zero gradient as proof of a minimum."
+    ],
+    "examNotes": "Write the gradient as a column or row vector consistently, and state the convention when calculating a Jacobian."
+  },
+  {
+    "id": "gradients-autodiff-ref",
+    "topicId": "gradients-autodiff",
+    "title": "Gradients, Backpropagation, Automatic Differentiation and Taylor Series",
+    "overview": "Gradient calculations provide derivatives of model outputs or losses with respect to inputs and parameters. Backpropagation applies the chain rule efficiently through a computational graph; automatic differentiation evaluates derivatives by systematic chain-rule propagation.",
+    "definitions": [
+      [
+        "Backpropagation",
+        "An efficient reverse-mode chain-rule procedure for computing derivatives of a scalar loss with respect to many intermediate values and parameters."
+      ],
+      [
+        "Computational graph",
+        "A directed graph whose nodes represent operations or values and whose edges represent data dependencies."
+      ],
+      [
+        "Automatic differentiation",
+        "A family of methods that computes derivatives by applying chain rules to elementary operations, avoiding finite-difference approximation error."
+      ],
+      [
+        "Linearisation",
+        "A first-order local approximation of a differentiable function."
+      ],
+      [
+        "Taylor series",
+        "A local expansion of a function using derivatives at a reference point."
+      ]
+    ],
+    "keyPoints": [
+      "Reverse-mode differentiation is especially efficient for one scalar output and many inputs, as in neural-network loss gradients.",
+      "Forward-mode differentiation is often efficient for few inputs and many outputs.",
+      "Backpropagation computes gradients; the optimiser uses them to update parameters.",
+      "Finite differences approximate derivatives and can suffer from truncation and rounding errors.",
+      "For scalar f near a, f(a+h)≈f(a)+∇f(a)ᵀh for small h."
+    ],
+    "example": "If L=(xy)², then ∂L/∂x=2x y² and ∂L/∂y=2y x². A computational graph applies the product and power rules along the graph edges.",
+    "commonMistakes": [
+      "Saying backpropagation is itself the optimisation algorithm; it computes gradients used by an optimiser.",
+      "Calling automatic differentiation symbolic differentiation or finite differences.",
+      "Assuming a first-order Taylor approximation is exact for a nonlinear function."
+    ],
+    "examNotes": "Trace derivatives from the scalar loss backward through operations; each local derivative multiplies the upstream derivative."
+  },
+  {
+    "id": "optimization-ref",
+    "topicId": "optimization",
+    "title": "Gradient Descent, Constraints and Lagrange Multipliers",
+    "overview": "Optimisation seeks parameter values that minimise or maximise an objective. Gradient methods use local derivative information, while constraints restrict the feasible region.",
+    "definitions": [
+      [
+        "Objective function",
+        "The scalar function to be minimised or maximised."
+      ],
+      [
+        "Gradient descent",
+        "The update xₖ₊₁=xₖ−η∇f(xₖ), where η is the learning rate."
+      ],
+      [
+        "Feasible region",
+        "The set of points satisfying all constraints."
+      ],
+      [
+        "Lagrangian",
+        "For equality constraints gᵢ(x)=0, L(x,λ)=f(x)+Σᵢλᵢgᵢ(x), under a chosen sign convention."
+      ],
+      [
+        "Lagrange multiplier",
+        "A variable introduced to enforce a constraint in stationary-point conditions."
+      ]
+    ],
+    "keyPoints": [
+      "The learning rate controls step size; too large may diverge or oscillate, while too small can make progress slow.",
+      "For a differentiable unconstrained interior optimum, ∇f=0 is a necessary first-order condition.",
+      "Constrained optima may occur where the gradient is not zero; constraint conditions must be considered.",
+      "Lagrange multiplier conditions solve ∇ₓL=0 together with the constraint equations, subject to regularity assumptions.",
+      "A convex function has no nonglobal local minimum: every local minimum is global."
+    ],
+    "example": "To minimise f(x,y)=x²+y² subject to x+y=1, symmetry gives x=y=1/2. The Lagrange equations produce the same constrained minimum.",
+    "commonMistakes": [
+      "Updating in the positive-gradient direction when minimising.",
+      "Ignoring constraints after forming the objective.",
+      "Assuming every stationary point is a minimum."
+    ],
+    "examNotes": "Write the objective, constraints and sign convention for the Lagrangian before solving."
+  },
+  {
+    "id": "vector-matrix-calculus-ref",
+    "topicId": "vector-matrix-calculus",
+    "title": "Vector-Valued Derivatives and Jacobian Matrices",
+    "overview": "The Jacobian generalises the derivative to vector-valued functions. It records how every output component changes with every input component.",
+    "definitions": [
+      [
+        "Vector-valued function",
+        "A mapping f: ℝⁿ→ℝᵐ that returns m components for an n-dimensional input."
+      ],
+      [
+        "Jacobian",
+        "The m×n matrix Jᵢⱼ=∂fᵢ/∂xⱼ under the common output-by-input convention."
+      ],
+      [
+        "Hessian",
+        "The matrix of second-order partial derivatives of a scalar-valued function."
+      ],
+      [
+        "Matrix calculus",
+        "Notation and rules for derivatives involving vectors and matrices."
+      ]
+    ],
+    "keyPoints": [
+      "For f:ℝⁿ→ℝᵐ, the Jacobian has m rows and n columns with the output-by-input convention.",
+      "For a scalar output (m=1), the Jacobian is a 1×n row under this convention; the gradient is often written as an n×1 column.",
+      "The Jacobian gives the best local linear approximation: f(x+Δx)≈f(x)+J(x)Δx.",
+      "For a scalar-valued function, the Hessian captures curvature through second derivatives.",
+      "Always state or follow the Jacobian/gradient convention because row-versus-column layouts differ across texts."
+    ],
+    "example": "For f(x,y)=(x²+y, xy), J=[[2x,1],[y,x]]. At (2,3), J=[[4,1],[3,2]].",
+    "commonMistakes": [
+      "Writing an n×m Jacobian under the output-by-input convention.",
+      "Confusing the Jacobian with the Hessian.",
+      "Differentiating a vector output as if it were necessarily a scalar."
+    ],
+    "examNotes": "Count output components for rows and input variables for columns, then fill each entry with a partial derivative."
+  },
+  {
+    "id": "optimization-algorithms-ref",
+    "topicId": "optimization-algorithms",
+    "title": "Optima, Convexity and Gradient Descent Variants",
+    "overview": "Optimisation landscapes can contain local minima, maxima, saddle points and flat regions. Gradient descent variants differ in how much data is used to estimate a gradient at each update.",
+    "definitions": [
+      [
+        "Local minimum",
+        "A point whose objective value is no greater than values in some neighbourhood."
+      ],
+      [
+        "Global minimum",
+        "A point whose objective value is no greater than the value at every feasible point."
+      ],
+      [
+        "Saddle point",
+        "A stationary point that is a minimum along some directions and a maximum along others, locally."
+      ],
+      [
+        "Convex function",
+        "A function whose line segment interpolation lies above or on the function graph; formally f(θx+(1−θ)y)≤θf(x)+(1−θ)f(y)."
+      ],
+      [
+        "Batch gradient descent",
+        "Uses the full training dataset to estimate each gradient update."
+      ],
+      [
+        "Stochastic gradient descent",
+        "Uses one example per update."
+      ],
+      [
+        "Mini-batch gradient descent",
+        "Uses a subset of examples per update."
+      ]
+    ],
+    "keyPoints": [
+      "For a twice-differentiable unconstrained problem, Hessian curvature can help classify a stationary point; positive definite indicates a strict local minimum.",
+      "A convex objective over a convex feasible set has global-optimum guarantees for local minima.",
+      "Batch gradients are generally less noisy but more expensive per update.",
+      "Stochastic updates are cheap and noisy; mini-batches trade off computational efficiency and gradient variance.",
+      "The best variant depends on dataset size, hardware, noise, convergence behaviour and implementation details."
+    ],
+    "example": "For f(x,y)=x²−y², (0,0) is stationary but is a saddle: along x it curves upward, while along y it curves downward.",
+    "commonMistakes": [
+      "Calling every point with zero gradient a local minimum.",
+      "Assuming stochastic gradient descent always converges faster in wall-clock time.",
+      "Confusing convexity of the objective with convexity of a particular level set."
+    ],
+    "examNotes": "Use derivatives to classify stationary points, and compare batch, mini-batch and stochastic updates by sample count per step and gradient noise."
+  },
+  {
+    "id": "matrix-phylogeny-ref",
+    "topicId": "matrix-phylogeny",
+    "title": "Matrix Phylogeny: Relationships Among Matrix Classes",
+    "overview": "Matrix phylogeny is a functional map of relationships among matrix types and the operations or properties associated with them. It is not a biological analogy or a chronology. The map helps connect general real matrices to square and non-square matrices, then relates square matrices to singularity, invertibility and eigen-decomposition properties.",
+    "definitions": [
+      [
+        "Singular matrix",
+        "A square matrix with determinant zero; it has no two-sided inverse."
+      ],
+      [
+        "Regular / invertible matrix",
+        "A square matrix with non-zero determinant and an inverse."
+      ],
+      [
+        "Defective matrix",
+        "A square matrix that does not have a complete basis of eigenvectors, so it cannot be diagonalised by an eigenvector basis."
+      ],
+      [
+        "Non-defective matrix",
+        "A square matrix with enough linearly independent eigenvectors to admit an eigendecomposition."
+      ],
+      [
+        "Normal matrix",
+        "A complex square matrix satisfying A* A = A A*, where A* is the conjugate transpose; for real matrices this is AᵀA=AAᵀ."
+      ]
+    ],
+    "keyPoints": [
+      "For any real rectangular matrix, an SVD exists; the matrix does not need to be square.",
+      "For square matrices, the determinant distinguishes singular (determinant zero) from invertible (determinant non-zero).",
+      "Invertible and diagonalizable are different properties. A matrix can be invertible but defective.",
+      "A real symmetric matrix is normal and has real eigenvalues with an orthonormal eigenbasis.",
+      "Orthogonal matrices satisfy AᵀA=AAᵀ=I; positive-definite matrices have strictly positive quadratic forms and positive eigenvalues when symmetric.",
+      "The diagram uses subset relationships to show how specialised matrix classes sit within broader classes, and labels operations such as inverse, determinant, trace, SVD and Cholesky decomposition."
+    ],
+    "example": "A 2D rotation matrix by 90 degrees is invertible (its determinant is 1), yet its characteristic polynomial has no real roots, so it is not diagonalizable over the real numbers. This illustrates why non-singular and non-defective are not interchangeable.",
+    "commonMistakes": [
+      "Assuming every invertible matrix has a real eigenvector basis.",
+      "Treating the existence of SVD as requiring a square matrix.",
+      "Confusing singularity (no inverse) with defectiveness (no full eigenvector basis)."
+    ],
+    "examNotes": "Read the matrix-phylogeny diagram as a classification map. For any claim, identify the matrix class, the defining condition, and whether the condition guarantees an inverse, eigenbasis or factorisation."
+  }
+]

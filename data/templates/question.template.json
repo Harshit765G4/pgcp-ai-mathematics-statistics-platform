@@ -1,0 +1,25 @@
+{
+  "id": "CORE-070",
+  "number": 136,
+  "bank": "core",
+  "topicId": "ai-foundations",
+  "difficulty": "medium",
+  "type": "concept",
+  "question": "Write one unambiguous question statement.",
+  "options": [
+    "Plausible answer option A",
+    "Plausible answer option B",
+    "Plausible answer option C",
+    "Plausible answer option D"
+  ],
+  "correctAnswer": 0,
+  "explanation": "Explain the underlying concept and why the keyed answer is best.",
+  "optionExplanations": [
+    "Explain why option A is correct or incorrect.",
+    "Explain the misconception represented by option B.",
+    "Explain the misconception represented by option C.",
+    "Explain the misconception represented by option D."
+  ],
+  "hint": "Give a useful clue without revealing the answer.",
+  "referenceId": "ai-foundations-ref"
+}

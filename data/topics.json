@@ -1,0 +1,170 @@
+[
+  {
+    "id": "ai-foundations",
+    "name": "Definition, Scope & Structure of AI",
+    "section": "Fundamentals of AI",
+    "sessions": "1, 3–4",
+    "description": "Meaning, scope, major capabilities and the structure of AI systems."
+  },
+  {
+    "id": "ai-history",
+    "name": "AI History, Turing & Artificial Life",
+    "section": "Fundamentals of AI",
+    "sessions": "1, 5–6",
+    "description": "Historical milestones, Alan Turing, the Turing Machine and Test, artificial life and emergent behaviour."
+  },
+  {
+    "id": "ai-ethics",
+    "name": "Ethics & Responsible AI",
+    "section": "Fundamentals of AI",
+    "sessions": "2",
+    "description": "Ethical, social and legal implications; human agency and responsible development."
+  },
+  {
+    "id": "ai-systems",
+    "name": "Rule-Based & Expert Systems",
+    "section": "Fundamentals of AI",
+    "sessions": "3–6",
+    "description": "AI system structure, rule-based systems and knowledge-driven expert systems."
+  },
+  {
+    "id": "ml-learning",
+    "name": "Machine Learning Paradigms",
+    "section": "Fundamentals of AI",
+    "sessions": "7–8",
+    "description": "Supervised and unsupervised learning, model behaviour and examples."
+  },
+  {
+    "id": "knowledge-representation",
+    "name": "Knowledge Representation & State Spaces",
+    "section": "Fundamentals of AI",
+    "sessions": "9, 14",
+    "description": "Representing facts, states, actions, transitions and problem-solving structures."
+  },
+  {
+    "id": "search",
+    "name": "Search Strategies",
+    "section": "Fundamentals of AI",
+    "sessions": "10–13",
+    "description": "Classical, uninformed, parallel, adversarial and heuristic search; search engines."
+  },
+  {
+    "id": "agents-csp",
+    "name": "Intelligent Agents & Constraint Satisfaction",
+    "section": "Fundamentals of AI",
+    "sessions": "12–13",
+    "description": "Agent-environment interaction, rational action, constraint satisfaction and combinatorial optimisation."
+  },
+  {
+    "id": "logic",
+    "name": "Propositional & Predicate Logic",
+    "section": "Fundamentals of AI",
+    "sessions": "14",
+    "description": "Propositions, predicates, quantifiers, inference and logic programming."
+  },
+  {
+    "id": "reasoning-planning",
+    "name": "Inference, Resolution & Planning",
+    "section": "Fundamentals of AI",
+    "sessions": "15",
+    "description": "Inference, resolution, planning paradigms and AI problem-solving."
+  },
+  {
+    "id": "big-data",
+    "name": "Big Data & Analytics",
+    "section": "Fundamentals of AI",
+    "sessions": "15",
+    "description": "Structured and unstructured data, analytics and the relevance of big data to AI."
+  },
+  {
+    "id": "vectors",
+    "name": "Vectors, Operations & Similarity",
+    "section": "Linear Algebra",
+    "sessions": "1",
+    "description": "Vector definitions, scalar operations, dot products, projections, cosine similarity and orthogonality."
+  },
+  {
+    "id": "vector-spaces",
+    "name": "Norms, Vector Spaces, Span & Basis",
+    "section": "Linear Algebra",
+    "sessions": "2–3",
+    "description": "Norms, vector spaces, linear combinations, spans, independence and basis vectors."
+  },
+  {
+    "id": "linear-maps",
+    "name": "Linear Independence, Rank & Linear Maps",
+    "section": "Linear Algebra",
+    "sessions": "4–5",
+    "description": "Independence, basis, rank, linear mappings, affine spaces and transformations."
+  },
+  {
+    "id": "matrices",
+    "name": "Matrices & Matrix Operations",
+    "section": "Linear Algebra",
+    "sessions": "5–6",
+    "description": "Matrix definitions, addition, transpose, multiplication, Hadamard product, determinant, identity and inverse."
+  },
+  {
+    "id": "matrix-properties",
+    "name": "Matrix Types, Rank, Trace & Approximation",
+    "section": "Linear Algebra",
+    "sessions": "6",
+    "description": "Symmetric, diagonal, orthogonal, orthonormal and positive-definite matrices; rank, trace and approximation."
+  },
+  {
+    "id": "matrix-phylogeny",
+    "name": "Matrix Phylogeny",
+    "section": "Linear Algebra",
+    "sessions": "6",
+    "description": "The relationship map among matrix classes and the properties or operations associated with them."
+  },
+  {
+    "id": "eigen-pca-svd",
+    "name": "Eigenvalues, Eigenvectors, PCA & SVD",
+    "section": "Linear Algebra",
+    "sessions": "7–8",
+    "description": "Eigen concepts, principal component analysis and singular value decomposition."
+  },
+  {
+    "id": "derivatives",
+    "name": "Functions & Single-Variable Derivatives",
+    "section": "Calculus",
+    "sessions": "9–10",
+    "description": "Functions, derivative intuition and common differentiation rules including the chain rule."
+  },
+  {
+    "id": "multivariable",
+    "name": "Partial & Directional Derivatives",
+    "section": "Calculus",
+    "sessions": "9–10",
+    "description": "Partial derivatives, gradients, directional derivatives and multivariable function behaviour."
+  },
+  {
+    "id": "gradients-autodiff",
+    "name": "Vector Gradients, Backpropagation & Taylor Series",
+    "section": "Calculus",
+    "sessions": "11",
+    "description": "Vector-valued gradients, matrix gradients, gradient identities, backpropagation, automatic differentiation, linearisation and Taylor series."
+  },
+  {
+    "id": "optimization",
+    "name": "Gradient Descent & Constrained Optimisation",
+    "section": "Calculus",
+    "sessions": "12–13",
+    "description": "Gradient-based optimisation, constraints, Lagrange multipliers and convex optimisation."
+  },
+  {
+    "id": "vector-matrix-calculus",
+    "name": "Vector & Matrix Calculus; Jacobians",
+    "section": "Calculus",
+    "sessions": "14–15",
+    "description": "Derivatives of scalar- and vector-valued functions and Jacobian matrices."
+  },
+  {
+    "id": "optimization-algorithms",
+    "name": "Optima, Saddle Points & Gradient Algorithms",
+    "section": "Calculus",
+    "sessions": "14–15",
+    "description": "Local and global extrema, saddle points, convex functions and batch, mini-batch and stochastic gradient descent."
+  }
+]

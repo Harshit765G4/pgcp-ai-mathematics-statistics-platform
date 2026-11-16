@@ -1,0 +1,7 @@
+{
+  "id": "new-topic-id",
+  "name": "Readable topic name",
+  "section": "Fundamentals of AI | Linear Algebra | Calculus | Supplementary",
+  "sessions": "Session or session range as shown in the syllabus",
+  "description": "One-sentence explanation of the topic scope."
+}

@@ -1,0 +1,12 @@
+{
+  "name": "pgcp-ai-mathematics-statistics-learning-platform",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Responsive MCQ learning and practice platform for PGCP-AI Mathematics and Statistics for AI.",
+  "scripts": {
+    "validate": "node scripts/validate-questions.mjs",
+    "serve": "python -m http.server 4173",
+    "build:questions": "python scripts/build_questions.py"
+  }
+}

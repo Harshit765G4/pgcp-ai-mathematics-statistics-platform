@@ -1,0 +1,1727 @@
+[
+  {
+    "id": "CORE-001",
+    "number": 1,
+    "bank": "core",
+    "topicId": "ai-foundations",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "Which statement best captures the scope of Artificial Intelligence?",
+    "options": [
+      "The process of storing every possible input in a fixed lookup table",
+      "The exclusive use of neural networks to classify images",
+      "The automation of physical machinery without information processing",
+      "The study of systems that perceive, reason, learn, plan or act toward goals"
+    ],
+    "correctAnswer": 3,
+    "explanation": "AI is a broad field concerned with intelligent capabilities such as perception, reasoning, learning, planning and action. Neural networks are one family of techniques, not the whole field.",
+    "optionExplanations": [
+      "A lookup table is one possible implementation technique and does not define the field.",
+      "Neural networks are important but do not exhaust symbolic, search-based or other AI approaches.",
+      "Physical automation can be non-intelligent and is not the defining boundary of AI.",
+      "Correct. AI is a broad field concerned with intelligent capabilities such as perception, reasoning, learning, planning and action. Neural networks are one family of techniques, not the whole field."
+    ],
+    "hint": "Think of AI as a collection of capabilities and methods, not one particular model.",
+    "referenceId": "ai-foundations-ref"
+  },
+  {
+    "id": "CORE-002",
+    "number": 2,
+    "bank": "core",
+    "topicId": "ai-history",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "What is the primary purpose of an abstract Turing Machine?",
+    "options": [
+      "To determine whether a chatbot is conscious",
+      "To imitate a biological neuron using voltages",
+      "To rank web pages by relevance",
+      "To provide a mathematical model of computation"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A Turing Machine is a formal model consisting of a tape, a read/write head, states and transition rules. It is used to reason about computability.",
+    "optionExplanations": [
+      "Consciousness is not what the Turing Machine formalises.",
+      "A biological neuron model is a different modelling idea.",
+      "Ranking web pages is an information-retrieval task, not the definition of a Turing Machine.",
+      "Correct. A Turing Machine is a formal model consisting of a tape, a read/write head, states and transition rules. It is used to reason about computability."
+    ],
+    "hint": "Separate the theoretical model of computation from the conversational imitation game.",
+    "referenceId": "ai-history-ref"
+  },
+  {
+    "id": "CORE-003",
+    "number": 3,
+    "bank": "core",
+    "topicId": "ai-history",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "In the Turing Test as described in the syllabus, what is the evaluator primarily judging?",
+    "options": [
+      "Whether the system has a biological body",
+      "Whether the system uses a neural network internally",
+      "Whether the system can solve every mathematical problem",
+      "Whether the system can be distinguished from a human through its responses"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The imitation-game setup asks whether a judge can reliably distinguish machine and human responses in the specified interaction. It does not directly establish consciousness or universal competence.",
+    "optionExplanations": [
+      "A biological body is not required in the text-based imitation-game framing.",
+      "The internal architecture is not the criterion being judged.",
+      "The test does not require solving every mathematical problem.",
+      "Correct. The imitation-game setup asks whether a judge can reliably distinguish machine and human responses in the specified interaction. It does not directly establish consciousness or universal competence."
+    ],
+    "hint": "Focus on the observable interaction and the evaluator’s judgement.",
+    "referenceId": "ai-history-ref"
+  },
+  {
+    "id": "CORE-004",
+    "number": 4,
+    "bank": "core",
+    "topicId": "ai-history",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "A simulated colony forms organised trails even though each virtual agent follows only local rules. Which concept does this illustrate?",
+    "options": [
+      "Matrix inversion",
+      "Predicate quantification",
+      "Supervised labelling",
+      "Emergent behaviour"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Emergent behaviour is a system-level pattern produced by interactions among simpler components, rather than a central instruction specifying the overall pattern.",
+    "optionExplanations": [
+      "Matrix inversion is an algebraic operation and does not explain the colony pattern.",
+      "Predicate quantification is a logic concept, not collective organisation.",
+      "Supervised labelling concerns learning from target labels.",
+      "Correct. Emergent behaviour is a system-level pattern produced by interactions among simpler components, rather than a central instruction specifying the overall pattern."
+    ],
+    "hint": "Look for a global pattern arising from local interactions.",
+    "referenceId": "ai-history-ref"
+  },
+  {
+    "id": "CORE-005",
+    "number": 5,
+    "bank": "core",
+    "topicId": "ai-ethics",
+    "difficulty": "medium",
+    "type": "scenario",
+    "question": "A model has high overall accuracy but produces substantially more false rejections for one demographic group. Which responsible-AI concern is most directly raised?",
+    "options": [
+      "Matrix orthogonality",
+      "Search completeness",
+      "Vector normalisation",
+      "Fairness and disparate impact"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A strong aggregate score can hide uneven error rates across groups. Fairness assessment requires examining relevant subgroup outcomes and the deployment context.",
+    "optionExplanations": [
+      "Orthogonality is a geometric property of vectors or matrices.",
+      "Search completeness concerns whether a search method finds a solution when one exists.",
+      "Vector normalisation changes vector scale and does not address group error disparities.",
+      "Correct. A strong aggregate score can hide uneven error rates across groups. Fairness assessment requires examining relevant subgroup outcomes and the deployment context."
+    ],
+    "hint": "Disaggregate performance instead of relying only on the overall average.",
+    "referenceId": "ai-ethics-ref"
+  },
+  {
+    "id": "CORE-006",
+    "number": 6,
+    "bank": "core",
+    "topicId": "ai-ethics",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Why is meaningful human oversight more than simply placing a person’s name on an AI approval form?",
+    "options": [
+      "The reviewer must always accept the model’s recommendation",
+      "The reviewer must be able to retrain the model from memory",
+      "The reviewer removes the need for monitoring after deployment",
+      "The reviewer needs information, authority and a practical opportunity to intervene"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Oversight is meaningful only when people can understand relevant limitations, have authority to challenge or override outcomes, and have enough time and process support to act.",
+    "optionExplanations": [
+      "Automatic acceptance is not oversight.",
+      "Retraining from memory is not a necessary or sufficient oversight condition.",
+      "Monitoring remains important because inputs, users and risks can change after deployment.",
+      "Correct. Oversight is meaningful only when people can understand relevant limitations, have authority to challenge or override outcomes, and have enough time and process support to act."
+    ],
+    "hint": "Ask whether the human can actually detect and correct a problem.",
+    "referenceId": "ai-ethics-ref"
+  },
+  {
+    "id": "CORE-007",
+    "number": 7,
+    "bank": "core",
+    "topicId": "ai-systems",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "In a typical expert-system architecture, where are domain facts and IF–THEN rules stored?",
+    "options": [
+      "Inference engine",
+      "User interface only",
+      "Output actuator",
+      "Knowledge base"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The knowledge base stores domain knowledge such as facts, rules and relationships. The inference engine applies that knowledge to derive conclusions.",
+    "optionExplanations": [
+      "The inference engine applies rules rather than serving as the rule repository.",
+      "A user interface presents information; it is not the whole knowledge store.",
+      "An actuator carries out actions and is not the knowledge repository.",
+      "Correct. The knowledge base stores domain knowledge such as facts, rules and relationships. The inference engine applies that knowledge to derive conclusions."
+    ],
+    "hint": "Distinguish stored domain knowledge from the mechanism that reasons over it.",
+    "referenceId": "ai-systems-ref"
+  },
+  {
+    "id": "CORE-008",
+    "number": 8,
+    "bank": "core",
+    "topicId": "ai-systems",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "A rule system starts with known facts and repeatedly fires every rule whose conditions match, adding new facts. Which reasoning direction is being used?",
+    "options": [
+      "Backward chaining",
+      "Adversarial search",
+      "Singular value decomposition",
+      "Forward chaining"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Forward chaining is data-driven: it begins with known facts and derives consequences by applying matching rules.",
+    "optionExplanations": [
+      "Backward chaining starts from a goal and seeks supporting premises.",
+      "Adversarial search reasons about competing agents and game outcomes.",
+      "SVD is a matrix factorisation technique.",
+      "Correct. Forward chaining is data-driven: it begins with known facts and derives consequences by applying matching rules."
+    ],
+    "hint": "The process moves from facts toward conclusions.",
+    "referenceId": "ai-systems-ref"
+  },
+  {
+    "id": "CORE-009",
+    "number": 9,
+    "bank": "core",
+    "topicId": "ml-learning",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "A dataset contains customer attributes but no target categories. The goal is to discover groups of similar customers. Which learning paradigm fits?",
+    "options": [
+      "Supervised classification",
+      "Supervised regression",
+      "Reinforcement learning with a supplied reward sequence",
+      "Unsupervised learning"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Clustering is an unsupervised task because the training data do not include predefined target labels; the method seeks structure in the inputs.",
+    "optionExplanations": [
+      "Classification requires labelled categories.",
+      "Regression requires numerical target values.",
+      "The scenario does not describe sequential actions and rewards.",
+      "Correct. Clustering is an unsupervised task because the training data do not include predefined target labels; the method seeks structure in the inputs."
+    ],
+    "hint": "Check whether examples come with known target labels.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "CORE-010",
+    "number": 10,
+    "bank": "core",
+    "topicId": "ml-learning",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "Predicting the selling price of a house from its features is most naturally framed as:",
+    "options": [
+      "Adversarial search",
+      "Predicate-logic resolution",
+      "Supervised regression",
+      "Unsupervised clustering"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Historical examples with known prices provide numerical targets, making the task supervised regression.",
+    "optionExplanations": [
+      "Adversarial search handles opposing objectives, commonly in games.",
+      "Resolution is a logical inference method, not a price-prediction paradigm.",
+      "Correct. Historical examples with known prices provide numerical targets, making the task supervised regression.",
+      "Clustering groups examples without supplied target prices."
+    ],
+    "hint": "The output is a number learned from labelled examples.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "CORE-011",
+    "number": 11,
+    "bank": "core",
+    "topicId": "knowledge-representation",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which set of elements most completely defines a classical state-space search problem?",
+    "options": [
+      "Training labels, validation labels and a loss function",
+      "A covariance matrix, eigenvalues and singular values",
+      "Initial state, actions, transition model, goal test and path cost",
+      "Only an initial state and a list of possible answers"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A standard search formulation specifies where the search starts, what actions are available, how actions change states, how goals are recognised and how path costs are assessed.",
+    "optionExplanations": [
+      "These are elements of supervised model development, not state-space search.",
+      "These are linear-algebra and statistical quantities, not a complete search definition.",
+      "Correct. A standard search formulation specifies where the search starts, what actions are available, how actions change states, how goals are recognised and how path costs are assessed.",
+      "A list of answers omits the transition and goal structure."
+    ],
+    "hint": "Think of what an algorithm needs to generate successors and recognise a solution.",
+    "referenceId": "knowledge-representation-ref"
+  },
+  {
+    "id": "CORE-012",
+    "number": 12,
+    "bank": "core",
+    "topicId": "knowledge-representation",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "In a route-finding problem, what is the role of the transition model?",
+    "options": [
+      "It assigns the final grade to the search algorithm",
+      "It stores the heuristic estimate without describing actions",
+      "It describes the resulting city or state after taking a road from the current city",
+      "It checks only whether the destination has been reached"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The transition model specifies how an action changes the current state, for example moving from one city to an adjacent city.",
+    "optionExplanations": [
+      "Evaluation may assess an algorithm but is not the transition model.",
+      "A heuristic may estimate distance, but it does not replace the state transition definition.",
+      "Correct. The transition model specifies how an action changes the current state, for example moving from one city to an adjacent city.",
+      "The goal test checks destination satisfaction."
+    ],
+    "hint": "Ask what changes when an action is applied.",
+    "referenceId": "knowledge-representation-ref"
+  },
+  {
+    "id": "CORE-013",
+    "number": 13,
+    "bank": "core",
+    "topicId": "search",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which frontier data structure is conventionally used by breadth-first search?",
+    "options": [
+      "Priority queue ordered by estimated heuristic only",
+      "Hash table ordered by vector norm",
+      "First-in, first-out queue",
+      "Last-in, first-out stack"
+    ],
+    "correctAnswer": 2,
+    "explanation": "BFS expands the shallowest nodes first, which is implemented with a FIFO queue.",
+    "optionExplanations": [
+      "A heuristic-only priority queue is typical of greedy best-first search, not standard BFS.",
+      "Vector norm is unrelated to the standard BFS frontier discipline.",
+      "Correct. BFS expands the shallowest nodes first, which is implemented with a FIFO queue.",
+      "A stack is associated with depth-first search."
+    ],
+    "hint": "The earliest generated frontier node is expanded first.",
+    "referenceId": "search-ref"
+  },
+  {
+    "id": "CORE-014",
+    "number": 14,
+    "bank": "core",
+    "topicId": "search",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "For a finite branching search tree with equal step costs, which statement about BFS is correct?",
+    "options": [
+      "It is optimal even when step costs vary arbitrarily",
+      "It can only search trees with exactly two successors per node",
+      "It is complete and finds a shallowest, hence lowest-step-count, solution",
+      "It always uses less memory than DFS"
+    ],
+    "correctAnswer": 2,
+    "explanation": "BFS is complete under finite branching and finds a shallowest goal. With equal step costs, a shallowest solution also has minimum path cost.",
+    "optionExplanations": [
+      "When step costs differ, shallowest need not mean cheapest.",
+      "BFS is not restricted to binary branching.",
+      "Correct. BFS is complete under finite branching and finds a shallowest goal. With equal step costs, a shallowest solution also has minimum path cost.",
+      "BFS often uses more memory than DFS because it stores a broad frontier."
+    ],
+    "hint": "The equal-cost condition is important for the optimality claim.",
+    "referenceId": "search-ref"
+  },
+  {
+    "id": "CORE-015",
+    "number": 15,
+    "bank": "core",
+    "topicId": "search",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "What is a common limitation of depth-first search in a search space with an infinite-depth branch?",
+    "options": [
+      "It always returns a minimum-cost solution",
+      "It cannot be implemented recursively",
+      "It may follow that branch indefinitely without reaching a solution elsewhere",
+      "It must store every node at the current depth before proceeding"
+    ],
+    "correctAnswer": 2,
+    "explanation": "DFS may become trapped on a deep or infinite branch and fail to explore another branch containing a goal. It is memory-efficient in many tree settings but not generally complete in infinite-depth spaces.",
+    "optionExplanations": [
+      "DFS is not generally cost-optimal.",
+      "Recursive DFS is a common implementation, though an explicit stack is also possible.",
+      "Correct. DFS may become trapped on a deep or infinite branch and fail to explore another branch containing a goal. It is memory-efficient in many tree settings but not generally complete in infinite-depth spaces.",
+      "Storing an entire breadth frontier is more characteristic of BFS."
+    ],
+    "hint": "Consider what happens if the first branch never ends.",
+    "referenceId": "search-ref"
+  },
+  {
+    "id": "CORE-016",
+    "number": 16,
+    "bank": "core",
+    "topicId": "search",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "When road segments have different non-negative costs and the goal is the least-cost route, which uninformed strategy is appropriate?",
+    "options": [
+      "Breadth-first search by depth alone",
+      "A random walk with no cost tracking",
+      "Uniform-cost search",
+      "Depth-first search"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Uniform-cost search expands the frontier path with the smallest accumulated path cost and is optimal under standard non-negative cost conditions.",
+    "optionExplanations": [
+      "BFS by depth is optimal only when step costs are equal.",
+      "A random walk does not guarantee least-cost exploration.",
+      "Correct. Uniform-cost search expands the frontier path with the smallest accumulated path cost and is optimal under standard non-negative cost conditions.",
+      "DFS does not systematically prioritise least accumulated cost."
+    ],
+    "hint": "The algorithm must compare total cost so far, not merely number of edges.",
+    "referenceId": "search-ref"
+  },
+  {
+    "id": "CORE-017",
+    "number": 17,
+    "bank": "core",
+    "topicId": "search",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "In minimax search, how does a MIN node select its backed-up value?",
+    "options": [
+      "It averages all child values regardless of the game model",
+      "It chooses the child with the largest branching factor",
+      "It selects the minimum of its child values",
+      "It selects the maximum of its child values"
+    ],
+    "correctAnswer": 2,
+    "explanation": "MIN represents the opponent choosing the outcome least favourable to MAX, so it backs up the minimum child value.",
+    "optionExplanations": [
+      "Averaging is not the minimax rule.",
+      "Branching factor does not determine the minimax utility.",
+      "Correct. MIN represents the opponent choosing the outcome least favourable to MAX, so it backs up the minimum child value.",
+      "The maximum is selected at MAX nodes."
+    ],
+    "hint": "The node name tells you whose objective is being optimised.",
+    "referenceId": "search-ref"
+  },
+  {
+    "id": "CORE-018",
+    "number": 18,
+    "bank": "core",
+    "topicId": "agents-csp",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "Which description best defines an intelligent agent?",
+    "options": [
+      "A function that must always return the same output for every input",
+      "A matrix with orthonormal columns",
+      "A system that perceives its environment and selects actions",
+      "A database that stores only historical observations"
+    ],
+    "correctAnswer": 2,
+    "explanation": "An agent receives percepts from an environment and selects actions that affect the environment, often guided by a performance measure.",
+    "optionExplanations": [
+      "A deterministic function can vary with its input; identical output for all inputs is not required.",
+      "Orthonormal columns describe a matrix property.",
+      "Correct. An agent receives percepts from an environment and selects actions that affect the environment, often guided by a performance measure.",
+      "A database may support an agent but does not itself define agency."
+    ],
+    "hint": "Look for the perception–action cycle.",
+    "referenceId": "agents-csp-ref"
+  },
+  {
+    "id": "CORE-019",
+    "number": 19,
+    "bank": "core",
+    "topicId": "agents-csp",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "A constraint-satisfaction problem is conventionally described by which three components?",
+    "options": [
+      "States, rewards and discount factors only",
+      "Rows, columns and eigenvalues",
+      "Variables, domains and constraints",
+      "Agents, sensors and actuators only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A CSP contains variables to assign, a domain of possible values for each variable and constraints that restrict allowed combinations.",
+    "optionExplanations": [
+      "Rewards and discount factors describe reinforcement-learning settings.",
+      "Rows, columns and eigenvalues are matrix concepts.",
+      "Correct. A CSP contains variables to assign, a domain of possible values for each variable and constraints that restrict allowed combinations.",
+      "Sensors and actuators describe agent interaction but not the standard CSP triple."
+    ],
+    "hint": "List what needs a value, what values are allowed and what makes assignments compatible.",
+    "referenceId": "agents-csp-ref"
+  },
+  {
+    "id": "CORE-020",
+    "number": 20,
+    "bank": "core",
+    "topicId": "logic",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which formula expresses “Every student submitted an assignment” using Student(x) and Submitted(x)?",
+    "options": [
+      "∃x (Student(x) → ¬Submitted(x))",
+      "∀x (Student(x) → Submitted(x))",
+      "∃x (Student(x) ∧ Submitted(x))",
+      "∀x (Student(x) ∧ ¬Submitted(x))"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The universal statement applies to every object in the domain: if an object is a student, it has submitted. The implication avoids requiring every domain object to be a student.",
+    "optionExplanations": [
+      "This is existential and does not express that all students submitted.",
+      "Correct. The universal statement applies to every object in the domain: if an object is a student, it has submitted. The implication avoids requiring every domain object to be a student.",
+      "This says at least one object is both a student and a submitter.",
+      "This says every object is a student and has not submitted, which is much stronger and opposite."
+    ],
+    "hint": "Use a universal quantifier and an implication from being a student to having submitted.",
+    "referenceId": "logic-ref"
+  },
+  {
+    "id": "CORE-021",
+    "number": 21,
+    "bank": "core",
+    "topicId": "logic",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "For material implication P → Q, in which case is the statement false?",
+    "options": [
+      "P is true and Q is true",
+      "P is true and Q is false",
+      "P is false and Q is false",
+      "P is false and Q is true"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Material implication is false only when the antecedent is true but the consequent is false; in all other truth-value combinations it is true.",
+    "optionExplanations": [
+      "A true antecedent and true consequent satisfy the implication.",
+      "Correct. Material implication is false only when the antecedent is true but the consequent is false; in all other truth-value combinations it is true.",
+      "When P is false, the implication is true under material implication.",
+      "A false antecedent makes the implication true."
+    ],
+    "hint": "The one failing case is a promise whose condition happened but whose consequence did not.",
+    "referenceId": "logic-ref"
+  },
+  {
+    "id": "CORE-022",
+    "number": 22,
+    "bank": "core",
+    "topicId": "reasoning-planning",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Given clauses (A ∨ P) and (B ∨ ¬P), which resolvent follows by resolving on P?",
+    "options": [
+      "¬A ∨ ¬B",
+      "A ∨ B",
+      "A ∧ B",
+      "P ∨ ¬P"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Resolution removes the complementary pair P and ¬P and combines the remaining literals, producing A ∨ B.",
+    "optionExplanations": [
+      "Negating the remaining literals is not part of resolution.",
+      "Correct. Resolution removes the complementary pair P and ¬P and combines the remaining literals, producing A ∨ B.",
+      "Conjunction is not the resolution operation; the result is a clause.",
+      "P ∨ ¬P is a tautology and is not the resolvent of these clauses."
+    ],
+    "hint": "Remove the complementary literals and keep the other literal from each clause.",
+    "referenceId": "reasoning-planning-ref"
+  },
+  {
+    "id": "CORE-023",
+    "number": 23,
+    "bank": "core",
+    "topicId": "reasoning-planning",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "In classical planning, what does an action precondition specify?",
+    "options": [
+      "The final score of a search engine",
+      "What must be true before the action can be applied",
+      "What must be true after every possible plan has ended",
+      "The numerical learning rate of the planner"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A precondition is a set of conditions that must hold in the current state before the action is legal. Effects describe how the state changes.",
+    "optionExplanations": [
+      "Search-engine scoring is unrelated to action applicability.",
+      "Correct. A precondition is a set of conditions that must hold in the current state before the action is legal. Effects describe how the state changes.",
+      "Postconditions or effects describe changes after application, not preconditions.",
+      "A learning rate belongs to optimisation."
+    ],
+    "hint": "Separate conditions before an action from changes caused by the action.",
+    "referenceId": "reasoning-planning-ref"
+  },
+  {
+    "id": "CORE-024",
+    "number": 24,
+    "bank": "core",
+    "topicId": "big-data",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "Which example is most clearly unstructured data in the usual database-schema sense?",
+    "options": [
+      "A CSV file with consistent rows and named fields",
+      "A free-form customer review paragraph",
+      "A table with fixed columns for customer ID and purchase date",
+      "A relational table of product IDs and integer quantities"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Free-form text does not follow a fixed relational tabular schema, so it is conventionally treated as unstructured data.",
+    "optionExplanations": [
+      "A consistently tabular CSV is structured even though it is stored as a text file.",
+      "Correct. Free-form text does not follow a fixed relational tabular schema, so it is conventionally treated as unstructured data.",
+      "A fixed-column table is structured.",
+      "A relational table is structured."
+    ],
+    "hint": "Look for the item without predefined columns and typed fields.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "CORE-025",
+    "number": 25,
+    "bank": "core",
+    "topicId": "big-data",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which “V” of big data refers to the speed at which data are generated, arrive or need to be processed?",
+    "options": [
+      "Veracity",
+      "Velocity",
+      "Variety",
+      "Volume"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Velocity is about the rate of data generation, arrival and processing. Volume is amount, variety is diversity of forms, and veracity concerns quality or trustworthiness.",
+    "optionExplanations": [
+      "Veracity concerns data quality and reliability.",
+      "Correct. Velocity is about the rate of data generation, arrival and processing. Volume is amount, variety is diversity of forms, and veracity concerns quality or trustworthiness.",
+      "Variety concerns formats and sources.",
+      "Volume concerns total amount."
+    ],
+    "hint": "Think of data arriving rapidly from live sensors or transactions.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "CORE-026",
+    "number": 26,
+    "bank": "core",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "What is the result type of the standard dot product of two real vectors of equal length?",
+    "options": [
+      "A Boolean value indicating equality",
+      "A scalar",
+      "A vector with the same dimension",
+      "A square matrix"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The dot product sums pairwise component products and returns one scalar value.",
+    "optionExplanations": [
+      "The dot product is not merely an equality test.",
+      "Correct. The dot product sums pairwise component products and returns one scalar value.",
+      "A vector result is associated with operations such as vector addition or cross product in 3D.",
+      "A matrix result is associated with outer products."
+    ],
+    "hint": "The operation combines all component products into one number.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "CORE-027",
+    "number": 27,
+    "bank": "core",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "For non-zero vectors a and b, what does a·b = 0 imply in ordinary Euclidean space?",
+    "options": [
+      "The vectors must both be unit vectors",
+      "The vectors are orthogonal",
+      "The vectors have equal lengths",
+      "The vectors point in exactly the same direction"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A zero dot product means the vectors are perpendicular (orthogonal) in Euclidean geometry. It does not determine their lengths.",
+    "optionExplanations": [
+      "Unit length is not implied by a zero dot product.",
+      "Correct. A zero dot product means the vectors are perpendicular (orthogonal) in Euclidean geometry. It does not determine their lengths.",
+      "Orthogonality does not require equal norms.",
+      "Same-direction non-zero vectors have a positive dot product."
+    ],
+    "hint": "Use the geometric relation a·b=||a||||b||cosθ.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "CORE-028",
+    "number": 28,
+    "bank": "core",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Cosine similarity is most directly intended to compare which property of two non-zero vectors?",
+    "options": [
+      "The determinant of the matrix formed by their entries",
+      "Their angular orientation, independent of positive scaling",
+      "Their Euclidean distance including magnitude",
+      "Their number of non-zero coordinates only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cosine similarity divides the dot product by the product of the norms, normalising away magnitude and measuring the angle between vectors.",
+    "optionExplanations": [
+      "The determinant is defined for a square matrix, not this pairwise similarity definition.",
+      "Correct. Cosine similarity divides the dot product by the product of the norms, normalising away magnitude and measuring the angle between vectors.",
+      "Euclidean distance includes magnitude differences.",
+      "The count of non-zero coordinates is not the cosine formula."
+    ],
+    "hint": "Notice that both vector norms appear in the denominator.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "CORE-029",
+    "number": 29,
+    "bank": "core",
+    "topicId": "vector-spaces",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "A set of vectors is linearly independent when:",
+    "options": [
+      "Every vector has unit Euclidean norm",
+      "Only the trivial coefficient choice makes their linear combination equal zero",
+      "At least one vector is a scalar multiple of another",
+      "Their span contains the zero vector only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Independence means c₁v₁+…+cₖvₖ=0 has only c₁=…=cₖ=0 as a solution.",
+    "optionExplanations": [
+      "Unit norms do not determine independence.",
+      "Correct. Independence means c₁v₁+…+cₖvₖ=0 has only c₁=…=cₖ=0 as a solution.",
+      "A scalar-multiple relationship creates dependence.",
+      "The span of any non-empty vector set includes the zero vector."
+    ],
+    "hint": "Set the linear combination equal to the zero vector and inspect its coefficients.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "CORE-030",
+    "number": 30,
+    "bank": "core",
+    "topicId": "vector-spaces",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "What two properties must a basis of a finite-dimensional vector space satisfy?",
+    "options": [
+      "It spans the space and is linearly independent",
+      "It contains the zero vector and is orthogonal",
+      "It has the largest possible number of vectors, including repetitions",
+      "It consists only of vectors with positive entries"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A basis is a minimal spanning set, equivalently a spanning set that is linearly independent.",
+    "optionExplanations": [
+      "Correct. A basis is a minimal spanning set, equivalently a spanning set that is linearly independent.",
+      "A basis cannot contain the zero vector because that creates dependence.",
+      "Repeated or redundant vectors violate independence.",
+      "Positive entries are not required; basis vectors may contain negative or zero entries."
+    ],
+    "hint": "A basis must be able to generate the whole space without redundancy.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "CORE-031",
+    "number": 31,
+    "bank": "core",
+    "topicId": "vector-spaces",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "What is the dimension of ℝ⁴?",
+    "options": [
+      "4",
+      "2",
+      "8",
+      "It depends on the values of the vector coordinates"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The standard basis of ℝ⁴ contains four independent coordinate vectors, so its dimension is four.",
+    "optionExplanations": [
+      "Correct. The standard basis of ℝ⁴ contains four independent coordinate vectors, so its dimension is four.",
+      "Two is not the number of independent coordinate directions in ℝ⁴.",
+      "Eight is unrelated to its basis size.",
+      "Dimension is a property of the space, not of a particular vector’s coordinate values."
+    ],
+    "hint": "Dimension is the number of vectors in a basis, not the number of possible points.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "CORE-032",
+    "number": 32,
+    "bank": "core",
+    "topicId": "linear-maps",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which property must every linear map T satisfy?",
+    "options": [
+      "T(0)=0",
+      "T(0)=b for any non-zero translation vector b",
+      "T(u+v)=T(u)T(v) using scalar multiplication",
+      "T(cu)=T(u)+c for every scalar c"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Linearity implies homogeneity and additivity; setting c=0 in homogeneity gives T(0)=0.",
+    "optionExplanations": [
+      "Correct. Linearity implies homogeneity and additivity; setting c=0 in homogeneity gives T(0)=0.",
+      "A nonzero translation generally makes a transformation affine rather than linear.",
+      "Linearity preserves vector addition, not multiplication of vectors.",
+      "The homogeneity property is T(cu)=cT(u)."
+    ],
+    "hint": "Apply the scalar-multiplication property with scalar zero.",
+    "referenceId": "linear-maps-ref"
+  },
+  {
+    "id": "CORE-033",
+    "number": 33,
+    "bank": "core",
+    "topicId": "linear-maps",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "A linear transformation maps ℝ⁵ into ℝ³. What is the maximum possible rank of its matrix?",
+    "options": [
+      "3",
+      "5",
+      "8",
+      "15"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Rank cannot exceed either the number of rows (3) or columns (5), so the maximum is min(3,5)=3.",
+    "optionExplanations": [
+      "Correct. Rank cannot exceed either the number of rows (3) or columns (5), so the maximum is min(3,5)=3.",
+      "The matrix has only three output coordinates, so rank cannot be five.",
+      "Eight is larger than either dimension.",
+      "The product of the dimensions is not a rank bound."
+    ],
+    "hint": "Rank is bounded by the smaller matrix dimension.",
+    "referenceId": "linear-maps-ref"
+  },
+  {
+    "id": "CORE-034",
+    "number": 34,
+    "bank": "core",
+    "topicId": "matrices",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "If A is 2×3 and B is 3×4, what is the shape of AB?",
+    "options": [
+      "2×4",
+      "3×3",
+      "4×2",
+      "2×3"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The inner dimensions 3 and 3 match, and the product keeps the outer dimensions, giving 2×4.",
+    "optionExplanations": [
+      "Correct. The inner dimensions 3 and 3 match, and the product keeps the outer dimensions, giving 2×4.",
+      "3×3 does not preserve the outer dimensions.",
+      "4×2 would correspond to a different product order and dimensions.",
+      "2×3 is the shape of A, not the product."
+    ],
+    "hint": "For an m×n matrix multiplied by n×p, the result is m×p.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "CORE-035",
+    "number": 35,
+    "bank": "core",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which identity correctly describes the transpose of a product?",
+    "options": [
+      "(AB)ᵀ = BᵀAᵀ",
+      "(AB)ᵀ = AᵀBᵀ",
+      "(AB)ᵀ = AB",
+      "(AB)ᵀ = A⁻¹B⁻¹ for every A and B"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The transpose reverses product order: (AB)ᵀ=BᵀAᵀ. The identity is essential in matrix calculus and linear algebra.",
+    "optionExplanations": [
+      "Correct. The transpose reverses product order: (AB)ᵀ=BᵀAᵀ. The identity is essential in matrix calculus and linear algebra.",
+      "This keeps the order unchanged and is generally wrong.",
+      "The transpose of a product is not generally the same product.",
+      "Inverses may not exist and are not the transpose rule."
+    ],
+    "hint": "Transpose the factors and reverse their order.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "CORE-036",
+    "number": 36,
+    "bank": "core",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "For a square matrix A, which condition is equivalent to A being invertible?",
+    "options": [
+      "det(A) ≠ 0",
+      "det(A) = 0",
+      "Every entry of A is non-zero",
+      "A has at least one zero eigenvalue"
+    ],
+    "correctAnswer": 0,
+    "explanation": "A square matrix is nonsingular exactly when its determinant is non-zero; equivalently, its columns are independent and its inverse exists.",
+    "optionExplanations": [
+      "Correct. A square matrix is nonsingular exactly when its determinant is non-zero; equivalently, its columns are independent and its inverse exists.",
+      "A zero determinant means singular, not invertible.",
+      "Entry-wise nonzero values do not guarantee nonsingularity.",
+      "A zero eigenvalue implies singularity."
+    ],
+    "hint": "Recall the determinant test for singularity.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "CORE-037",
+    "number": 37,
+    "bank": "core",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "What distinguishes the Hadamard product from ordinary matrix multiplication?",
+    "options": [
+      "It multiplies corresponding entries element by element",
+      "It computes row-by-column dot products",
+      "It requires the left matrix to be square and invertible",
+      "It always produces a scalar"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Hadamard product multiplies entries at matching positions and normally requires equal-shaped matrices. Standard matrix multiplication combines rows and columns.",
+    "optionExplanations": [
+      "Correct. The Hadamard product multiplies entries at matching positions and normally requires equal-shaped matrices. Standard matrix multiplication combines rows and columns.",
+      "Row-by-column dot products define standard matrix multiplication.",
+      "Invertibility is not required for an element-wise product.",
+      "The Hadamard product returns a matrix of the same shape."
+    ],
+    "hint": "Think of matching positions rather than row–column dot products.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "CORE-038",
+    "number": 38,
+    "bank": "core",
+    "topicId": "matrix-properties",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "For a real orthogonal square matrix Q, which statement is true?",
+    "options": [
+      "Q⁻¹ = Qᵀ",
+      "Q⁻¹ = −Qᵀ for every Q",
+      "QᵀQ = 0",
+      "Q must be diagonal"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Orthogonality means QᵀQ=I, so Qᵀ is the inverse. Orthogonal transformations preserve Euclidean lengths and angles.",
+    "optionExplanations": [
+      "Correct. Orthogonality means QᵀQ=I, so Qᵀ is the inverse. Orthogonal transformations preserve Euclidean lengths and angles.",
+      "The inverse is the transpose, without a negative sign.",
+      "QᵀQ equals the identity, not the zero matrix.",
+      "Rotations can be orthogonal without being diagonal."
+    ],
+    "hint": "Use the defining equation QᵀQ=I.",
+    "referenceId": "matrix-properties-ref"
+  },
+  {
+    "id": "CORE-039",
+    "number": 39,
+    "bank": "core",
+    "topicId": "matrix-properties",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "A real symmetric matrix A is positive definite when:",
+    "options": [
+      "xᵀAx > 0 for every non-zero real vector x",
+      "Every entry of A is strictly positive",
+      "All row sums are equal",
+      "A is necessarily the identity matrix"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Positive definiteness is defined through the quadratic form xᵀAx being positive for all non-zero x. It is a global algebraic condition, not an entry-wise condition.",
+    "optionExplanations": [
+      "Correct. Positive definiteness is defined through the quadratic form xᵀAx being positive for all non-zero x. It is a global algebraic condition, not an entry-wise condition.",
+      "Positive entries alone do not ensure positive definiteness.",
+      "Equal row sums are not the definition.",
+      "The identity is positive definite, but it is only one example."
+    ],
+    "hint": "Use the quadratic form definition.",
+    "referenceId": "matrix-properties-ref"
+  },
+  {
+    "id": "CORE-040",
+    "number": 40,
+    "bank": "core",
+    "topicId": "matrix-properties",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "What is the trace of a square matrix?",
+    "options": [
+      "The product of all its entries",
+      "The number of non-zero rows",
+      "The sum of all singular values for every matrix",
+      "The sum of its main-diagonal entries"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The trace is the sum of diagonal entries of a square matrix. It is also equal to the sum of eigenvalues counted with algebraic multiplicity.",
+    "optionExplanations": [
+      "The product of all entries is not the trace.",
+      "Rank relates to independent rows or columns, not trace.",
+      "The sum of singular values is the nuclear norm and is not generally the trace.",
+      "Correct. The trace is the sum of diagonal entries of a square matrix. It is also equal to the sum of eigenvalues counted with algebraic multiplicity."
+    ],
+    "hint": "Look only at the main diagonal.",
+    "referenceId": "matrix-properties-ref"
+  },
+  {
+    "id": "CORE-041",
+    "number": 41,
+    "bank": "core",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which equation defines an eigenvector v and eigenvalue λ of a square matrix A?",
+    "options": [
+      "Av = 0 for every vector v",
+      "A + v = λI",
+      "Aᵀv = λ for any scalar λ",
+      "Av = λv, where v is non-zero"
+    ],
+    "correctAnswer": 3,
+    "explanation": "An eigenvector is a non-zero direction that the transformation maps to a scalar multiple of itself. The scalar is the corresponding eigenvalue.",
+    "optionExplanations": [
+      "Av=0 describes a null-space vector and would correspond only to eigenvalue zero if v is nonzero.",
+      "The addition equation is not the eigenvector definition.",
+      "The right-hand side should be a vector λv, not an arbitrary scalar.",
+      "Correct. An eigenvector is a non-zero direction that the transformation maps to a scalar multiple of itself. The scalar is the corresponding eigenvalue."
+    ],
+    "hint": "The transformed vector must remain on the same line as v.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "CORE-042",
+    "number": 42,
+    "bank": "core",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Why are eigenvectors especially useful in understanding a real symmetric matrix?",
+    "options": [
+      "Its eigenvalues must all be negative",
+      "Its eigenvectors are always identical to the coordinate axes",
+      "It cannot be diagonalised",
+      "It has an orthonormal basis of eigenvectors"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The spectral theorem states that a real symmetric matrix is orthogonally diagonalizable, with an orthonormal eigenbasis and real eigenvalues.",
+    "optionExplanations": [
+      "Symmetric matrices may have positive, negative or zero eigenvalues.",
+      "Eigenvectors need not align with the original coordinate axes.",
+      "Real symmetric matrices are diagonalizable by an orthogonal matrix.",
+      "Correct. The spectral theorem states that a real symmetric matrix is orthogonally diagonalizable, with an orthonormal eigenbasis and real eigenvalues."
+    ],
+    "hint": "Recall the spectral theorem for real symmetric matrices.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "CORE-043",
+    "number": 43,
+    "bank": "core",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "In PCA, what do the leading principal components represent?",
+    "options": [
+      "The original feature columns sorted alphabetically",
+      "Directions with the smallest possible variance first",
+      "The class labels that supervise a classifier",
+      "Directions that capture the greatest variance in the data, in descending order"
+    ],
+    "correctAnswer": 3,
+    "explanation": "PCA finds orthogonal directions of maximal variance in centred data; components are linear combinations of original features.",
+    "optionExplanations": [
+      "Principal components are not simply alphabetically ordered input columns.",
+      "The first component maximises variance rather than minimising it.",
+      "PCA is ordinarily an unsupervised dimensionality-reduction method and does not require class labels.",
+      "Correct. PCA finds orthogonal directions of maximal variance in centred data; components are linear combinations of original features."
+    ],
+    "hint": "Think about the variance captured by each projected direction.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "CORE-044",
+    "number": 44,
+    "bank": "core",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which property is guaranteed for singular values in an SVD?",
+    "options": [
+      "They are always equal to the eigenvalues of A",
+      "They must be negative for a rank-deficient matrix",
+      "There is one singular value for every entry of A",
+      "They are non-negative"
+    ],
+    "correctAnswer": 3,
+    "explanation": "In A=UΣVᵀ, singular values are the non-negative diagonal entries of Σ, usually ordered from largest to smallest.",
+    "optionExplanations": [
+      "For non-square or nonsymmetric A, singular values are not generally eigenvalues of A.",
+      "Rank deficiency creates zero singular values, not negative ones.",
+      "The number of singular values is bounded by min(m,n), not the number of entries.",
+      "Correct. In A=UΣVᵀ, singular values are the non-negative diagonal entries of Σ, usually ordered from largest to smallest."
+    ],
+    "hint": "The SVD diagonal matrix contains lengths/scales, not signed eigenvalues.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "CORE-045",
+    "number": 45,
+    "bank": "core",
+    "topicId": "derivatives",
+    "difficulty": "basic",
+    "type": "concept",
+    "question": "Geometrically, what does f′(a) represent when the derivative exists?",
+    "options": [
+      "The total area under f from 0 to a",
+      "The function value at x=a",
+      "The average slope over the entire domain",
+      "The slope of the tangent to y=f(x) at x=a"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The derivative is the instantaneous rate of change and equals the tangent-line slope at the point for a differentiable graph.",
+    "optionExplanations": [
+      "Area is associated with integration.",
+      "The function value is f(a), not f′(a).",
+      "An average slope uses a finite interval, not an instantaneous limit.",
+      "Correct. The derivative is the instantaneous rate of change and equals the tangent-line slope at the point for a differentiable graph."
+    ],
+    "hint": "Distinguish instantaneous slope from accumulated area or average change.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "CORE-046",
+    "number": 46,
+    "bank": "core",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which rule is needed to differentiate f(x)=u(x)v(x)?",
+    "options": [
+      "Chain rule only: (uv)′=u′v′",
+      "Quotient rule: (uv)′=(u′v−uv′)/v²",
+      "Power rule only, regardless of u and v",
+      "Product rule: (uv)′=u′v+uv′"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The derivative of a product is the derivative of the first factor times the second plus the first times the derivative of the second.",
+    "optionExplanations": [
+      "Differentiating both factors and multiplying their derivatives is not the product rule.",
+      "The quotient rule applies to a ratio, not a product.",
+      "The power rule alone is not sufficient for arbitrary functions u and v.",
+      "Correct. The derivative of a product is the derivative of the first factor times the second plus the first times the derivative of the second."
+    ],
+    "hint": "Each factor is differentiated once while the other is kept unchanged.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "CORE-047",
+    "number": 47,
+    "bank": "core",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which statement about differentiability and continuity is mathematically correct?",
+    "options": [
+      "Continuity always implies differentiability",
+      "A function is differentiable only when its derivative is positive",
+      "A zero derivative means the function is discontinuous",
+      "Differentiability at a point implies continuity there"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A differentiable function is continuous at the point, but a continuous function may have a corner or other non-differentiable behaviour.",
+    "optionExplanations": [
+      "A continuous function such as |x| at zero is not differentiable there.",
+      "The derivative may be negative or zero as well as positive.",
+      "A zero derivative is compatible with a smooth constant function.",
+      "Correct. A differentiable function is continuous at the point, but a continuous function may have a corner or other non-differentiable behaviour."
+    ],
+    "hint": "The implication works in one direction only.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "CORE-048",
+    "number": 48,
+    "bank": "core",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "When calculating ∂f/∂x for f(x,y), what is done with y?",
+    "options": [
+      "It is set equal to zero in every problem",
+      "It is differentiated with respect to x as well",
+      "It is replaced with the derivative of x",
+      "It is treated as constant during differentiation with respect to x"
+    ],
+    "correctAnswer": 3,
+    "explanation": "A partial derivative differentiates with respect to one chosen variable while holding the other independent variables fixed.",
+    "optionExplanations": [
+      "Setting y=0 changes the problem and is not the definition.",
+      "Differentiating y with respect to x is not part of the partial derivative when x and y are independent.",
+      "There is no rule replacing y with a derivative of x.",
+      "Correct. A partial derivative differentiates with respect to one chosen variable while holding the other independent variables fixed."
+    ],
+    "hint": "The symbol ∂/∂x tells you which variable changes.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "CORE-049",
+    "number": 49,
+    "bank": "core",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "For a differentiable scalar function f, which direction gives the greatest instantaneous rate of increase at a point where ∇f is non-zero?",
+    "options": [
+      "The direction opposite to the gradient",
+      "Any direction tangent to a level set",
+      "A direction perpendicular to the gradient",
+      "The direction of the gradient"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The directional derivative along a unit vector u is ∇f·u, which is maximised when u points in the direction of ∇f.",
+    "optionExplanations": [
+      "The negative gradient gives the steepest decrease.",
+      "A tangent direction to a level set has zero first-order change.",
+      "A perpendicular direction also gives zero directional derivative.",
+      "Correct. The directional derivative along a unit vector u is ∇f·u, which is maximised when u points in the direction of ∇f."
+    ],
+    "hint": "Use the dot product and its maximum when two vectors align.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "CORE-050",
+    "number": 50,
+    "bank": "core",
+    "topicId": "gradients-autodiff",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "What does backpropagation compute in a neural network?",
+    "options": [
+      "The global minimum without an optimiser",
+      "The exact inverse of every weight matrix",
+      "Gradients of a loss with respect to intermediate values and parameters",
+      "The class labels for the training set"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Backpropagation efficiently applies the chain rule through a computational graph to obtain gradients. An optimiser then uses these gradients to update parameters.",
+    "optionExplanations": [
+      "Gradient calculation alone does not guarantee finding a global minimum.",
+      "Backpropagation does not invert weight matrices.",
+      "Correct. Backpropagation efficiently applies the chain rule through a computational graph to obtain gradients. An optimiser then uses these gradients to update parameters.",
+      "Labels are part of the training targets, not computed by backpropagation."
+    ],
+    "hint": "Separate derivative computation from the parameter-update rule.",
+    "referenceId": "gradients-autodiff-ref"
+  },
+  {
+    "id": "CORE-051",
+    "number": 51,
+    "bank": "core",
+    "topicId": "gradients-autodiff",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which statement best distinguishes automatic differentiation from finite differences?",
+    "options": [
+      "Finite differences are exact for every smooth function",
+      "Automatic differentiation and numerical finite differences are identical methods",
+      "Automatic differentiation applies chain rules to elementary operations; finite differences approximate derivatives using function evaluations",
+      "Automatic differentiation always requires symbolic algebra; finite differences never evaluate the function"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Automatic differentiation propagates derivatives through a computational graph using exact local derivative rules (up to floating-point arithmetic). Finite differences estimate slopes from nearby function values.",
+    "optionExplanations": [
+      "Finite-difference estimates generally have truncation and rounding error.",
+      "The methods have different mechanisms and error properties.",
+      "Correct. Automatic differentiation propagates derivatives through a computational graph using exact local derivative rules (up to floating-point arithmetic). Finite differences estimate slopes from nearby function values.",
+      "Finite differences evaluate the function at perturbed inputs."
+    ],
+    "hint": "Look at whether derivatives are propagated through operations or estimated from small input changes.",
+    "referenceId": "gradients-autodiff-ref"
+  },
+  {
+    "id": "CORE-052",
+    "number": 52,
+    "bank": "core",
+    "topicId": "gradients-autodiff",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "For a smooth scalar function near a point a, what does the first-order Taylor approximation provide?",
+    "options": [
+      "The covariance matrix of the input data",
+      "The list of all stationary points",
+      "A local linear approximation using the function value and gradient at a",
+      "An exact representation of every nonlinear function over the whole domain"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The first-order approximation is f(a+h)≈f(a)+∇f(a)ᵀh for small h. Higher-order terms capture curvature and approximation error.",
+    "optionExplanations": [
+      "Covariance is a statistical quantity, not the Taylor approximation.",
+      "The expression approximates nearby values; it does not enumerate stationary points.",
+      "Correct. The first-order approximation is f(a+h)≈f(a)+∇f(a)ᵀh for small h. Higher-order terms capture curvature and approximation error.",
+      "A nonlinear function is not generally represented exactly by one linear expression."
+    ],
+    "hint": "It is a local approximation based on first derivatives.",
+    "referenceId": "gradients-autodiff-ref"
+  },
+  {
+    "id": "CORE-053",
+    "number": 53,
+    "bank": "core",
+    "topicId": "optimization",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "For minimisation, which is the standard gradient-descent update?",
+    "options": [
+      "xₖ₊₁ = ηxₖ − ∇f(xₖ)",
+      "xₖ₊₁ = xₖ − ηf(xₖ)",
+      "xₖ₊₁ = xₖ − η∇f(xₖ)",
+      "xₖ₊₁ = xₖ + η∇f(xₖ)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The negative gradient points in the local direction of steepest decrease. The learning rate η controls the step size.",
+    "optionExplanations": [
+      "This scales the current point and subtracts a scalar function value, not the gradient vector.",
+      "The update subtracts the gradient, not the objective value itself.",
+      "Correct. The negative gradient points in the local direction of steepest decrease. The learning rate η controls the step size.",
+      "This moves uphill for a sufficiently small positive learning rate."
+    ],
+    "hint": "A minimisation step moves opposite to the gradient.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "CORE-054",
+    "number": 54,
+    "bank": "core",
+    "topicId": "optimization",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "In equality-constrained optimisation, what is the main role of a Lagrange multiplier?",
+    "options": [
+      "To replace the objective function with a random search",
+      "To make the constraint disappear from the problem",
+      "To incorporate a constraint into stationary-point equations through the Lagrangian",
+      "To guarantee that every stationary point is a global minimum"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Lagrangian combines the objective with equality constraints, and its stationary conditions help locate constrained optima under appropriate regularity conditions.",
+    "optionExplanations": [
+      "Lagrange multipliers are analytical conditions, not random search.",
+      "The constraint remains central to the Lagrangian equations.",
+      "Correct. The Lagrangian combines the objective with equality constraints, and its stationary conditions help locate constrained optima under appropriate regularity conditions.",
+      "A stationary point may be a maximum or saddle, and global guarantees need further assumptions."
+    ],
+    "hint": "The multiplier is attached to a constraint equation.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "CORE-055",
+    "number": 55,
+    "bank": "core",
+    "topicId": "optimization",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "What is a key property of a differentiable convex objective on a convex feasible set?",
+    "options": [
+      "It has exactly one stationary point",
+      "Its Hessian must be the identity matrix",
+      "Every local minimum is also a global minimum",
+      "Every stationary point must be a strict maximum"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Convexity rules out nonglobal local minima. A minimiser, when one exists, is global; uniqueness requires stronger conditions such as strict convexity.",
+    "optionExplanations": [
+      "There may be many stationary points or none in an unconstrained domain.",
+      "The Hessian need only be positive semidefinite where the twice-differentiable convexity condition applies, not identity.",
+      "Correct. Convexity rules out nonglobal local minima. A minimiser, when one exists, is global; uniqueness requires stronger conditions such as strict convexity.",
+      "A convex function does not have local maxima in the general interior sense unless it is constant in relevant directions."
+    ],
+    "hint": "Convexity concerns the shape of the objective and the relationship between local and global minima.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "CORE-056",
+    "number": 56,
+    "bank": "core",
+    "topicId": "vector-matrix-calculus",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "For f: ℝⁿ → ℝᵐ, using the output-by-input convention, what is the shape of its Jacobian?",
+    "options": [
+      "n×n for all m",
+      "m×m for all n",
+      "m×n",
+      "n×m"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Each row corresponds to an output component and each column to an input variable, so Jᵢⱼ=∂fᵢ/∂xⱼ has shape m×n.",
+    "optionExplanations": [
+      "The Jacobian need not be square.",
+      "The Jacobian need not be square.",
+      "Correct. Each row corresponds to an output component and each column to an input variable, so Jᵢⱼ=∂fᵢ/∂xⱼ has shape m×n.",
+      "This is the transpose convention, not the output-by-input convention specified."
+    ],
+    "hint": "Count output components for rows and input variables for columns.",
+    "referenceId": "vector-matrix-calculus-ref"
+  },
+  {
+    "id": "CORE-057",
+    "number": 57,
+    "bank": "core",
+    "topicId": "vector-matrix-calculus",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "A scalar-valued function f: ℝⁿ → ℝ has what Jacobian shape under the output-by-input convention?",
+    "options": [
+      "n×n",
+      "1×1 for every n",
+      "1×n",
+      "n×1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "There is one output component and n input variables, so the Jacobian is a row with n partial derivatives. Many texts represent the gradient as an n×1 column; the convention must be checked.",
+    "optionExplanations": [
+      "An n×n Hessian is a second-derivative object.",
+      "The Jacobian contains one partial derivative per input variable.",
+      "Correct. There is one output component and n input variables, so the Jacobian is a row with n partial derivatives. Many texts represent the gradient as an n×1 column; the convention must be checked.",
+      "This is the common column-gradient representation, not the Jacobian convention stated in the question."
+    ],
+    "hint": "The output count is one; the input count is n.",
+    "referenceId": "vector-matrix-calculus-ref"
+  },
+  {
+    "id": "CORE-058",
+    "number": 58,
+    "bank": "core",
+    "topicId": "optimization-algorithms",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "The function f(x,y)=x²−y² has a stationary point at (0,0). How should this point be classified?",
+    "options": [
+      "Strict local maximum",
+      "Point where the gradient does not exist",
+      "Saddle point",
+      "Strict local minimum"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The gradient is zero at the origin. Along the x direction the function increases away from zero, while along the y direction it decreases, so the point is a saddle.",
+    "optionExplanations": [
+      "Along the x-axis, f(x,0)=x²>0, so nearby values are higher.",
+      "The function is a polynomial, so its gradient exists everywhere.",
+      "Correct. The gradient is zero at the origin. Along the x direction the function increases away from zero, while along the y direction it decreases, so the point is a saddle.",
+      "Along the y-axis, f(0,y)=−y²<0, so nearby values are lower."
+    ],
+    "hint": "Compare the function along the x-axis and y-axis near the origin.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "CORE-059",
+    "number": 59,
+    "bank": "core",
+    "topicId": "optimization-algorithms",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which comparison between batch, mini-batch and stochastic gradient descent is correct?",
+    "options": [
+      "All three necessarily compute identical gradients on each update",
+      "Stochastic gradient descent never uses training data",
+      "Batch uses all training examples per update; mini-batch uses a subset; stochastic uses one example",
+      "Batch uses one example; mini-batch uses all examples; stochastic uses a subset"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The names describe how many training examples contribute to one gradient estimate. The choice affects computation, noise and update frequency.",
+    "optionExplanations": [
+      "The variants can produce different gradient estimates and trajectories.",
+      "Stochastic gradient descent updates using an individual training example.",
+      "Correct. The names describe how many training examples contribute to one gradient estimate. The choice affects computation, noise and update frequency.",
+      "This reverses the standard definitions."
+    ],
+    "hint": "Compare the number of examples processed for one parameter update.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "CORE-060",
+    "number": 108,
+    "bank": "core",
+    "topicId": "linear-maps",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "A transformation is T(x)=Ax+b with b non-zero. How should it generally be classified?",
+    "options": [
+      "An orthogonal transformation by definition",
+      "An affine transformation, not a linear map",
+      "A linear map because A is a matrix",
+      "A projection because b is constant"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A nonzero translation term means T(0)=b rather than zero, so the transformation is affine and generally not linear.",
+    "optionExplanations": [
+      "Orthogonality requires a specific inner-product-preserving linear transformation.",
+      "Correct. A nonzero translation term means T(0)=b rather than zero, so the transformation is affine and generally not linear.",
+      "The presence of a matrix A does not remove the nonzero translation term.",
+      "A constant translation is not the same as a projection."
+    ],
+    "hint": "Test what happens to the zero vector.",
+    "referenceId": "linear-maps-ref"
+  },
+  {
+    "id": "CORE-061",
+    "number": 121,
+    "bank": "core",
+    "topicId": "ai-foundations",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which sequence best represents a common high-level flow in an AI application?",
+    "options": [
+      "Training labels, then a matrix inverse, regardless of the task",
+      "Input/perception, representation or model processing, decision, and output/action",
+      "Output/action, then input, with no intermediate processing",
+      "Database storage only, followed by a fixed report"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Many AI systems receive inputs, extract or represent relevant information, reason or predict, and then produce an output or action. The exact architecture depends on the application.",
+    "optionExplanations": [
+      "The workflow is not restricted to labels or matrix inversion.",
+      "Correct. Many AI systems receive inputs, extract or represent relevant information, reason or predict, and then produce an output or action. The exact architecture depends on the application.",
+      "A useful system ordinarily processes input before producing an action.",
+      "Storage may be one component but is not the entire AI flow."
+    ],
+    "hint": "Trace information from the environment through processing to a system response.",
+    "referenceId": "ai-foundations-ref"
+  },
+  {
+    "id": "CORE-062",
+    "number": 122,
+    "bank": "core",
+    "topicId": "ai-history",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which statement best describes the broad shift in AI methods across its history?",
+    "options": [
+      "Every modern AI system is based exclusively on a Turing Machine implementation",
+      "AI has included symbolic reasoning and expert systems as well as statistical learning and modern neural approaches",
+      "AI history consists only of the recent introduction of chatbots",
+      "Symbolic reasoning was never used in AI"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AI has evolved through several approaches, including symbolic methods, knowledge-based expert systems, statistical learning and neural methods. These approaches are not mutually exclusive.",
+    "optionExplanations": [
+      "A Turing Machine is a theoretical model of computation, not the exclusive implementation of modern AI.",
+      "Correct. AI has evolved through several approaches, including symbolic methods, knowledge-based expert systems, statistical learning and neural methods. These approaches are not mutually exclusive.",
+      "AI research predates recent chatbots by decades.",
+      "Symbolic reasoning and expert systems are important historical AI approaches."
+    ],
+    "hint": "Think of several generations and families of AI techniques rather than a single invention.",
+    "referenceId": "ai-history-ref"
+  },
+  {
+    "id": "CORE-063",
+    "number": 123,
+    "bank": "core",
+    "topicId": "ai-systems",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "What is a useful distinction between a rule-based system and a machine-learning model?",
+    "options": [
+      "A rule-based system and a learned model are identical by definition",
+      "A rule-based system applies explicitly encoded rules, while a learned model derives patterns from training data",
+      "A rule-based system always uses more data than a learned model",
+      "A learned model cannot produce predictions"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Rule-based systems rely on explicitly represented conditions and rules. Machine-learning models fit parameters or structures from data; hybrid systems may combine both.",
+    "optionExplanations": [
+      "The two approaches have distinct knowledge and learning mechanisms.",
+      "Correct. Rule-based systems rely on explicitly represented conditions and rules. Machine-learning models fit parameters or structures from data; hybrid systems may combine both.",
+      "Rule-based systems can operate with limited data and do not inherently require a larger dataset.",
+      "Prediction is a core use of learned models."
+    ],
+    "hint": "Ask where the decision logic comes from: written rules or patterns learned from examples.",
+    "referenceId": "ai-systems-ref"
+  },
+  {
+    "id": "CORE-064",
+    "number": 124,
+    "bank": "core",
+    "topicId": "ml-learning",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "A robot improves its navigation policy by trying actions and receiving feedback from the environment. Which learning idea is most closely related?",
+    "options": [
+      "Dimensionality reduction of a covariance matrix",
+      "Learning through interaction and feedback",
+      "Unsupervised clustering of fixed customer records",
+      "Static rule lookup with no feedback"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Learning through interaction uses consequences or feedback from actions to improve behaviour. This is conceptually related to reinforcement-learning settings, though the syllabus names the broader interaction idea.",
+    "optionExplanations": [
+      "Covariance decomposition is a linear-algebra task, not interactive learning.",
+      "Correct. Learning through interaction uses consequences or feedback from actions to improve behaviour. This is conceptually related to reinforcement-learning settings, though the syllabus names the broader interaction idea.",
+      "Clustering fixed records does not describe an action–feedback loop.",
+      "A static lookup system does not learn from interaction."
+    ],
+    "hint": "The system changes its behaviour based on outcomes of its own actions.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "CORE-065",
+    "number": 125,
+    "bank": "core",
+    "topicId": "search",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "What is the main idea behind parallel search?",
+    "options": [
+      "Remove the need for a goal test and state representation",
+      "Explore different parts of the search space concurrently using multiple processing resources",
+      "Convert every search problem into a matrix multiplication",
+      "Guarantee that each worker finds a different optimal solution"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Parallel search divides exploration work across processing resources. Practical performance depends on task partitioning, communication, synchronisation and load balance.",
+    "optionExplanations": [
+      "A valid problem formulation and goal test are still required.",
+      "Correct. Parallel search divides exploration work across processing resources. Practical performance depends on task partitioning, communication, synchronisation and load balance.",
+      "Matrix multiplication is not the defining operation of parallel search.",
+      "Workers may explore overlapping regions, and a single solution may be sought."
+    ],
+    "hint": "Look for multiple branches or subproblems being explored at the same time.",
+    "referenceId": "search-ref"
+  },
+  {
+    "id": "CORE-066",
+    "number": 126,
+    "bank": "core",
+    "topicId": "search",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "In a search engine, what is the purpose of ranking after candidate documents have been retrieved?",
+    "options": [
+      "Compute the inverse of the query-term matrix",
+      "Order retrieved documents by estimated relevance to the user query",
+      "Change the original text of every retrieved document",
+      "Guarantee that every relevant document is indexed"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Retrieval finds candidate documents and ranking orders them according to estimated relevance or other ranking signals. Ranking does not guarantee complete indexing or perfect relevance.",
+    "optionExplanations": [
+      "Matrix inversion is not the general purpose of search-result ranking.",
+      "Correct. Retrieval finds candidate documents and ranking orders them according to estimated relevance or other ranking signals. Ranking does not guarantee complete indexing or perfect relevance.",
+      "Ranking normally orders results rather than rewriting source documents.",
+      "Ranking cannot guarantee that all relevant material was indexed."
+    ],
+    "hint": "Think about what the user sees first on a results page.",
+    "referenceId": "search-ref"
+  },
+  {
+    "id": "CORE-067",
+    "number": 127,
+    "bank": "core",
+    "topicId": "logic",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Which statement best describes logic programming?",
+    "options": [
+      "It stores only unlabelled image pixels",
+      "Facts and rules are declared, and queries are answered through logical inference",
+      "Every operation must be written as a sequence of machine-level instructions",
+      "It is a numerical optimisation method for eigenvectors"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Logic programming represents relationships declaratively using facts and rules; a query asks whether a goal follows through inference.",
+    "optionExplanations": [
+      "Image pixels may be data for AI but do not define logic programming.",
+      "Correct. Logic programming represents relationships declaratively using facts and rules; a query asks whether a goal follows through inference.",
+      "Logic programming is declarative rather than a list of low-level instructions.",
+      "Eigenvector optimisation is unrelated to its defining paradigm."
+    ],
+    "hint": "The program describes relationships that should hold, then asks a query.",
+    "referenceId": "logic-ref"
+  },
+  {
+    "id": "CORE-068",
+    "number": 128,
+    "bank": "core",
+    "topicId": "matrix-properties",
+    "difficulty": "medium",
+    "type": "concept",
+    "question": "Why is low-rank matrix approximation useful in data analysis?",
+    "options": [
+      "It removes the need to choose an approximation tolerance or rank",
+      "It can retain dominant structure while reducing storage or computation",
+      "It guarantees that every original matrix entry remains exactly unchanged",
+      "It increases matrix rank to the maximum possible value"
+    ],
+    "correctAnswer": 1,
+    "explanation": "A low-rank approximation represents a matrix using fewer independent directions, often retaining dominant patterns while reducing storage, noise or computation. The trade-off is approximation error.",
+    "optionExplanations": [
+      "The chosen rank controls the trade-off between compactness and fidelity.",
+      "Correct. A low-rank approximation represents a matrix using fewer independent directions, often retaining dominant patterns while reducing storage, noise or computation. The trade-off is approximation error.",
+      "An approximation generally changes some entries or reconstruction values.",
+      "Low-rank approximation reduces rank rather than maximising it."
+    ],
+    "hint": "Think about representing a large matrix with fewer degrees of freedom.",
+    "referenceId": "matrix-properties-ref"
+  },
+  {
+    "id": "CORE-069",
+    "number": 135,
+    "bank": "core",
+    "topicId": "matrix-phylogeny",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "What does the “matrix phylogeny” diagram summarise in the matrix-decomposition material?",
+    "options": [
+      "A chronological history of when individual matrix entries were discovered",
+      "A method for clustering rows without using matrix properties",
+      "A proof that every invertible matrix is diagonalizable over the real numbers",
+      "Relationships and subset structure among matrix classes, together with properties or operations associated with them"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Matrix phylogeny is a functional relationship map: it organises matrix classes such as square, singular, invertible, normal, symmetric, orthogonal and positive definite, and links them to properties or operations such as determinant, inverse, eigen-decomposition and SVD. Invertibility and real diagonalizability are distinct properties.",
+    "optionExplanations": [
+      "It is not a historical timeline of matrix notation.",
+      "Clustering rows is not the chapter’s meaning of matrix phylogeny.",
+      "An invertible matrix need not be diagonalizable over the real numbers.",
+      "Correct. Matrix phylogeny is a functional relationship map: it organises matrix classes such as square, singular, invertible, normal, symmetric, orthogonal and positive definite, and links them to properties or operations such as determinant, inverse, eigen-decomposition and SVD. Invertibility and real diagonalizability are distinct properties."
+    ],
+    "hint": "Think of a map of matrix types and the properties that distinguish or connect them.",
+    "referenceId": "matrix-phylogeny-ref"
+  }
+]

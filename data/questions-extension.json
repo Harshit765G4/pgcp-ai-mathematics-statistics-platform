@@ -1,0 +1,502 @@
+[
+  {
+    "id": "EXT-001",
+    "number": 89,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "medium",
+    "type": "supplement",
+    "question": "Which measure is resistant to a small number of extremely large outliers?",
+    "options": [
+      "Arithmetic mean",
+      "Maximum",
+      "Range",
+      "Median"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The median depends on the middle order statistic and is less affected by extreme values than the mean, maximum or range.",
+    "optionExplanations": [
+      "The mean can be pulled strongly by extreme values.",
+      "The maximum is defined by the largest observation and is directly sensitive to an outlier.",
+      "The range depends directly on the minimum and maximum.",
+      "Correct. The median depends on the middle order statistic and is less affected by extreme values than the mean, maximum or range."
+    ],
+    "hint": "Think of a measure based on the ordered position rather than the magnitude of every value.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-002",
+    "number": 90,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "medium",
+    "type": "supplement",
+    "question": "For the data [2, 4, 4, 6], what is the population variance?",
+    "options": [
+      "4",
+      "1",
+      "8",
+      "2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The mean is 4. Squared deviations are 4, 0, 0, 4, whose population average is 8/4=2.",
+    "optionExplanations": [
+      "4 is the population standard deviation squared incorrectly or an unnormalised quantity.",
+      "1 is not the mean squared deviation.",
+      "8 is the sum of squared deviations before dividing by N.",
+      "Correct. The mean is 4. Squared deviations are 4, 0, 0, 4, whose population average is 8/4=2."
+    ],
+    "hint": "Find the mean, square each deviation and divide by N for population variance.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-003",
+    "number": 91,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "supplement",
+    "question": "A classifier detects a rare failure where missing a true failure is much more costly than a false alarm. Which metric is especially important to inspect alongside precision?",
+    "options": [
+      "R-squared",
+      "Silhouette score",
+      "Matrix trace",
+      "Recall"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Recall measures the proportion of actual positive failures detected. When false negatives are costly, recall is particularly important, though the decision threshold and precision trade-off also matter.",
+    "optionExplanations": [
+      "R-squared is typically a regression fit measure.",
+      "Silhouette score evaluates clustering separation.",
+      "Trace is a matrix property, not a classification metric.",
+      "Correct. Recall measures the proportion of actual positive failures detected. When false negatives are costly, recall is particularly important, though the decision threshold and precision trade-off also matter."
+    ],
+    "hint": "Focus on the cost of failing to detect a real positive case.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-004",
+    "number": 92,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "medium",
+    "type": "supplement",
+    "question": "What is overfitting?",
+    "options": [
+      "A model performs poorly on both training and test data because it is too simple",
+      "A model has exactly equal training and test error",
+      "A model is evaluated without any data",
+      "A model fits training data patterns, including noise, but generalises poorly to unseen data"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Overfitting occurs when a model captures idiosyncrasies or noise in training data and consequently has a generalisation gap.",
+    "optionExplanations": [
+      "This describes underfitting more closely.",
+      "Equal errors are not the defining feature and can occur at many performance levels.",
+      "Evaluation without data is not overfitting.",
+      "Correct. Overfitting occurs when a model captures idiosyncrasies or noise in training data and consequently has a generalisation gap."
+    ],
+    "hint": "Compare performance on training examples with performance on unseen examples.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-005",
+    "number": 93,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "medium",
+    "type": "supplement",
+    "question": "What is the main purpose of splitting labelled data into training, validation and test sets?",
+    "options": [
+      "Use all three sets to update model weights equally",
+      "Ensure every split has different feature definitions",
+      "Remove the need for an appropriate evaluation metric",
+      "Train parameters, select/tune models, and estimate final generalisation respectively"
+    ],
+    "correctAnswer": 3,
+    "explanation": "The training set fits parameters; validation supports model selection and tuning; the test set is reserved for a final, less biased evaluation.",
+    "optionExplanations": [
+      "Using the test set for repeated weight updates leaks evaluation information.",
+      "All splits should represent the same feature schema.",
+      "A sound metric is still needed to evaluate the target task.",
+      "Correct. The training set fits parameters; validation supports model selection and tuning; the test set is reserved for a final, less biased evaluation."
+    ],
+    "hint": "Each split should have a distinct role in the modelling workflow.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-006",
+    "number": 94,
+    "bank": "extension",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "supplement",
+    "question": "Why are feature standardisation and scaling often considered before distance-based machine learning?",
+    "options": [
+      "Scaling always increases the number of features",
+      "Scaling guarantees that classes become linearly separable",
+      "Scaling converts every feature into a categorical label",
+      "Features with large numeric scales can dominate distance calculations"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Distance-based methods can be dominated by features measured on large numeric scales. Scaling can make contributions more comparable when that is appropriate for the task.",
+    "optionExplanations": [
+      "Scaling does not inherently add features.",
+      "No scaling method guarantees linear separability.",
+      "Standardisation typically preserves numeric values rather than turning them into categories.",
+      "Correct. Distance-based methods can be dominated by features measured on large numeric scales. Scaling can make contributions more comparable when that is appropriate for the task."
+    ],
+    "hint": "Think about how a large unit range affects Euclidean distance.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "EXT-007",
+    "number": 95,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "hard",
+    "type": "supplement",
+    "question": "Why should PCA usually be fitted on the training split and then applied to validation/test data?",
+    "options": [
+      "Because PCA cannot transform data it has not seen",
+      "Because test data must have different columns",
+      "To force every principal component to explain equal variance",
+      "To avoid information leakage from evaluation data into the learned projection"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Fitting preprocessing on all data lets information from held-out observations influence the representation. Fit the PCA transform on training data, then apply that fitted transform to held-out sets.",
+    "optionExplanations": [
+      "PCA can transform unseen samples using the fitted loadings.",
+      "Feature columns must be aligned, not different.",
+      "Principal components generally explain different amounts of variance.",
+      "Correct. Fitting preprocessing on all data lets information from held-out observations influence the representation. Fit the PCA transform on training data, then apply that fitted transform to held-out sets."
+    ],
+    "hint": "Ask whether the held-out data influence a transformation that is meant to be learned from training only.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-008",
+    "number": 96,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "hard",
+    "type": "supplement",
+    "question": "What does regularisation do in many machine-learning objectives?",
+    "options": [
+      "Guarantees zero training error",
+      "Replaces the need for training data",
+      "Makes every parameter increase during optimisation",
+      "Adds a penalty or constraint that discourages overly complex parameter values"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Regularisation adds a complexity penalty or constraint, such as an L1 or L2 term, to encourage solutions that may generalise better.",
+    "optionExplanations": [
+      "Regularisation may increase training error slightly while improving generalisation.",
+      "It does not eliminate the need for data.",
+      "The penalty does not force parameters to increase.",
+      "Correct. Regularisation adds a complexity penalty or constraint, such as an L1 or L2 term, to encourage solutions that may generalise better."
+    ],
+    "hint": "Look for an extra term in the objective that discourages complexity.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-009",
+    "number": 97,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "medium",
+    "type": "supplement",
+    "question": "Bayes’ theorem is useful because it allows one to:",
+    "options": [
+      "Calculate a matrix inverse from its trace alone",
+      "Guarantee that a classifier is unbiased",
+      "Convert an unsupervised task into a deterministic search tree",
+      "Update a probability for a hypothesis using observed evidence"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Bayes’ theorem relates posterior, likelihood and prior: P(H|E)=P(E|H)P(H)/P(E), for P(E)>0.",
+    "optionExplanations": [
+      "Trace alone is insufficient to determine a matrix inverse.",
+      "Bayesian updating does not guarantee fairness or eliminate bias.",
+      "The theorem is probabilistic inference, not a conversion to search.",
+      "Correct. Bayes’ theorem relates posterior, likelihood and prior: P(H|E)=P(E|H)P(H)/P(E), for P(E)>0."
+    ],
+    "hint": "Recall the relationship between prior belief, evidence and posterior belief.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-010",
+    "number": 98,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "medium",
+    "type": "supplement",
+    "question": "A 95% confidence interval procedure is interpreted correctly as:",
+    "options": [
+      "95% of observations lie inside every confidence interval",
+      "The sample mean is correct 95% of the time",
+      "Across repeated samples, about 95% of intervals constructed by the procedure would contain the fixed true parameter",
+      "There is a 95% probability that this already-computed interval contains the fixed parameter"
+    ],
+    "correctAnswer": 2,
+    "explanation": "In the frequentist interpretation, the confidence level describes the long-run coverage rate of the procedure under its assumptions, not a probability assigned to the fixed parameter after observing one interval.",
+    "optionExplanations": [
+      "A confidence interval for a parameter is not an interval expected to contain 95% of individual observations.",
+      "Coverage does not mean the sample mean is exactly correct in 95% of repetitions.",
+      "Correct. In the frequentist interpretation, the confidence level describes the long-run coverage rate of the procedure under its assumptions, not a probability assigned to the fixed parameter after observing one interval.",
+      "The parameter is fixed in the frequentist framework; the interval is random before sampling."
+    ],
+    "hint": "Think about repeated sampling and the behaviour of the interval-building procedure.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-011",
+    "number": 99,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "hard",
+    "type": "supplement",
+    "question": "What is the main purpose of a learning-rate schedule in gradient-based training?",
+    "options": [
+      "To guarantee convergence to the global minimum for every objective",
+      "To eliminate the need to calculate gradients",
+      "To change the step size over training to balance progress and stability",
+      "To change the target labels after each epoch"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A schedule varies the learning rate over time, for example using larger early steps and smaller later steps, to balance speed and stability. It does not guarantee global optimality for arbitrary non-convex objectives.",
+    "optionExplanations": [
+      "Non-convex optimisation has no general global convergence guarantee from a schedule alone.",
+      "Gradient-based schedules still use gradients.",
+      "Correct. A schedule varies the learning rate over time, for example using larger early steps and smaller later steps, to balance speed and stability. It does not guarantee global optimality for arbitrary non-convex objectives.",
+      "Labels define the learning target and are not a learning-rate schedule."
+    ],
+    "hint": "The learning rate is the scale applied to each gradient update.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-012",
+    "number": 100,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "hard",
+    "type": "supplement",
+    "question": "What is data leakage in a machine-learning workflow?",
+    "options": [
+      "The training set contains multiple feature columns",
+      "A model has fewer parameters than observations",
+      "Information unavailable at prediction time improperly influences training or evaluation",
+      "A dataset is stored on a disk drive instead of memory"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Leakage occurs when information from validation/test data, future outcomes or otherwise unavailable variables contaminates model development, leading to over-optimistic evaluation.",
+    "optionExplanations": [
+      "Multiple feature columns are normal.",
+      "The parameter-to-observation ratio is not the definition of leakage.",
+      "Correct. Leakage occurs when information from validation/test data, future outcomes or otherwise unavailable variables contaminates model development, leading to over-optimistic evaluation.",
+      "Storage location is not data leakage."
+    ],
+    "hint": "Ask whether the model has access to information it would not legitimately have at prediction time.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-013",
+    "number": 101,
+    "bank": "extension",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "supplement",
+    "question": "What does the Hessian of a twice-differentiable scalar function contain?",
+    "options": [
+      "The sorted eigenvectors of the input matrix",
+      "The function values at every point in the domain",
+      "All second-order partial derivatives",
+      "All first-order partial derivatives only"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The Hessian is the square matrix whose (i,j) entry is the second partial derivative ∂²f/(∂xᵢ∂xⱼ).",
+    "optionExplanations": [
+      "Eigenvectors may be used to analyse the Hessian but are not its entries.",
+      "A Hessian is local derivative information, not a full table of function values.",
+      "Correct. The Hessian is the square matrix whose (i,j) entry is the second partial derivative ∂²f/(∂xᵢ∂xⱼ).",
+      "The first derivatives make up the gradient."
+    ],
+    "hint": "It is the second-derivative analogue of the gradient.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "EXT-014",
+    "number": 102,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "hard",
+    "type": "supplement",
+    "question": "For a covariance matrix, why are negative eigenvalues a warning sign in exact arithmetic?",
+    "options": [
+      "Eigenvalues of every matrix are always positive",
+      "A negative eigenvalue proves that the data have no variance",
+      "A covariance matrix is positive semidefinite, so its eigenvalues should be non-negative",
+      "A covariance matrix must have all eigenvalues strictly negative"
+    ],
+    "correctAnswer": 2,
+    "explanation": "For any vector x, xᵀΣx is the variance of a linear combination and cannot be negative; therefore an exact covariance matrix is positive semidefinite. Small negative numerical values may arise from floating-point error.",
+    "optionExplanations": [
+      "General matrices can have negative eigenvalues, but a covariance matrix cannot in exact arithmetic.",
+      "A negative eigenvalue is not proof that the data have no variance; it signals invalidity or numerical issues.",
+      "Correct. For any vector x, xᵀΣx is the variance of a linear combination and cannot be negative; therefore an exact covariance matrix is positive semidefinite. Small negative numerical values may arise from floating-point error.",
+      "Strict positivity is not guaranteed; zero eigenvalues are possible."
+    ],
+    "hint": "Connect covariance to variance of a projected variable.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-015",
+    "number": 103,
+    "bank": "extension",
+    "topicId": "optimization-algorithms",
+    "difficulty": "hard",
+    "type": "supplement",
+    "question": "Why can mini-batch training be faster in practice than pure stochastic updates on modern accelerators?",
+    "options": [
+      "Mini-batch updates never require memory for examples",
+      "A mini-batch automatically removes all local minima",
+      "Vectorised operations on a batch can use hardware efficiently while averaging some gradient noise",
+      "A batch makes each gradient mathematically exact for every possible dataset"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Batched matrix operations can exploit parallel hardware and reduce per-example overhead. The estimated gradient remains noisy relative to the full-batch gradient.",
+    "optionExplanations": [
+      "Mini-batches require storing or streaming data for the batch.",
+      "Batch size does not remove local minima from the objective landscape.",
+      "Correct. Batched matrix operations can exploit parallel hardware and reduce per-example overhead. The estimated gradient remains noisy relative to the full-batch gradient.",
+      "Only a full-data gradient is exact for the full empirical objective."
+    ],
+    "hint": "Consider hardware utilisation and the number of samples processed together.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "EXT-016",
+    "number": 104,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "medium",
+    "type": "supplement",
+    "question": "In a binary classifier, precision is defined as:",
+    "options": [
+      "TN/(TN+FP)",
+      "(TP+TN)/(TP+TN+FP+FN)",
+      "TP/(TP+FP)",
+      "TP/(TP+FN)"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Precision is the fraction of predicted positives that are true positives. Recall is TP/(TP+FN), specificity is TN/(TN+FP), and accuracy is the fraction of all predictions that are correct.",
+    "optionExplanations": [
+      "This is specificity.",
+      "This is accuracy.",
+      "Correct. Precision is the fraction of predicted positives that are true positives. Recall is TP/(TP+FN), specificity is TN/(TN+FP), and accuracy is the fraction of all predictions that are correct.",
+      "This is recall."
+    ],
+    "hint": "Precision asks: of the cases predicted positive, how many were actually positive?",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-017",
+    "number": 105,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "supplement",
+    "question": "A dataset is highly imbalanced, with 99% negative cases. Why can accuracy be misleading?",
+    "options": [
+      "Accuracy gives extra weight to the minority class",
+      "Accuracy is always lower than precision",
+      "A model predicting the majority class every time can score 99% accuracy while detecting no positives",
+      "Accuracy is undefined when class frequencies differ"
+    ],
+    "correctAnswer": 2,
+    "explanation": "A majority-class-only classifier would achieve 99% accuracy in this example but have zero recall for the minority positive class. Use a metric set aligned to the costs and class distribution.",
+    "optionExplanations": [
+      "Accuracy does not intrinsically up-weight the minority class.",
+      "There is no universal ordering between accuracy and precision.",
+      "Correct. A majority-class-only classifier would achieve 99% accuracy in this example but have zero recall for the minority positive class. Use a metric set aligned to the costs and class distribution.",
+      "Accuracy remains defined with class imbalance."
+    ],
+    "hint": "Consider the trivial strategy of always predicting the majority class.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-018",
+    "number": 106,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "medium",
+    "type": "supplement",
+    "question": "What does cross-validation primarily help estimate during model development?",
+    "options": [
+      "The number of hidden layers required in every network",
+      "Whether the labels are legally valid",
+      "How model performance varies across different training/validation splits",
+      "The exact global optimum of the loss function"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cross-validation repeatedly trains and validates across folds, providing a more robust estimate of performance and model-selection stability than a single split in many settings.",
+    "optionExplanations": [
+      "It can support model selection but does not prescribe a universal architecture.",
+      "Label legality and governance need separate review.",
+      "Correct. Cross-validation repeatedly trains and validates across folds, providing a more robust estimate of performance and model-selection stability than a single split in many settings.",
+      "Cross-validation does not solve global optimisation."
+    ],
+    "hint": "Think about repeated partitions and validation scores.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-019",
+    "number": 107,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "hard",
+    "type": "supplement",
+    "question": "What is the vanishing-gradient problem in a deep network?",
+    "options": [
+      "The model has no loss function",
+      "Every activation becomes exactly zero for all inputs",
+      "Gradients become extremely small as they propagate backward, making early layers learn very slowly",
+      "Gradients become infinite after every update"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Repeated multiplication by derivatives with magnitude below one can shrink gradients as they propagate backward through many layers, reducing learning signals for earlier layers.",
+    "optionExplanations": [
+      "A loss function is still present.",
+      "Vanishing gradients do not require every activation to be exactly zero.",
+      "Correct. Repeated multiplication by derivatives with magnitude below one can shrink gradients as they propagate backward through many layers, reducing learning signals for earlier layers.",
+      "Exploding gradients are associated with very large, not small, values."
+    ],
+    "hint": "Consider repeated products of small local derivatives in the chain rule.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-020",
+    "number": 120,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "medium",
+    "type": "supplement",
+    "question": "A value is 80, the sample mean is 50 and the standard deviation is 10. What is its z-score?",
+    "options": [
+      "8",
+      "3",
+      "30",
+      "0.3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "z=(x−μ)/σ=(80−50)/10=3. The value is three standard deviations above the mean.",
+    "optionExplanations": [
+      "8 is the observation divided by the standard deviation without centring.",
+      "Correct. z=(x−μ)/σ=(80−50)/10=3. The value is three standard deviations above the mean.",
+      "30 is the difference from the mean before standardising.",
+      "0.3 divides by 100 rather than 10."
+    ],
+    "hint": "Subtract the mean from the observation and divide by the standard deviation.",
+    "referenceId": "big-data-ref"
+  }
+]
