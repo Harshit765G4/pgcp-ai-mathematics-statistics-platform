@@ -1148,5 +1148,2605 @@
     ],
     "hint": "Separate what must already hold from what the action makes true.",
     "referenceId": "reasoning-planning-ref"
+  },
+  {
+    "id": "PRACTICAL-047",
+    "number": 417,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For A=[[4,0],[0,2]], what is det(A)?",
+    "options": [
+      "9",
+      "7",
+      "0",
+      "8"
+    ],
+    "correctAnswer": 3,
+    "explanation": "det(A)=4×2=8. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This is an arithmetic off-by-one; multiply the diagonal entries exactly.",
+      "This is an arithmetic off-by-one; the determinant is the product, not one less.",
+      "A diagonal matrix with nonzero diagonal entries is invertible and has nonzero determinant.",
+      "Correct. det(A)=4×2=8."
+    ],
+    "hint": "For a diagonal matrix, multiply the diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-048",
+    "number": 418,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "If f(x)=4x²−4x, what is f′(x)?",
+    "options": [
+      "4x²−4",
+      "12x²−4",
+      "4x−4",
+      "8x−4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "f(x)=4x³−4x, so f′(x)=12x²−4. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This repeats the original function rather than differentiating it.",
+      "Correct. f(x)=4x³−4x, so f′(x)=12x²−4.",
+      "The power rule multiplies the coefficient by the exponent and reduces the exponent by one.",
+      "The coefficient is x and must also be retained: derivative of x·x² is 3x·x²."
+    ],
+    "hint": "Rewrite the first term as a coefficient times x cubed.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-049",
+    "number": 419,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For f(x,y)=x²+2xy+2y², what is ∂f/∂x?",
+    "options": [
+      "2x+2y",
+      "2x+2x",
+      "2x+4y",
+      "2x+2xy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+    "optionExplanations": [
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+      "When differentiating with respect to x, the derivative of xy is y.",
+      "This mixes derivatives with respect to x and y.",
+      "The derivative of xy with respect to x is y, not xy."
+    ],
+    "hint": "Hold y fixed while differentiating with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-050",
+    "number": 420,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "A gradient-descent step uses x_new=x−ηg. If x=2, η=0.2 and g=6, what is x_new?",
+    "options": [
+      "1.80",
+      "-4.00",
+      "0.80",
+      "3.20"
+    ],
+    "correctAnswer": 2,
+    "explanation": "x_new=2−0.2×6=0.80. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The gradient magnitude must also multiply the learning rate.",
+      "This omits the learning-rate factor.",
+      "Correct. x_new=2−0.2×6=0.80.",
+      "This moves in the positive-gradient direction rather than descending."
+    ],
+    "hint": "Substitute the learning rate and gradient into the update equation.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-051",
+    "number": 421,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Let u=(2,3) and v=(3,3). What is u·v?",
+    "options": [
+      "15",
+      "16",
+      "-3",
+      "30"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The dot product is 2×3+3×3=15.",
+    "optionExplanations": [
+      "Correct. The dot product is 2×3+3×3=15.",
+      "The component products must be added exactly; this is an arithmetic off-by-one.",
+      "This subtracts the second component product instead of adding it.",
+      "This includes cross-products that are not part of the dot product."
+    ],
+    "hint": "Multiply corresponding components and add.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-052",
+    "number": 422,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "What is the Euclidean norm of v=(6,4)?",
+    "options": [
+      "3.162",
+      "7.211",
+      "10.000",
+      "24.000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "||v||₂=√(6²+4²)=√52≈7.211. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The squares must be summed before taking the square root.",
+      "Correct. ||v||₂=√(6²+4²)=√52≈7.211.",
+      "Adding components is not the Euclidean norm.",
+      "The product of components is not a magnitude."
+    ],
+    "hint": "Square each component, add, then take the square root.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-053",
+    "number": 423,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For u=(2,0) and v=(0,2), what is their cosine similarity?",
+    "options": [
+      "-1",
+      "4",
+      "0",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Their dot product is zero, so the cosine similarity is zero.",
+    "optionExplanations": [
+      "They are not opposite directions; their dot product is zero.",
+      "The raw dot product is zero and cosine similarity is normalised by both norms.",
+      "Correct. Their dot product is zero, so the cosine similarity is zero.",
+      "The vectors point along different coordinate axes, not the same direction."
+    ],
+    "hint": "Compute the dot product first.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-054",
+    "number": 424,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept-application",
+    "question": "If v=(5,-4) and w=3v, what is ||w||₂ in terms of ||v||₂?",
+    "options": [
+      "||v||₂/3",
+      "9||v||₂",
+      "-3||v||₂",
+      "3||v||₂"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For any scalar c, ||cv||=|c| ||v||.",
+    "optionExplanations": [
+      "Multiplication by 3 increases magnitude.",
+      "The norm scales by |3|, not by its square.",
+      "A norm is non-negative.",
+      "Correct. For any scalar c, ||cv||=|c| ||v||."
+    ],
+    "hint": "Use absolute homogeneity of a norm.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-055",
+    "number": 425,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Are the vectors (1,4) and (2,8) linearly independent in R²?",
+    "options": [
+      "Yes; their coordinates are all nonzero.",
+      "The question cannot be answered without a norm.",
+      "No; the second vector is twice the first.",
+      "Yes; two vectors in R² are always independent."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+    "optionExplanations": [
+      "Nonzero coordinates do not establish independence.",
+      "Linear dependence does not require a norm.",
+      "Correct. A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+      "Two vectors may be scalar multiples and therefore dependent."
+    ],
+    "hint": "Check whether one vector is a scalar multiple of the other.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-056",
+    "number": 426,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Matrix A has 3 rows and 4 columns. What is the shape of Aᵀ?",
+    "options": [
+      "4×3",
+      "1×1",
+      "99×1",
+      "1×99"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Transpose interchanges rows and columns, so the shape becomes 4×3.",
+    "optionExplanations": [
+      "Correct. Transpose interchanges rows and columns, so the shape becomes 4×3.",
+      "Transpose does not collapse a rectangular matrix to one element.",
+      "Transpose does not flatten the matrix into one column.",
+      "Transpose does not flatten the matrix into one row."
+    ],
+    "hint": "Swap the two dimensions.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-057",
+    "number": 427,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-057: For A=[[2,0],[0,3]], what is det(A)?",
+    "options": [
+      "0",
+      "6",
+      "7",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "det(A)=2×3=6. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "A diagonal matrix with nonzero diagonal entries is invertible and has nonzero determinant.",
+      "Correct. det(A)=2×3=6.",
+      "This is an arithmetic off-by-one; multiply the diagonal entries exactly.",
+      "This is an arithmetic off-by-one; the determinant is the product, not one less."
+    ],
+    "hint": "For a diagonal matrix, multiply the diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-058",
+    "number": 428,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "If f(x)=2x²−2x, what is f′(x)?",
+    "options": [
+      "2x−2",
+      "4x−2",
+      "2x²−2",
+      "6x²−2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "f(x)=2x³−2x, so f′(x)=6x²−2. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The power rule multiplies the coefficient by the exponent and reduces the exponent by one.",
+      "The coefficient is x and must also be retained: derivative of x·x² is 3x·x².",
+      "This repeats the original function rather than differentiating it.",
+      "Correct. f(x)=2x³−2x, so f′(x)=6x²−2."
+    ],
+    "hint": "Rewrite the first term as a coefficient times x cubed.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-059",
+    "number": 429,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For f(x,y)=x²+4xy+2y², what is ∂f/∂x?",
+    "options": [
+      "4x+4y",
+      "2x+4xy",
+      "2x+4y",
+      "2x+4x"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x and ∂(4xy)/∂x=4y.",
+    "optionExplanations": [
+      "This mixes derivatives with respect to x and y.",
+      "The derivative of xy with respect to x is y, not xy.",
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x and ∂(4xy)/∂x=4y.",
+      "When differentiating with respect to x, the derivative of xy is y."
+    ],
+    "hint": "Hold y fixed while differentiating with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-060",
+    "number": 430,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "A gradient-descent step uses x_new=x−ηg. If x=3, η=0.4 and g=6, what is x_new?",
+    "options": [
+      "0.60",
+      "5.40",
+      "2.60",
+      "-3.00"
+    ],
+    "correctAnswer": 0,
+    "explanation": "x_new=3−0.4×6=0.60. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "Correct. x_new=3−0.4×6=0.60.",
+      "This moves in the positive-gradient direction rather than descending.",
+      "The gradient magnitude must also multiply the learning rate.",
+      "This omits the learning-rate factor."
+    ],
+    "hint": "Substitute the learning rate and gradient into the update equation.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-061",
+    "number": 431,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Let u=(2,1) and v=(1,3). What is u·v?",
+    "options": [
+      "-1",
+      "12",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The dot product is 2×1+1×3=5. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This subtracts the second component product instead of adding it.",
+      "This includes cross-products that are not part of the dot product.",
+      "Correct. The dot product is 2×1+1×3=5.",
+      "The component products must be added exactly; this is an arithmetic off-by-one."
+    ],
+    "hint": "Multiply corresponding components and add.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-062",
+    "number": 432,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "What is the Euclidean norm of v=(4,5)?",
+    "options": [
+      "9.000",
+      "20.000",
+      "3.000",
+      "6.403"
+    ],
+    "correctAnswer": 3,
+    "explanation": "||v||₂=√(4²+5²)=√41≈6.403. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "Adding components is not the Euclidean norm.",
+      "The product of components is not a magnitude.",
+      "The squares must be summed before taking the square root.",
+      "Correct. ||v||₂=√(4²+5²)=√41≈6.403."
+    ],
+    "hint": "Square each component, add, then take the square root.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-063",
+    "number": 433,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For u=(4,0) and v=(0,3), what is their cosine similarity?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "12"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Their dot product is zero, so the cosine similarity is zero.",
+    "optionExplanations": [
+      "Correct. Their dot product is zero, so the cosine similarity is zero.",
+      "The vectors point along different coordinate axes, not the same direction.",
+      "They are not opposite directions; their dot product is zero.",
+      "The raw dot product is zero and cosine similarity is normalised by both norms."
+    ],
+    "hint": "Compute the dot product first.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-064",
+    "number": 434,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept-application",
+    "question": "If v=(5,-2) and w=3v, what is ||w||₂ in terms of ||v||₂?",
+    "options": [
+      "-3||v||₂",
+      "3||v||₂",
+      "||v||₂/3",
+      "9||v||₂"
+    ],
+    "correctAnswer": 1,
+    "explanation": "For any scalar c, ||cv||=|c| ||v||.",
+    "optionExplanations": [
+      "A norm is non-negative.",
+      "Correct. For any scalar c, ||cv||=|c| ||v||.",
+      "Multiplication by 3 increases magnitude.",
+      "The norm scales by |3|, not by its square."
+    ],
+    "hint": "Use absolute homogeneity of a norm.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-065",
+    "number": 435,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Are the vectors (2,2) and (4,4) linearly independent in R²?",
+    "options": [
+      "No; the second vector is twice the first.",
+      "Yes; two vectors in R² are always independent.",
+      "Yes; their coordinates are all nonzero.",
+      "The question cannot be answered without a norm."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+    "optionExplanations": [
+      "Correct. A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+      "Two vectors may be scalar multiples and therefore dependent.",
+      "Nonzero coordinates do not establish independence.",
+      "Linear dependence does not require a norm."
+    ],
+    "hint": "Check whether one vector is a scalar multiple of the other.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-066",
+    "number": 436,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Matrix A has 4 rows and 4 columns. What is the shape of Aᵀ?",
+    "options": [
+      "99×1",
+      "1×99",
+      "4×4",
+      "1×1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Transpose interchanges rows and columns, so the shape becomes 4×4.",
+    "optionExplanations": [
+      "Transpose does not flatten the matrix into one column.",
+      "Transpose does not flatten the matrix into one row.",
+      "Correct. Transpose interchanges rows and columns, so the shape becomes 4×4.",
+      "Transpose does not collapse a rectangular matrix to one element."
+    ],
+    "hint": "Swap the two dimensions.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-067",
+    "number": 437,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For A=[[4,0],[0,1]], what is det(A)?",
+    "options": [
+      "5",
+      "3",
+      "0",
+      "4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "det(A)=4×1=4. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This is an arithmetic off-by-one; multiply the diagonal entries exactly.",
+      "This is an arithmetic off-by-one; the determinant is the product, not one less.",
+      "A diagonal matrix with nonzero diagonal entries is invertible and has nonzero determinant.",
+      "Correct. det(A)=4×1=4."
+    ],
+    "hint": "For a diagonal matrix, multiply the diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-068",
+    "number": 438,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "If f(x)=4x²−3x, what is f′(x)?",
+    "options": [
+      "4x²−3",
+      "12x²−3",
+      "4x−3",
+      "8x−3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "f(x)=4x³−3x, so f′(x)=12x²−3. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This repeats the original function rather than differentiating it.",
+      "Correct. f(x)=4x³−3x, so f′(x)=12x²−3.",
+      "The power rule multiplies the coefficient by the exponent and reduces the exponent by one.",
+      "The coefficient is x and must also be retained: derivative of x·x² is 3x·x²."
+    ],
+    "hint": "Rewrite the first term as a coefficient times x cubed.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-069",
+    "number": 439,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-069: For f(x,y)=x²+2xy+2y², what is ∂f/∂x?",
+    "options": [
+      "2x+2y",
+      "2x+2x",
+      "2x+4y",
+      "2x+2xy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+    "optionExplanations": [
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+      "When differentiating with respect to x, the derivative of xy is y.",
+      "This mixes derivatives with respect to x and y.",
+      "The derivative of xy with respect to x is y, not xy."
+    ],
+    "hint": "Hold y fixed while differentiating with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-070",
+    "number": 440,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "A gradient-descent step uses x_new=x−ηg. If x=1, η=0.2 and g=6, what is x_new?",
+    "options": [
+      "0.80",
+      "-5.00",
+      "-0.20",
+      "2.20"
+    ],
+    "correctAnswer": 2,
+    "explanation": "x_new=1−0.2×6=-0.20. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The gradient magnitude must also multiply the learning rate.",
+      "This omits the learning-rate factor.",
+      "Correct. x_new=1−0.2×6=-0.20.",
+      "This moves in the positive-gradient direction rather than descending."
+    ],
+    "hint": "Substitute the learning rate and gradient into the update equation.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-071",
+    "number": 441,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Let u=(2,2) and v=(3,3). What is u·v?",
+    "options": [
+      "12",
+      "13",
+      "0",
+      "24"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The dot product is 2×3+2×3=12.",
+    "optionExplanations": [
+      "Correct. The dot product is 2×3+2×3=12.",
+      "The component products must be added exactly; this is an arithmetic off-by-one.",
+      "This subtracts the second component product instead of adding it.",
+      "This includes cross-products that are not part of the dot product."
+    ],
+    "hint": "Multiply corresponding components and add.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-072",
+    "number": 442,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "What is the Euclidean norm of v=(6,6)?",
+    "options": [
+      "3.464",
+      "8.485",
+      "12.000",
+      "36.000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "||v||₂=√(6²+6²)=√72≈8.485. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The squares must be summed before taking the square root.",
+      "Correct. ||v||₂=√(6²+6²)=√72≈8.485.",
+      "Adding components is not the Euclidean norm.",
+      "The product of components is not a magnitude."
+    ],
+    "hint": "Square each component, add, then take the square root.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-073",
+    "number": 443,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For u=(2,0) and v=(0,1), what is their cosine similarity?",
+    "options": [
+      "-1",
+      "2",
+      "0",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Their dot product is zero, so the cosine similarity is zero.",
+    "optionExplanations": [
+      "They are not opposite directions; their dot product is zero.",
+      "The raw dot product is zero and cosine similarity is normalised by both norms.",
+      "Correct. Their dot product is zero, so the cosine similarity is zero.",
+      "The vectors point along different coordinate axes, not the same direction."
+    ],
+    "hint": "Compute the dot product first.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-074",
+    "number": 444,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept-application",
+    "question": "If v=(5,-3) and w=3v, what is ||w||₂ in terms of ||v||₂?",
+    "options": [
+      "||v||₂/3",
+      "9||v||₂",
+      "-3||v||₂",
+      "3||v||₂"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For any scalar c, ||cv||=|c| ||v||.",
+    "optionExplanations": [
+      "Multiplication by 3 increases magnitude.",
+      "The norm scales by |3|, not by its square.",
+      "A norm is non-negative.",
+      "Correct. For any scalar c, ||cv||=|c| ||v||."
+    ],
+    "hint": "Use absolute homogeneity of a norm.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-075",
+    "number": 445,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Are the vectors (3,4) and (6,8) linearly independent in R²?",
+    "options": [
+      "Yes; their coordinates are all nonzero.",
+      "The question cannot be answered without a norm.",
+      "No; the second vector is twice the first.",
+      "Yes; two vectors in R² are always independent."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+    "optionExplanations": [
+      "Nonzero coordinates do not establish independence.",
+      "Linear dependence does not require a norm.",
+      "Correct. A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+      "Two vectors may be scalar multiples and therefore dependent."
+    ],
+    "hint": "Check whether one vector is a scalar multiple of the other.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-076",
+    "number": 446,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Matrix A has 2 rows and 4 columns. What is the shape of Aᵀ?",
+    "options": [
+      "4×2",
+      "1×1",
+      "99×1",
+      "1×99"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Transpose interchanges rows and columns, so the shape becomes 4×2.",
+    "optionExplanations": [
+      "Correct. Transpose interchanges rows and columns, so the shape becomes 4×2.",
+      "Transpose does not collapse a rectangular matrix to one element.",
+      "Transpose does not flatten the matrix into one column.",
+      "Transpose does not flatten the matrix into one row."
+    ],
+    "hint": "Swap the two dimensions.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-077",
+    "number": 447,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For A=[[2,0],[0,2]], what is det(A)?",
+    "options": [
+      "0",
+      "4",
+      "5",
+      "3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "det(A)=2×2=4. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "A diagonal matrix with nonzero diagonal entries is invertible and has nonzero determinant.",
+      "Correct. det(A)=2×2=4.",
+      "This is an arithmetic off-by-one; multiply the diagonal entries exactly.",
+      "This is an arithmetic off-by-one; the determinant is the product, not one less."
+    ],
+    "hint": "For a diagonal matrix, multiply the diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-078",
+    "number": 448,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "If f(x)=2x²−4x, what is f′(x)?",
+    "options": [
+      "2x−4",
+      "4x−4",
+      "2x²−4",
+      "6x²−4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "f(x)=2x³−4x, so f′(x)=6x²−4. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The power rule multiplies the coefficient by the exponent and reduces the exponent by one.",
+      "The coefficient is x and must also be retained: derivative of x·x² is 3x·x².",
+      "This repeats the original function rather than differentiating it.",
+      "Correct. f(x)=2x³−4x, so f′(x)=6x²−4."
+    ],
+    "hint": "Rewrite the first term as a coefficient times x cubed.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-079",
+    "number": 449,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-079: For f(x,y)=x²+4xy+2y², what is ∂f/∂x?",
+    "options": [
+      "4x+4y",
+      "2x+4xy",
+      "2x+4y",
+      "2x+4x"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x and ∂(4xy)/∂x=4y.",
+    "optionExplanations": [
+      "This mixes derivatives with respect to x and y.",
+      "The derivative of xy with respect to x is y, not xy.",
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x and ∂(4xy)/∂x=4y.",
+      "When differentiating with respect to x, the derivative of xy is y."
+    ],
+    "hint": "Hold y fixed while differentiating with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-080",
+    "number": 450,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "A gradient-descent step uses x_new=x−ηg. If x=2, η=0.4 and g=6, what is x_new?",
+    "options": [
+      "-0.40",
+      "4.40",
+      "1.60",
+      "-4.00"
+    ],
+    "correctAnswer": 0,
+    "explanation": "x_new=2−0.4×6=-0.40. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "Correct. x_new=2−0.4×6=-0.40.",
+      "This moves in the positive-gradient direction rather than descending.",
+      "The gradient magnitude must also multiply the learning rate.",
+      "This omits the learning-rate factor."
+    ],
+    "hint": "Substitute the learning rate and gradient into the update equation.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-081",
+    "number": 451,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Let u=(2,3) and v=(1,3). What is u·v?",
+    "options": [
+      "-7",
+      "20",
+      "11",
+      "12"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The dot product is 2×1+3×3=11.",
+    "optionExplanations": [
+      "This subtracts the second component product instead of adding it.",
+      "This includes cross-products that are not part of the dot product.",
+      "Correct. The dot product is 2×1+3×3=11.",
+      "The component products must be added exactly; this is an arithmetic off-by-one."
+    ],
+    "hint": "Multiply corresponding components and add.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-082",
+    "number": 452,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "What is the Euclidean norm of v=(4,4)?",
+    "options": [
+      "8.000",
+      "16.000",
+      "2.828",
+      "5.657"
+    ],
+    "correctAnswer": 3,
+    "explanation": "||v||₂=√(4²+4²)=√32≈5.657. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "Adding components is not the Euclidean norm.",
+      "The product of components is not a magnitude.",
+      "The squares must be summed before taking the square root.",
+      "Correct. ||v||₂=√(4²+4²)=√32≈5.657."
+    ],
+    "hint": "Square each component, add, then take the square root.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-083",
+    "number": 453,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For u=(4,0) and v=(0,2), what is their cosine similarity?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "8"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Their dot product is zero, so the cosine similarity is zero.",
+    "optionExplanations": [
+      "Correct. Their dot product is zero, so the cosine similarity is zero.",
+      "The vectors point along different coordinate axes, not the same direction.",
+      "They are not opposite directions; their dot product is zero.",
+      "The raw dot product is zero and cosine similarity is normalised by both norms."
+    ],
+    "hint": "Compute the dot product first.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-084",
+    "number": 454,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept-application",
+    "question": "Applied variant PRACTICAL-084: If v=(5,-4) and w=3v, what is ||w||₂ in terms of ||v||₂?",
+    "options": [
+      "-3||v||₂",
+      "3||v||₂",
+      "||v||₂/3",
+      "9||v||₂"
+    ],
+    "correctAnswer": 1,
+    "explanation": "For any scalar c, ||cv||=|c| ||v||.",
+    "optionExplanations": [
+      "A norm is non-negative.",
+      "Correct. For any scalar c, ||cv||=|c| ||v||.",
+      "Multiplication by 3 increases magnitude.",
+      "The norm scales by |3|, not by its square."
+    ],
+    "hint": "Use absolute homogeneity of a norm.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-085",
+    "number": 455,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Are the vectors (1,2) and (2,4) linearly independent in R²?",
+    "options": [
+      "No; the second vector is twice the first.",
+      "Yes; two vectors in R² are always independent.",
+      "Yes; their coordinates are all nonzero.",
+      "The question cannot be answered without a norm."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+    "optionExplanations": [
+      "Correct. A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+      "Two vectors may be scalar multiples and therefore dependent.",
+      "Nonzero coordinates do not establish independence.",
+      "Linear dependence does not require a norm."
+    ],
+    "hint": "Check whether one vector is a scalar multiple of the other.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-086",
+    "number": 456,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-086: Matrix A has 3 rows and 4 columns. What is the shape of Aᵀ?",
+    "options": [
+      "99×1",
+      "1×99",
+      "4×3",
+      "1×1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Transpose interchanges rows and columns, so the shape becomes 4×3.",
+    "optionExplanations": [
+      "Transpose does not flatten the matrix into one column.",
+      "Transpose does not flatten the matrix into one row.",
+      "Correct. Transpose interchanges rows and columns, so the shape becomes 4×3.",
+      "Transpose does not collapse a rectangular matrix to one element."
+    ],
+    "hint": "Swap the two dimensions.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-087",
+    "number": 457,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For A=[[4,0],[0,3]], what is det(A)?",
+    "options": [
+      "13",
+      "11",
+      "0",
+      "12"
+    ],
+    "correctAnswer": 3,
+    "explanation": "det(A)=4×3=12. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This is an arithmetic off-by-one; multiply the diagonal entries exactly.",
+      "This is an arithmetic off-by-one; the determinant is the product, not one less.",
+      "A diagonal matrix with nonzero diagonal entries is invertible and has nonzero determinant.",
+      "Correct. det(A)=4×3=12."
+    ],
+    "hint": "For a diagonal matrix, multiply the diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-088",
+    "number": 458,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "If f(x)=4x²−2x, what is f′(x)?",
+    "options": [
+      "4x²−2",
+      "12x²−2",
+      "4x−2",
+      "8x−2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "f(x)=4x³−2x, so f′(x)=12x²−2. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This repeats the original function rather than differentiating it.",
+      "Correct. f(x)=4x³−2x, so f′(x)=12x²−2.",
+      "The power rule multiplies the coefficient by the exponent and reduces the exponent by one.",
+      "The coefficient is x and must also be retained: derivative of x·x² is 3x·x²."
+    ],
+    "hint": "Rewrite the first term as a coefficient times x cubed.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-089",
+    "number": 459,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-089: For f(x,y)=x²+2xy+2y², what is ∂f/∂x?",
+    "options": [
+      "2x+2y",
+      "2x+2x",
+      "2x+4y",
+      "2x+2xy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+    "optionExplanations": [
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+      "When differentiating with respect to x, the derivative of xy is y.",
+      "This mixes derivatives with respect to x and y.",
+      "The derivative of xy with respect to x is y, not xy."
+    ],
+    "hint": "Hold y fixed while differentiating with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-090",
+    "number": 460,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "A gradient-descent step uses x_new=x−ηg. If x=3, η=0.2 and g=6, what is x_new?",
+    "options": [
+      "2.80",
+      "-3.00",
+      "1.80",
+      "4.20"
+    ],
+    "correctAnswer": 2,
+    "explanation": "x_new=3−0.2×6=1.80. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The gradient magnitude must also multiply the learning rate.",
+      "This omits the learning-rate factor.",
+      "Correct. x_new=3−0.2×6=1.80.",
+      "This moves in the positive-gradient direction rather than descending."
+    ],
+    "hint": "Substitute the learning rate and gradient into the update equation.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-091",
+    "number": 461,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Let u=(2,1) and v=(3,3). What is u·v?",
+    "options": [
+      "9",
+      "10",
+      "3",
+      "18"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The dot product is 2×3+1×3=9. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "Correct. The dot product is 2×3+1×3=9.",
+      "The component products must be added exactly; this is an arithmetic off-by-one.",
+      "This subtracts the second component product instead of adding it.",
+      "This includes cross-products that are not part of the dot product."
+    ],
+    "hint": "Multiply corresponding components and add.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-092",
+    "number": 462,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "What is the Euclidean norm of v=(6,5)?",
+    "options": [
+      "3.317",
+      "7.810",
+      "11.000",
+      "30.000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "||v||₂=√(6²+5²)=√61≈7.810. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The squares must be summed before taking the square root.",
+      "Correct. ||v||₂=√(6²+5²)=√61≈7.810.",
+      "Adding components is not the Euclidean norm.",
+      "The product of components is not a magnitude."
+    ],
+    "hint": "Square each component, add, then take the square root.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-093",
+    "number": 463,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For u=(2,0) and v=(0,3), what is their cosine similarity?",
+    "options": [
+      "-1",
+      "6",
+      "0",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Their dot product is zero, so the cosine similarity is zero.",
+    "optionExplanations": [
+      "They are not opposite directions; their dot product is zero.",
+      "The raw dot product is zero and cosine similarity is normalised by both norms.",
+      "Correct. Their dot product is zero, so the cosine similarity is zero.",
+      "The vectors point along different coordinate axes, not the same direction."
+    ],
+    "hint": "Compute the dot product first.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-094",
+    "number": 464,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept-application",
+    "question": "Applied variant PRACTICAL-094: If v=(5,-2) and w=3v, what is ||w||₂ in terms of ||v||₂?",
+    "options": [
+      "||v||₂/3",
+      "9||v||₂",
+      "-3||v||₂",
+      "3||v||₂"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For any scalar c, ||cv||=|c| ||v||.",
+    "optionExplanations": [
+      "Multiplication by 3 increases magnitude.",
+      "The norm scales by |3|, not by its square.",
+      "A norm is non-negative.",
+      "Correct. For any scalar c, ||cv||=|c| ||v||."
+    ],
+    "hint": "Use absolute homogeneity of a norm.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-095",
+    "number": 465,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Are the vectors (2,4) and (4,8) linearly independent in R²?",
+    "options": [
+      "Yes; their coordinates are all nonzero.",
+      "The question cannot be answered without a norm.",
+      "No; the second vector is twice the first.",
+      "Yes; two vectors in R² are always independent."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+    "optionExplanations": [
+      "Nonzero coordinates do not establish independence.",
+      "Linear dependence does not require a norm.",
+      "Correct. A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+      "Two vectors may be scalar multiples and therefore dependent."
+    ],
+    "hint": "Check whether one vector is a scalar multiple of the other.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-096",
+    "number": 466,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-096: Matrix A has 4 rows and 4 columns. What is the shape of Aᵀ?",
+    "options": [
+      "4×4",
+      "1×1",
+      "99×1",
+      "1×99"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Transpose interchanges rows and columns, so the shape becomes 4×4.",
+    "optionExplanations": [
+      "Correct. Transpose interchanges rows and columns, so the shape becomes 4×4.",
+      "Transpose does not collapse a rectangular matrix to one element.",
+      "Transpose does not flatten the matrix into one column.",
+      "Transpose does not flatten the matrix into one row."
+    ],
+    "hint": "Swap the two dimensions.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-097",
+    "number": 467,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For A=[[2,0],[0,1]], what is det(A)?",
+    "options": [
+      "0",
+      "2",
+      "3",
+      "1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "det(A)=2×1=2. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "A diagonal matrix with nonzero diagonal entries is invertible and has nonzero determinant.",
+      "Correct. det(A)=2×1=2.",
+      "This is an arithmetic off-by-one; multiply the diagonal entries exactly.",
+      "This is an arithmetic off-by-one; the determinant is the product, not one less."
+    ],
+    "hint": "For a diagonal matrix, multiply the diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-098",
+    "number": 468,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "If f(x)=2x²−3x, what is f′(x)?",
+    "options": [
+      "2x−3",
+      "4x−3",
+      "2x²−3",
+      "6x²−3"
+    ],
+    "correctAnswer": 3,
+    "explanation": "f(x)=2x³−3x, so f′(x)=6x²−3. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The power rule multiplies the coefficient by the exponent and reduces the exponent by one.",
+      "The coefficient is x and must also be retained: derivative of x·x² is 3x·x².",
+      "This repeats the original function rather than differentiating it.",
+      "Correct. f(x)=2x³−3x, so f′(x)=6x²−3."
+    ],
+    "hint": "Rewrite the first term as a coefficient times x cubed.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-099",
+    "number": 469,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-099: For f(x,y)=x²+4xy+2y², what is ∂f/∂x?",
+    "options": [
+      "4x+4y",
+      "2x+4xy",
+      "2x+4y",
+      "2x+4x"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x and ∂(4xy)/∂x=4y.",
+    "optionExplanations": [
+      "This mixes derivatives with respect to x and y.",
+      "The derivative of xy with respect to x is y, not xy.",
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x and ∂(4xy)/∂x=4y.",
+      "When differentiating with respect to x, the derivative of xy is y."
+    ],
+    "hint": "Hold y fixed while differentiating with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-100",
+    "number": 470,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "A gradient-descent step uses x_new=x−ηg. If x=1, η=0.4 and g=6, what is x_new?",
+    "options": [
+      "-1.40",
+      "3.40",
+      "0.60",
+      "-5.00"
+    ],
+    "correctAnswer": 0,
+    "explanation": "x_new=1−0.4×6=-1.40. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "Correct. x_new=1−0.4×6=-1.40.",
+      "This moves in the positive-gradient direction rather than descending.",
+      "The gradient magnitude must also multiply the learning rate.",
+      "This omits the learning-rate factor."
+    ],
+    "hint": "Substitute the learning rate and gradient into the update equation.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-101",
+    "number": 471,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Let u=(2,2) and v=(1,3). What is u·v?",
+    "options": [
+      "-4",
+      "16",
+      "8",
+      "9"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The dot product is 2×1+2×3=8. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This subtracts the second component product instead of adding it.",
+      "This includes cross-products that are not part of the dot product.",
+      "Correct. The dot product is 2×1+2×3=8.",
+      "The component products must be added exactly; this is an arithmetic off-by-one."
+    ],
+    "hint": "Multiply corresponding components and add.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-102",
+    "number": 472,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "What is the Euclidean norm of v=(4,6)?",
+    "options": [
+      "10.000",
+      "24.000",
+      "3.162",
+      "7.211"
+    ],
+    "correctAnswer": 3,
+    "explanation": "||v||₂=√(4²+6²)=√52≈7.211. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "Adding components is not the Euclidean norm.",
+      "The product of components is not a magnitude.",
+      "The squares must be summed before taking the square root.",
+      "Correct. ||v||₂=√(4²+6²)=√52≈7.211."
+    ],
+    "hint": "Square each component, add, then take the square root.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-103",
+    "number": 473,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "For u=(4,0) and v=(0,1), what is their cosine similarity?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "4"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Their dot product is zero, so the cosine similarity is zero.",
+    "optionExplanations": [
+      "Correct. Their dot product is zero, so the cosine similarity is zero.",
+      "The vectors point along different coordinate axes, not the same direction.",
+      "They are not opposite directions; their dot product is zero.",
+      "The raw dot product is zero and cosine similarity is normalised by both norms."
+    ],
+    "hint": "Compute the dot product first.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-104",
+    "number": 474,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept-application",
+    "question": "Applied variant PRACTICAL-104: If v=(5,-3) and w=3v, what is ||w||₂ in terms of ||v||₂?",
+    "options": [
+      "-3||v||₂",
+      "3||v||₂",
+      "||v||₂/3",
+      "9||v||₂"
+    ],
+    "correctAnswer": 1,
+    "explanation": "For any scalar c, ||cv||=|c| ||v||.",
+    "optionExplanations": [
+      "A norm is non-negative.",
+      "Correct. For any scalar c, ||cv||=|c| ||v||.",
+      "Multiplication by 3 increases magnitude.",
+      "The norm scales by |3|, not by its square."
+    ],
+    "hint": "Use absolute homogeneity of a norm.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-105",
+    "number": 475,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Are the vectors (3,2) and (6,4) linearly independent in R²?",
+    "options": [
+      "No; the second vector is twice the first.",
+      "Yes; two vectors in R² are always independent.",
+      "Yes; their coordinates are all nonzero.",
+      "The question cannot be answered without a norm."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+    "optionExplanations": [
+      "Correct. A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+      "Two vectors may be scalar multiples and therefore dependent.",
+      "Nonzero coordinates do not establish independence.",
+      "Linear dependence does not require a norm."
+    ],
+    "hint": "Check whether one vector is a scalar multiple of the other.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-106",
+    "number": 476,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-106: Matrix A has 2 rows and 4 columns. What is the shape of Aᵀ?",
+    "options": [
+      "99×1",
+      "1×99",
+      "4×2",
+      "1×1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Transpose interchanges rows and columns, so the shape becomes 4×2.",
+    "optionExplanations": [
+      "Transpose does not flatten the matrix into one column.",
+      "Transpose does not flatten the matrix into one row.",
+      "Correct. Transpose interchanges rows and columns, so the shape becomes 4×2.",
+      "Transpose does not collapse a rectangular matrix to one element."
+    ],
+    "hint": "Swap the two dimensions.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-107",
+    "number": 477,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-107: For A=[[4,0],[0,2]], what is det(A)?",
+    "options": [
+      "9",
+      "7",
+      "0",
+      "8"
+    ],
+    "correctAnswer": 3,
+    "explanation": "det(A)=4×2=8. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This is an arithmetic off-by-one; multiply the diagonal entries exactly.",
+      "This is an arithmetic off-by-one; the determinant is the product, not one less.",
+      "A diagonal matrix with nonzero diagonal entries is invertible and has nonzero determinant.",
+      "Correct. det(A)=4×2=8."
+    ],
+    "hint": "For a diagonal matrix, multiply the diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-108",
+    "number": 478,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-108: If f(x)=4x²−4x, what is f′(x)?",
+    "options": [
+      "4x²−4",
+      "12x²−4",
+      "4x−4",
+      "8x−4"
+    ],
+    "correctAnswer": 1,
+    "explanation": "f(x)=4x³−4x, so f′(x)=12x²−4. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This repeats the original function rather than differentiating it.",
+      "Correct. f(x)=4x³−4x, so f′(x)=12x²−4.",
+      "The power rule multiplies the coefficient by the exponent and reduces the exponent by one.",
+      "The coefficient is x and must also be retained: derivative of x·x² is 3x·x²."
+    ],
+    "hint": "Rewrite the first term as a coefficient times x cubed.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-109",
+    "number": 479,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-109: For f(x,y)=x²+2xy+2y², what is ∂f/∂x?",
+    "options": [
+      "2x+2y",
+      "2x+2x",
+      "2x+4y",
+      "2x+2xy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+    "optionExplanations": [
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+      "When differentiating with respect to x, the derivative of xy is y.",
+      "This mixes derivatives with respect to x and y.",
+      "The derivative of xy with respect to x is y, not xy."
+    ],
+    "hint": "Hold y fixed while differentiating with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-110",
+    "number": 480,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-110: A gradient-descent step uses x_new=x−ηg. If x=2, η=0.2 and g=6, what is x_new?",
+    "options": [
+      "1.80",
+      "-4.00",
+      "0.80",
+      "3.20"
+    ],
+    "correctAnswer": 2,
+    "explanation": "x_new=2−0.2×6=0.80. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The gradient magnitude must also multiply the learning rate.",
+      "This omits the learning-rate factor.",
+      "Correct. x_new=2−0.2×6=0.80.",
+      "This moves in the positive-gradient direction rather than descending."
+    ],
+    "hint": "Substitute the learning rate and gradient into the update equation.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-111",
+    "number": 481,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-111: Let u=(2,3) and v=(3,3). What is u·v?",
+    "options": [
+      "15",
+      "16",
+      "-3",
+      "30"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The dot product is 2×3+3×3=15.",
+    "optionExplanations": [
+      "Correct. The dot product is 2×3+3×3=15.",
+      "The component products must be added exactly; this is an arithmetic off-by-one.",
+      "This subtracts the second component product instead of adding it.",
+      "This includes cross-products that are not part of the dot product."
+    ],
+    "hint": "Multiply corresponding components and add.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-112",
+    "number": 482,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-112: What is the Euclidean norm of v=(6,4)?",
+    "options": [
+      "3.162",
+      "7.211",
+      "10.000",
+      "24.000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "||v||₂=√(6²+4²)=√52≈7.211. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The squares must be summed before taking the square root.",
+      "Correct. ||v||₂=√(6²+4²)=√52≈7.211.",
+      "Adding components is not the Euclidean norm.",
+      "The product of components is not a magnitude."
+    ],
+    "hint": "Square each component, add, then take the square root.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-113",
+    "number": 483,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-113: For u=(2,0) and v=(0,2), what is their cosine similarity?",
+    "options": [
+      "-1",
+      "4",
+      "0",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Their dot product is zero, so the cosine similarity is zero.",
+    "optionExplanations": [
+      "They are not opposite directions; their dot product is zero.",
+      "The raw dot product is zero and cosine similarity is normalised by both norms.",
+      "Correct. Their dot product is zero, so the cosine similarity is zero.",
+      "The vectors point along different coordinate axes, not the same direction."
+    ],
+    "hint": "Compute the dot product first.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-114",
+    "number": 484,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept-application",
+    "question": "Applied variant PRACTICAL-114: If v=(5,-4) and w=3v, what is ||w||₂ in terms of ||v||₂?",
+    "options": [
+      "||v||₂/3",
+      "9||v||₂",
+      "-3||v||₂",
+      "3||v||₂"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For any scalar c, ||cv||=|c| ||v||.",
+    "optionExplanations": [
+      "Multiplication by 3 increases magnitude.",
+      "The norm scales by |3|, not by its square.",
+      "A norm is non-negative.",
+      "Correct. For any scalar c, ||cv||=|c| ||v||."
+    ],
+    "hint": "Use absolute homogeneity of a norm.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-115",
+    "number": 485,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-115: Are the vectors (1,4) and (2,8) linearly independent in R²?",
+    "options": [
+      "Yes; their coordinates are all nonzero.",
+      "The question cannot be answered without a norm.",
+      "No; the second vector is twice the first.",
+      "Yes; two vectors in R² are always independent."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+    "optionExplanations": [
+      "Nonzero coordinates do not establish independence.",
+      "Linear dependence does not require a norm.",
+      "Correct. A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+      "Two vectors may be scalar multiples and therefore dependent."
+    ],
+    "hint": "Check whether one vector is a scalar multiple of the other.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-116",
+    "number": 486,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-116: Matrix A has 3 rows and 4 columns. What is the shape of Aᵀ?",
+    "options": [
+      "4×3",
+      "1×1",
+      "99×1",
+      "1×99"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Transpose interchanges rows and columns, so the shape becomes 4×3.",
+    "optionExplanations": [
+      "Correct. Transpose interchanges rows and columns, so the shape becomes 4×3.",
+      "Transpose does not collapse a rectangular matrix to one element.",
+      "Transpose does not flatten the matrix into one column.",
+      "Transpose does not flatten the matrix into one row."
+    ],
+    "hint": "Swap the two dimensions.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-117",
+    "number": 487,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-117: For A=[[2,0],[0,3]], what is det(A)?",
+    "options": [
+      "0",
+      "6",
+      "7",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "explanation": "det(A)=2×3=6. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "A diagonal matrix with nonzero diagonal entries is invertible and has nonzero determinant.",
+      "Correct. det(A)=2×3=6.",
+      "This is an arithmetic off-by-one; multiply the diagonal entries exactly.",
+      "This is an arithmetic off-by-one; the determinant is the product, not one less."
+    ],
+    "hint": "For a diagonal matrix, multiply the diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-118",
+    "number": 488,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-118: If f(x)=2x²−2x, what is f′(x)?",
+    "options": [
+      "2x−2",
+      "4x−2",
+      "2x²−2",
+      "6x²−2"
+    ],
+    "correctAnswer": 3,
+    "explanation": "f(x)=2x³−2x, so f′(x)=6x²−2. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The power rule multiplies the coefficient by the exponent and reduces the exponent by one.",
+      "The coefficient is x and must also be retained: derivative of x·x² is 3x·x².",
+      "This repeats the original function rather than differentiating it.",
+      "Correct. f(x)=2x³−2x, so f′(x)=6x²−2."
+    ],
+    "hint": "Rewrite the first term as a coefficient times x cubed.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-119",
+    "number": 489,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-119: For f(x,y)=x²+4xy+2y², what is ∂f/∂x?",
+    "options": [
+      "4x+4y",
+      "2x+4xy",
+      "2x+4y",
+      "2x+4x"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x and ∂(4xy)/∂x=4y.",
+    "optionExplanations": [
+      "This mixes derivatives with respect to x and y.",
+      "The derivative of xy with respect to x is y, not xy.",
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x and ∂(4xy)/∂x=4y.",
+      "When differentiating with respect to x, the derivative of xy is y."
+    ],
+    "hint": "Hold y fixed while differentiating with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-120",
+    "number": 490,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-120: A gradient-descent step uses x_new=x−ηg. If x=3, η=0.4 and g=6, what is x_new?",
+    "options": [
+      "0.60",
+      "5.40",
+      "2.60",
+      "-3.00"
+    ],
+    "correctAnswer": 0,
+    "explanation": "x_new=3−0.4×6=0.60. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "Correct. x_new=3−0.4×6=0.60.",
+      "This moves in the positive-gradient direction rather than descending.",
+      "The gradient magnitude must also multiply the learning rate.",
+      "This omits the learning-rate factor."
+    ],
+    "hint": "Substitute the learning rate and gradient into the update equation.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-121",
+    "number": 491,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-121: Let u=(2,1) and v=(1,3). What is u·v?",
+    "options": [
+      "-1",
+      "12",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The dot product is 2×1+1×3=5. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This subtracts the second component product instead of adding it.",
+      "This includes cross-products that are not part of the dot product.",
+      "Correct. The dot product is 2×1+1×3=5.",
+      "The component products must be added exactly; this is an arithmetic off-by-one."
+    ],
+    "hint": "Multiply corresponding components and add.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-122",
+    "number": 492,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-122: What is the Euclidean norm of v=(4,5)?",
+    "options": [
+      "9.000",
+      "20.000",
+      "3.000",
+      "6.403"
+    ],
+    "correctAnswer": 3,
+    "explanation": "||v||₂=√(4²+5²)=√41≈6.403. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "Adding components is not the Euclidean norm.",
+      "The product of components is not a magnitude.",
+      "The squares must be summed before taking the square root.",
+      "Correct. ||v||₂=√(4²+5²)=√41≈6.403."
+    ],
+    "hint": "Square each component, add, then take the square root.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-123",
+    "number": 493,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-123: For u=(4,0) and v=(0,3), what is their cosine similarity?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "12"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Their dot product is zero, so the cosine similarity is zero.",
+    "optionExplanations": [
+      "Correct. Their dot product is zero, so the cosine similarity is zero.",
+      "The vectors point along different coordinate axes, not the same direction.",
+      "They are not opposite directions; their dot product is zero.",
+      "The raw dot product is zero and cosine similarity is normalised by both norms."
+    ],
+    "hint": "Compute the dot product first.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-124",
+    "number": 494,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept-application",
+    "question": "Applied variant PRACTICAL-124: If v=(5,-2) and w=3v, what is ||w||₂ in terms of ||v||₂?",
+    "options": [
+      "-3||v||₂",
+      "3||v||₂",
+      "||v||₂/3",
+      "9||v||₂"
+    ],
+    "correctAnswer": 1,
+    "explanation": "For any scalar c, ||cv||=|c| ||v||.",
+    "optionExplanations": [
+      "A norm is non-negative.",
+      "Correct. For any scalar c, ||cv||=|c| ||v||.",
+      "Multiplication by 3 increases magnitude.",
+      "The norm scales by |3|, not by its square."
+    ],
+    "hint": "Use absolute homogeneity of a norm.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-125",
+    "number": 495,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-125: Are the vectors (2,2) and (4,4) linearly independent in R²?",
+    "options": [
+      "No; the second vector is twice the first.",
+      "Yes; two vectors in R² are always independent.",
+      "Yes; their coordinates are all nonzero.",
+      "The question cannot be answered without a norm."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+    "optionExplanations": [
+      "Correct. A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+      "Two vectors may be scalar multiples and therefore dependent.",
+      "Nonzero coordinates do not establish independence.",
+      "Linear dependence does not require a norm."
+    ],
+    "hint": "Check whether one vector is a scalar multiple of the other.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-126",
+    "number": 496,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-126: Matrix A has 4 rows and 4 columns. What is the shape of Aᵀ?",
+    "options": [
+      "99×1",
+      "1×99",
+      "4×4",
+      "1×1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Transpose interchanges rows and columns, so the shape becomes 4×4.",
+    "optionExplanations": [
+      "Transpose does not flatten the matrix into one column.",
+      "Transpose does not flatten the matrix into one row.",
+      "Correct. Transpose interchanges rows and columns, so the shape becomes 4×4.",
+      "Transpose does not collapse a rectangular matrix to one element."
+    ],
+    "hint": "Swap the two dimensions.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-127",
+    "number": 497,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-127: For A=[[4,0],[0,1]], what is det(A)?",
+    "options": [
+      "5",
+      "3",
+      "0",
+      "4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "det(A)=4×1=4. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This is an arithmetic off-by-one; multiply the diagonal entries exactly.",
+      "This is an arithmetic off-by-one; the determinant is the product, not one less.",
+      "A diagonal matrix with nonzero diagonal entries is invertible and has nonzero determinant.",
+      "Correct. det(A)=4×1=4."
+    ],
+    "hint": "For a diagonal matrix, multiply the diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-128",
+    "number": 498,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-128: If f(x)=4x²−3x, what is f′(x)?",
+    "options": [
+      "4x²−3",
+      "12x²−3",
+      "4x−3",
+      "8x−3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "f(x)=4x³−3x, so f′(x)=12x²−3. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This repeats the original function rather than differentiating it.",
+      "Correct. f(x)=4x³−3x, so f′(x)=12x²−3.",
+      "The power rule multiplies the coefficient by the exponent and reduces the exponent by one.",
+      "The coefficient is x and must also be retained: derivative of x·x² is 3x·x²."
+    ],
+    "hint": "Rewrite the first term as a coefficient times x cubed.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-129",
+    "number": 499,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-129: For f(x,y)=x²+2xy+2y², what is ∂f/∂x?",
+    "options": [
+      "2x+2y",
+      "2x+2x",
+      "2x+4y",
+      "2x+2xy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+    "optionExplanations": [
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+      "When differentiating with respect to x, the derivative of xy is y.",
+      "This mixes derivatives with respect to x and y.",
+      "The derivative of xy with respect to x is y, not xy."
+    ],
+    "hint": "Hold y fixed while differentiating with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-130",
+    "number": 500,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-130: A gradient-descent step uses x_new=x−ηg. If x=1, η=0.2 and g=6, what is x_new?",
+    "options": [
+      "0.80",
+      "-5.00",
+      "-0.20",
+      "2.20"
+    ],
+    "correctAnswer": 2,
+    "explanation": "x_new=1−0.2×6=-0.20. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The gradient magnitude must also multiply the learning rate.",
+      "This omits the learning-rate factor.",
+      "Correct. x_new=1−0.2×6=-0.20.",
+      "This moves in the positive-gradient direction rather than descending."
+    ],
+    "hint": "Substitute the learning rate and gradient into the update equation.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-131",
+    "number": 501,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-131: Let u=(2,2) and v=(3,3). What is u·v?",
+    "options": [
+      "12",
+      "13",
+      "0",
+      "24"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The dot product is 2×3+2×3=12.",
+    "optionExplanations": [
+      "Correct. The dot product is 2×3+2×3=12.",
+      "The component products must be added exactly; this is an arithmetic off-by-one.",
+      "This subtracts the second component product instead of adding it.",
+      "This includes cross-products that are not part of the dot product."
+    ],
+    "hint": "Multiply corresponding components and add.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-132",
+    "number": 502,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-132: What is the Euclidean norm of v=(6,6)?",
+    "options": [
+      "3.464",
+      "8.485",
+      "12.000",
+      "36.000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "||v||₂=√(6²+6²)=√72≈8.485. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The squares must be summed before taking the square root.",
+      "Correct. ||v||₂=√(6²+6²)=√72≈8.485.",
+      "Adding components is not the Euclidean norm.",
+      "The product of components is not a magnitude."
+    ],
+    "hint": "Square each component, add, then take the square root.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-133",
+    "number": 503,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-133: For u=(2,0) and v=(0,1), what is their cosine similarity?",
+    "options": [
+      "-1",
+      "2",
+      "0",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Their dot product is zero, so the cosine similarity is zero.",
+    "optionExplanations": [
+      "They are not opposite directions; their dot product is zero.",
+      "The raw dot product is zero and cosine similarity is normalised by both norms.",
+      "Correct. Their dot product is zero, so the cosine similarity is zero.",
+      "The vectors point along different coordinate axes, not the same direction."
+    ],
+    "hint": "Compute the dot product first.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-134",
+    "number": 504,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept-application",
+    "question": "Applied variant PRACTICAL-134: If v=(5,-3) and w=3v, what is ||w||₂ in terms of ||v||₂?",
+    "options": [
+      "||v||₂/3",
+      "9||v||₂",
+      "-3||v||₂",
+      "3||v||₂"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For any scalar c, ||cv||=|c| ||v||.",
+    "optionExplanations": [
+      "Multiplication by 3 increases magnitude.",
+      "The norm scales by |3|, not by its square.",
+      "A norm is non-negative.",
+      "Correct. For any scalar c, ||cv||=|c| ||v||."
+    ],
+    "hint": "Use absolute homogeneity of a norm.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-135",
+    "number": 505,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-135: Are the vectors (3,4) and (6,8) linearly independent in R²?",
+    "options": [
+      "Yes; their coordinates are all nonzero.",
+      "The question cannot be answered without a norm.",
+      "No; the second vector is twice the first.",
+      "Yes; two vectors in R² are always independent."
+    ],
+    "correctAnswer": 2,
+    "explanation": "A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+    "optionExplanations": [
+      "Nonzero coordinates do not establish independence.",
+      "Linear dependence does not require a norm.",
+      "Correct. A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+      "Two vectors may be scalar multiples and therefore dependent."
+    ],
+    "hint": "Check whether one vector is a scalar multiple of the other.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-136",
+    "number": 506,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-136: Matrix A has 2 rows and 4 columns. What is the shape of Aᵀ?",
+    "options": [
+      "4×2",
+      "1×1",
+      "99×1",
+      "1×99"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Transpose interchanges rows and columns, so the shape becomes 4×2.",
+    "optionExplanations": [
+      "Correct. Transpose interchanges rows and columns, so the shape becomes 4×2.",
+      "Transpose does not collapse a rectangular matrix to one element.",
+      "Transpose does not flatten the matrix into one column.",
+      "Transpose does not flatten the matrix into one row."
+    ],
+    "hint": "Swap the two dimensions.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-137",
+    "number": 507,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-137: For A=[[2,0],[0,2]], what is det(A)?",
+    "options": [
+      "0",
+      "4",
+      "5",
+      "3"
+    ],
+    "correctAnswer": 1,
+    "explanation": "det(A)=2×2=4. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "A diagonal matrix with nonzero diagonal entries is invertible and has nonzero determinant.",
+      "Correct. det(A)=2×2=4.",
+      "This is an arithmetic off-by-one; multiply the diagonal entries exactly.",
+      "This is an arithmetic off-by-one; the determinant is the product, not one less."
+    ],
+    "hint": "For a diagonal matrix, multiply the diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-138",
+    "number": 508,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-138: If f(x)=2x²−4x, what is f′(x)?",
+    "options": [
+      "2x−4",
+      "4x−4",
+      "2x²−4",
+      "6x²−4"
+    ],
+    "correctAnswer": 3,
+    "explanation": "f(x)=2x³−4x, so f′(x)=6x²−4. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The power rule multiplies the coefficient by the exponent and reduces the exponent by one.",
+      "The coefficient is x and must also be retained: derivative of x·x² is 3x·x².",
+      "This repeats the original function rather than differentiating it.",
+      "Correct. f(x)=2x³−4x, so f′(x)=6x²−4."
+    ],
+    "hint": "Rewrite the first term as a coefficient times x cubed.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-139",
+    "number": 509,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-139: For f(x,y)=x²+4xy+2y², what is ∂f/∂x?",
+    "options": [
+      "4x+4y",
+      "2x+4xy",
+      "2x+4y",
+      "2x+4x"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x and ∂(4xy)/∂x=4y.",
+    "optionExplanations": [
+      "This mixes derivatives with respect to x and y.",
+      "The derivative of xy with respect to x is y, not xy.",
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x and ∂(4xy)/∂x=4y.",
+      "When differentiating with respect to x, the derivative of xy is y."
+    ],
+    "hint": "Hold y fixed while differentiating with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-140",
+    "number": 510,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-140: A gradient-descent step uses x_new=x−ηg. If x=2, η=0.4 and g=6, what is x_new?",
+    "options": [
+      "-0.40",
+      "4.40",
+      "1.60",
+      "-4.00"
+    ],
+    "correctAnswer": 0,
+    "explanation": "x_new=2−0.4×6=-0.40. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "Correct. x_new=2−0.4×6=-0.40.",
+      "This moves in the positive-gradient direction rather than descending.",
+      "The gradient magnitude must also multiply the learning rate.",
+      "This omits the learning-rate factor."
+    ],
+    "hint": "Substitute the learning rate and gradient into the update equation.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "PRACTICAL-141",
+    "number": 511,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-141: Let u=(2,3) and v=(1,3). What is u·v?",
+    "options": [
+      "-7",
+      "20",
+      "11",
+      "12"
+    ],
+    "correctAnswer": 2,
+    "explanation": "The dot product is 2×1+3×3=11.",
+    "optionExplanations": [
+      "This subtracts the second component product instead of adding it.",
+      "This includes cross-products that are not part of the dot product.",
+      "Correct. The dot product is 2×1+3×3=11.",
+      "The component products must be added exactly; this is an arithmetic off-by-one."
+    ],
+    "hint": "Multiply corresponding components and add.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-142",
+    "number": 512,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-142: What is the Euclidean norm of v=(4,4)?",
+    "options": [
+      "8.000",
+      "16.000",
+      "2.828",
+      "5.657"
+    ],
+    "correctAnswer": 3,
+    "explanation": "||v||₂=√(4²+4²)=√32≈5.657. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "Adding components is not the Euclidean norm.",
+      "The product of components is not a magnitude.",
+      "The squares must be summed before taking the square root.",
+      "Correct. ||v||₂=√(4²+4²)=√32≈5.657."
+    ],
+    "hint": "Square each component, add, then take the square root.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-143",
+    "number": 513,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-143: For u=(4,0) and v=(0,2), what is their cosine similarity?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "8"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Their dot product is zero, so the cosine similarity is zero.",
+    "optionExplanations": [
+      "Correct. Their dot product is zero, so the cosine similarity is zero.",
+      "The vectors point along different coordinate axes, not the same direction.",
+      "They are not opposite directions; their dot product is zero.",
+      "The raw dot product is zero and cosine similarity is normalised by both norms."
+    ],
+    "hint": "Compute the dot product first.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-144",
+    "number": 514,
+    "bank": "practical",
+    "topicId": "vectors",
+    "difficulty": "medium",
+    "type": "concept-application",
+    "question": "Applied variant PRACTICAL-144: If v=(5,-4) and w=3v, what is ||w||₂ in terms of ||v||₂?",
+    "options": [
+      "-3||v||₂",
+      "3||v||₂",
+      "||v||₂/3",
+      "9||v||₂"
+    ],
+    "correctAnswer": 1,
+    "explanation": "For any scalar c, ||cv||=|c| ||v||.",
+    "optionExplanations": [
+      "A norm is non-negative.",
+      "Correct. For any scalar c, ||cv||=|c| ||v||.",
+      "Multiplication by 3 increases magnitude.",
+      "The norm scales by |3|, not by its square."
+    ],
+    "hint": "Use absolute homogeneity of a norm.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "PRACTICAL-145",
+    "number": 515,
+    "bank": "practical",
+    "topicId": "vector-spaces",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-145: Are the vectors (1,2) and (2,4) linearly independent in R²?",
+    "options": [
+      "No; the second vector is twice the first.",
+      "Yes; two vectors in R² are always independent.",
+      "Yes; their coordinates are all nonzero.",
+      "The question cannot be answered without a norm."
+    ],
+    "correctAnswer": 0,
+    "explanation": "A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+    "optionExplanations": [
+      "Correct. A nontrivial combination (−2)v₁+v₂=0 proves dependence.",
+      "Two vectors may be scalar multiples and therefore dependent.",
+      "Nonzero coordinates do not establish independence.",
+      "Linear dependence does not require a norm."
+    ],
+    "hint": "Check whether one vector is a scalar multiple of the other.",
+    "referenceId": "vector-spaces-ref"
+  },
+  {
+    "id": "PRACTICAL-146",
+    "number": 516,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-146: Matrix A has 3 rows and 4 columns. What is the shape of Aᵀ?",
+    "options": [
+      "99×1",
+      "1×99",
+      "4×3",
+      "1×1"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Transpose interchanges rows and columns, so the shape becomes 4×3.",
+    "optionExplanations": [
+      "Transpose does not flatten the matrix into one column.",
+      "Transpose does not flatten the matrix into one row.",
+      "Correct. Transpose interchanges rows and columns, so the shape becomes 4×3.",
+      "Transpose does not collapse a rectangular matrix to one element."
+    ],
+    "hint": "Swap the two dimensions.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-147",
+    "number": 517,
+    "bank": "practical",
+    "topicId": "matrices",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-147: For A=[[4,0],[0,3]], what is det(A)?",
+    "options": [
+      "13",
+      "11",
+      "0",
+      "12"
+    ],
+    "correctAnswer": 3,
+    "explanation": "det(A)=4×3=12. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This is an arithmetic off-by-one; multiply the diagonal entries exactly.",
+      "This is an arithmetic off-by-one; the determinant is the product, not one less.",
+      "A diagonal matrix with nonzero diagonal entries is invertible and has nonzero determinant.",
+      "Correct. det(A)=4×3=12."
+    ],
+    "hint": "For a diagonal matrix, multiply the diagonal entries.",
+    "referenceId": "matrices-ref"
+  },
+  {
+    "id": "PRACTICAL-148",
+    "number": 518,
+    "bank": "practical",
+    "topicId": "derivatives",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-148: If f(x)=4x²−2x, what is f′(x)?",
+    "options": [
+      "4x²−2",
+      "12x²−2",
+      "4x−2",
+      "8x−2"
+    ],
+    "correctAnswer": 1,
+    "explanation": "f(x)=4x³−2x, so f′(x)=12x²−2. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "This repeats the original function rather than differentiating it.",
+      "Correct. f(x)=4x³−2x, so f′(x)=12x²−2.",
+      "The power rule multiplies the coefficient by the exponent and reduces the exponent by one.",
+      "The coefficient is x and must also be retained: derivative of x·x² is 3x·x²."
+    ],
+    "hint": "Rewrite the first term as a coefficient times x cubed.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "PRACTICAL-149",
+    "number": 519,
+    "bank": "practical",
+    "topicId": "multivariable",
+    "difficulty": "medium",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-149: For f(x,y)=x²+2xy+2y², what is ∂f/∂x?",
+    "options": [
+      "2x+2y",
+      "2x+2x",
+      "2x+4y",
+      "2x+2xy"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+    "optionExplanations": [
+      "Correct. Treat y as constant: ∂(x²)/∂x=2x and ∂(2xy)/∂x=2y.",
+      "When differentiating with respect to x, the derivative of xy is y.",
+      "This mixes derivatives with respect to x and y.",
+      "The derivative of xy with respect to x is y, not xy."
+    ],
+    "hint": "Hold y fixed while differentiating with respect to x.",
+    "referenceId": "multivariable-ref"
+  },
+  {
+    "id": "PRACTICAL-150",
+    "number": 520,
+    "bank": "practical",
+    "topicId": "optimization",
+    "difficulty": "basic",
+    "type": "calculation",
+    "question": "Applied variant PRACTICAL-150: A gradient-descent step uses x_new=x−ηg. If x=3, η=0.2 and g=6, what is x_new?",
+    "options": [
+      "2.80",
+      "-3.00",
+      "1.80",
+      "4.20"
+    ],
+    "correctAnswer": 2,
+    "explanation": "x_new=3−0.2×6=1.80. This follows from the definition and the stated conditions; check the operation and assumptions before applying the result.",
+    "optionExplanations": [
+      "The gradient magnitude must also multiply the learning rate.",
+      "This omits the learning-rate factor.",
+      "Correct. x_new=3−0.2×6=1.80.",
+      "This moves in the positive-gradient direction rather than descending."
+    ],
+    "hint": "Substitute the learning rate and gradient into the update equation.",
+    "referenceId": "optimization-ref"
   }
 ]

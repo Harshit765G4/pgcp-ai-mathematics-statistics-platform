@@ -7,6 +7,7 @@
   "scripts": {
     "validate": "node scripts/validate-questions.mjs",
     "serve": "python -m http.server 4173",
-    "build:questions": "python scripts/build_questions.py"
+    "build:questions": "python scripts/build_questions.py",
+    "expand:questions": "python scripts/expand_question_banks.py"
   }
 }

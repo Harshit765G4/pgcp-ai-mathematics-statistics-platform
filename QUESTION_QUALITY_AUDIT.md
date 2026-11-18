@@ -1,99 +1,65 @@
-# Question Quality & Coverage Audit
+# Question Quality & Coverage Audit — Updated Release
 
-## 1. Source and coverage basis
+## 1. Syllabus basis
 
-Primary source: the five-page ACTS Pune document, **Suggested Teaching Guidelines for Mathematics and Statistics for AI — PGCP-AI August 2026**.
-
-The syllabus material is organised into:
+Primary source: ACTS Pune, *Suggested Teaching Guidelines for Mathematics and Statistics for AI — PGCP-AI August 2026*. The full supplied syllabus was used to organise the topic catalogue.
 
 - **I. Fundamentals of AI:** Sessions 1–15.
 - **II. Mathematics for AI — Linear Algebra:** Sessions 1–8.
 - **II. Mathematics for AI — Calculus:** Sessions 9–15.
 
-The source does not prescribe a standalone Statistics module. Statistics/probability-related questions, where present, are classified as supplementary in the extension bank rather than represented as required syllabus coverage.
+The source does not prescribe a standalone Statistics module. Statistics-adjacent professional material is kept in the supplementary extension bank, not claimed as core syllabus coverage. The syllabus term “Matrix Phylogeny” is retained as supplied.
 
-Assignments in the source were used to infer suitable numerical/application question styles. They were not converted into extra topic units.
+## 2. Bank counts
 
-## 2. Current bank counts
+| Bank | Current | Target |
+|---|---:|---:|
+| Core syllabus | 350 | 350 |
+| Practical / mathematical applications | 150 | 150 |
+| Beyond-syllabus extension | 100 | 100 |
+| **Total** | **600** | **600** |
 
-| Bank | Current | Target | Gap |
-|---|---:|---:|---:|
-| Core syllabus | 69 | 350 | 281 |
-| Practical / mathematics applications | 46 | 150 | 104 |
-| Beyond-syllabus extension | 20 | 100 | 80 |
-| **Total** | **135** | **600** | **465** |
+## 3. Coverage by syllabus section
 
-The source prompt has conflicting counts in its bank headings and detailed requirements: the headings say 300 core and 100 practical, while the detailed requirements specify 350 core and 150 practical. This release adopts the detailed requirement (350 + 150 + 100 = 600).
+| Section | Questions |
+|---|---:|
+| Fundamentals of AI | 245 |
+| Linear Algebra | 197 |
+| Calculus | 158 |
+| **Total** | **600** |
 
-**Status:** This is a curated first bank, not a claim that the 600-question target is complete. The implementation deliberately avoids bulk-generated filler questions.
+All questions map to one of 24 topic IDs and a reusable reference ID.
 
-## 3. Question record completeness
+## 4. Question record fields
 
-Each current question includes:
+Every record includes a permanent ID, global number, bank, topic ID, difficulty, question type, question statement, four options, zero-based correct answer, overall explanation, four option explanations, hint and reference ID. Existing IDs and original global numbers from the earlier 135-question release were preserved; newly added questions receive new IDs and numbers.
 
-- Stable unique ID and global question number.
-- Bank, topic ID, difficulty, and question type.
-- A question statement and four answer options.
-- One zero-based correct-answer index.
-- A learning-oriented overall explanation.
-- An explanation/rationale for each of the four options.
-- A non-answer-revealing hint.
-- A topic reference ID.
+## 5. Validation performed
 
-Difficulty labels use Basic, Medium, Hard, and Expert. The label is intended to represent the cognitive work involved, not simply to balance category counts.
+Command: `npm run validate`.
 
-## 4. Structural validation performed
+- Core: 350
+- Practical: 150
+- Extension: 100
+- Total: 600
+- Topics: 24; references: 24
+- Unique IDs: 600
+- Unique global question numbers: 600
+- Structural errors: 0
+- Lexical-overlap warnings: 681
 
-Command run: `npm run validate`.
+The structural validator checks JSON parsing, required fields, unique IDs and global numbers, four distinct options, valid answer indices, explanations, option-level rationales, hints, topic/reference mappings, exact duplicate prompts and lexical-overlap candidates.
 
-Latest result:
+## 6. Important quality limitation
 
-```text
-Core syllabus: 69
-Practical / Maths: 46
-Beyond syllabus: 20
-Total: 135
-Topics: 24; references: 24
-Unique IDs: 135; unique global numbers: 135
-Errors: 0; overlap warnings: 4
-Structural validation passed.
-```
+The 681 lexical-overlap warnings are not proof that 681 pairs are semantic duplicates, because the detector is a lightweight token-overlap heuristic. However, the high count means the bank has **not** passed a complete semantic-uniqueness audit. Some newly added items use related concept patterns or parameterised practice cases. Review the flagged pairs and the mathematical calculations before treating this as a final exam-ready question bank. No external subject-matter expert review is claimed.
 
-The validator checks:
+## 7. Scope notes
 
-- Valid JSON in all three question banks.
-- Required record fields and expected bank identity.
-- Globally unique question IDs and numbers.
-- Four non-empty, distinct answer options.
-- A valid answer index (0–3).
-- Overall and option-level explanations.
-- A hint for every question.
-- Valid topic and reference mappings.
-- Exact duplicate prompts.
-- High lexical-overlap candidates for manual review.
+- The prior `questions.json` reference files contained Python-programming questions. Their record structure was used as a format reference only; their unrelated questions were not imported.
+- The supplied syllabus assignments informed numerical and application question styles; they were not added as separate syllabus chapters.
+- The source document title includes Statistics, but the supplied sessions do not define a standalone statistics unit.
 
-## 5. Similarity warnings reviewed
+## 8. Testing boundaries
 
-The validator reported four high lexical-overlap pairs. They were manually inspected and use similar numeric/matrix notation, but the intended tasks are different:
-
-- `PRACTICAL-002`: vector dot product.
-- `PRACTICAL-010`: matrix transpose.
-- `PRACTICAL-030`: matrix determinant.
-- `PRACTICAL-003`: vector projection.
-- `PRACTICAL-031`: diagonal matrix inverse.
-
-The pairs are lexical false positives around short mathematical expressions and repeated numeric tokens. The heuristic cannot guarantee semantic uniqueness, so future additions still require manual comparison at the learning-objective level.
-
-## 6. Content-specific notes
-
-- The course title includes Statistics, but no standalone statistics sessions appear in the supplied five-page teaching guideline. Related statistical content is marked as extension rather than core.
-- “Matrix Phylogeny” is preserved as a syllabus topic and has a dedicated reference.
-- The syllabus uses terms such as “Turing Machine”, “Turing Test”, “Matrix Approximation”, “Singular Value Decomposition”, “Lagrange Multipliers”, and “Saddle Point”; these remain in the topic/reference structure.
-
-## 7. Review boundaries and limitations
-
-- Structural validation passed for the current records.
-- Structural validation does not establish that every distractor is equally plausible or that every technical explanation is independently peer-reviewed.
-- No external subject-matter expert review is claimed.
-- The question bank is below its requested target by 465 questions. Additions should be developed topic-by-topic and validated before release.
-- No automated test is claimed for all seven viewport sizes or every interaction. The interface contains responsive layout rules; the project README provides local run and validation steps for further browser QA.
+Structural JSON validation passed. JavaScript syntax and static HTML/CSS parsing are checked separately. Full manual browser testing across all requested viewport widths and independent expert review of all 600 explanations/options have not been completed.

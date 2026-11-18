@@ -41,15 +41,16 @@
       </section>
 
       <section class="stats-grid" aria-label="Practice dashboard">
-        <article class="stat-card"><span class="stat-label">Question bank</span><strong id="statTotal">135</strong><span class="stat-foot">Available questions</span></article>
+        <article class="stat-card"><span class="stat-label">Question bank</span><strong id="statTotal">600</strong><span class="stat-foot">Available questions</span></article>
         <article class="stat-card"><span class="stat-label">Attempted</span><strong id="statAttempted">0</strong><span class="stat-foot" id="statAttemptedFoot">0% completed</span></article>
         <article class="stat-card"><span class="stat-label">Correct</span><strong id="statCorrect">0</strong><span class="stat-foot">Checked answers</span></article>
         <article class="stat-card"><span class="stat-label">Accuracy</span><strong id="statAccuracy">—</strong><span class="stat-foot">Of checked answers</span></article>
-        <article class="stat-card progress-stat"><div class="stat-label-row"><span class="stat-label">Overall progress</span><strong id="statProgress">0%</strong></div><div class="progress-track"><div id="progressBar" class="progress-fill"></div></div><span class="stat-foot" id="statRemaining">135 questions remaining</span></article>
+        <article class="stat-card progress-stat"><div class="stat-label-row"><span class="stat-label">Overall progress</span><strong id="statProgress">0%</strong></div><div class="progress-track"><div id="progressBar" class="progress-fill"></div></div><span class="stat-foot" id="statRemaining">600 questions remaining</span></article>
       </section>
 
       <section class="filter-bar" aria-label="Question filters">
         <label><span>Practice mode</span><select id="modeSelect"><option value="all">All questions</option><option value="topic">Topic practice</option><option value="random">Random practice</option><option value="incorrect">Incorrect revision</option><option value="flagged">Flagged revision</option><option value="unanswered">Unattempted practice</option><option value="mock">Timed mock exam</option></select></label>
+        <label><span>Subject</span><select id="subjectSelect"><option value="all">All subjects</option><option value="Fundamentals of AI">Fundamentals of AI</option><option value="Linear Algebra">Linear Algebra</option><option value="Calculus">Calculus</option></select></label>
         <label><span>Question bank</span><select id="bankSelect"><option value="all">All banks</option><option value="core">Core syllabus</option><option value="practical">Practical / Maths</option><option value="extension">Beyond syllabus</option></select></label>
         <label class="topic-filter"><span>Topic</span><select id="topicSelect"><option value="all">All topics</option></select></label>
         <label><span>Difficulty</span><select id="difficultySelect"><option value="all">All levels</option><option value="basic">Basic</option><option value="medium">Medium</option><option value="hard">Hard</option><option value="expert">Expert</option></select></label>
@@ -60,7 +61,7 @@
       <div class="workspace" id="workspace">
         <aside class="navigator-panel panel" id="navigatorPanel" aria-label="Question navigator">
           <div class="panel-heading">
-            <div><h2>Navigator</h2><p><span id="visibleCount">135</span> questions in view</p></div>
+            <div><h2>Navigator</h2><p><span id="visibleCount">600</span> questions in view</p></div>
             <button class="text-button" id="clearFilters">Clear</button>
           </div>
           <div class="bank-summary" id="bankSummary"></div>
@@ -77,7 +78,7 @@
               <div class="question-ident"><span class="question-number-label" id="questionNumber">QUESTION 1</span><span class="dot-separator">·</span><span id="questionTopic">Topic</span></div>
               <div class="question-badges"><span class="bank-badge" id="questionBank">Core syllabus</span><span class="difficulty-badge medium" id="questionDifficulty">Medium</span></div>
             </div>
-            <div class="question-progress"><div class="progress-track"><div id="questionProgressBar" class="progress-fill"></div></div><span id="questionPosition">1 of 135</span></div>
+            <div class="question-progress"><div class="progress-track"><div id="questionProgressBar" class="progress-fill"></div></div><span id="questionPosition">1 of 600</span></div>
             <div class="question-stem" id="questionStem">Loading questions…</div>
             <div class="answer-prompt"><span>Select one answer</span><span id="selectedLabel">No option selected</span></div>
             <div class="answer-options" id="answerOptions" role="radiogroup" aria-label="Answer options"></div>

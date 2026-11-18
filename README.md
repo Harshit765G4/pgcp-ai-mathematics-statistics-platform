@@ -4,16 +4,25 @@ A responsive, static web application for studying and practising the **Mathemati
 
 ## Current content status
 
-| Bank | Current questions | Initial target in the detailed requirements |
+| Bank | Current questions | Target |
 |---|---:|---:|
-| Core syllabus | 69 | 350 |
-| Practical / mathematics applications | 46 | 150 |
-| Beyond-syllabus extension | 20 | 100 |
-| **Total** | **135** | **600** |
+| Core syllabus | 350 | 350 |
+| Practical / mathematics applications | 150 | 150 |
+| Beyond-syllabus extension | 100 | 100 |
+| **Total** | **600** | **600** |
 
-The current release contains 135 curated questions, not the full 600-question target. Question quality was prioritised over generating low-value repetitions. The remaining target is 281 core, 104 practical, and 80 extension questions. These can be added incrementally without changing the UI.
+The 600-question set covers the syllabus sections and sub-sections. Current distribution:
 
-> The prompt's bank headings say 300 core and 100 practical, while the detailed requirements say 350 and 150. This project follows the detailed counts (350 + 150 + 100 = 600).
+| Syllabus section | Questions |
+|---|---:|
+| Fundamentals of AI | 245 |
+| Linear Algebra | 197 |
+| Calculus | 158 |
+| **Total** | **600** |
+
+The supplied prior `questions.json` reference was used to understand the record shape (stable ID, bank, topic, difficulty, question, four options, answer index, explanation, hint, reference and number). Its earlier Python-programming questions were not copied into this subject bank. The current application retains its richer schema, including per-option explanations and stable bank-specific IDs.
+
+**Content-quality qualification:** structural validation passes, but the lexical-overlap heuristic flags 681 pairs for manual review. Some are related learning objectives and some may be overly similar; this is not a certified semantic-uniqueness audit. The generated bank is a substantial practice release, not an expert-peer-reviewed examination paper. Review flagged pairs and technical explanations before relying on every item for a high-stakes exam.
 
 ## Features
 
@@ -55,6 +64,7 @@ math-statistics-ai-platform/
 │   └── styles.css
 └── scripts/
     ├── build_questions.py
+    ├── expand_question_banks.py
     └── validate-questions.mjs
 ```
 
@@ -89,9 +99,9 @@ npm run validate
 
 The validator checks JSON parsing, required fields, unique question IDs, unique global question numbers, exactly four distinct options, valid answer indexes, explanations, per-option rationales, hints, topic/reference mappings, exact duplicate prompts, and high lexical-overlap candidates.
 
-To regenerate the current bank from the bundled authoring script, run `npm run build:questions` (Python 3 is required). Review the generated JSON and rerun validation before committing it.
+The initial curated set can be regenerated with `npm run build:questions` (Python 3 required). To expand banks that are below their targets, run `npm run expand:questions`. Do not run the initial build script over an expanded bank because it recreates the initial curated set. Review generated content and rerun validation before committing it.
 
-The overlap detector is a heuristic, not a semantic AI model. Review flagged candidates manually before release. The current four overlap candidates share mathematical notation/numeric tokens but test distinct operations; see the audit report.
+The overlap detector is a heuristic, not a semantic AI model. The current audit reports 681 lexical-overlap candidates; manually inspect these before treating the bank as final exam material.
 
 ## Add questions
 

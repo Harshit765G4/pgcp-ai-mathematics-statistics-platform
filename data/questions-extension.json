@@ -498,5 +498,2005 @@
     ],
     "hint": "Subtract the mean from the observation and divide by the standard deviation.",
     "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-021",
+    "number": 521,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Which property of a distributed data-processing system describes its ability to continue operating when a worker node fails?",
+    "options": [
+      "normalisation",
+      "fault tolerance",
+      "horizontal scalability",
+      "data dimensionality"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fault tolerance is the ability to recover from component failures without losing the overall service.",
+    "optionExplanations": [
+      "Normalisation rescales or restructures data.",
+      "Correct. Fault tolerance is the ability to recover from component failures without losing the overall service.",
+      "Scalability concerns handling more workload by adding resources.",
+      "Dimensionality is the number of variables or features."
+    ],
+    "hint": "Look for resilience to node or component failure.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-022",
+    "number": 522,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "What is the main purpose of cross-validation during model selection?",
+    "options": [
+      "increase the size of the final test set",
+      "guarantee that the selected model is unbiased",
+      "replace the need for a held-out final test",
+      "estimate how model performance varies across different train-validation splits"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cross-validation provides repeated validation estimates to compare models more robustly.",
+    "optionExplanations": [
+      "Cross-validation rotates validation folds; it does not enlarge the final test set.",
+      "It helps estimate generalisation but does not guarantee unbiased selection.",
+      "A final untouched test can still be useful.",
+      "Correct. Cross-validation provides repeated validation estimates to compare models more robustly."
+    ],
+    "hint": "Think about repeated data splits and model-selection stability.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-023",
+    "number": 523,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Why is whitening after PCA different from merely projecting onto principal components?",
+    "options": [
+      "PCA projection always sets every component variance to one",
+      "whitening deletes every low-variance component automatically",
+      "whitening additionally rescales component scores to have unit variance under the fitted covariance model",
+      "whitening rotates the data but never rescales it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PCA rotates into principal directions; whitening also scales by inverse standard deviations.",
+    "optionExplanations": [
+      "Projection alone preserves the component variances.",
+      "That is truncation, not the definition of whitening.",
+      "Correct. PCA rotates into principal directions; whitening also scales by inverse standard deviations.",
+      "Whitening includes variance scaling."
+    ],
+    "hint": "Separate rotation/projection from variance rescaling.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-024",
+    "number": 524,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "What does the condition number of a positive-definite Hessian suggest about local optimisation difficulty?",
+    "options": [
+      "a large condition number indicates elongated curvature and potentially slow progress for basic gradient descent",
+      "a zero condition number proves strict convexity",
+      "it counts the number of local minima",
+      "it is identical to the learning rate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ratio of largest to smallest eigenvalue describes curvature anisotropy.",
+    "optionExplanations": [
+      "Correct. The ratio of largest to smallest eigenvalue describes curvature anisotropy.",
+      "A positive-definite matrix has positive eigenvalues and condition number at least one.",
+      "Condition number measures eigenvalue spread.",
+      "Learning rate is chosen separately."
+    ],
+    "hint": "Compare the largest and smallest Hessian eigenvalues.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-025",
+    "number": 525,
+    "bank": "extension",
+    "topicId": "vectors",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Why can cosine similarity be misleading for vectors with zero norm?",
+    "options": [
+      "zero vectors are always identical to all vectors",
+      "the cosine function accepts only integer angles",
+      "the denominator contains the product of norms, so the expression is undefined when either vector is zero",
+      "the dot product becomes infinite"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cosine similarity divides the dot product by the product of the norms.",
+    "optionExplanations": [
+      "Similarity is undefined, not universally maximal.",
+      "The issue is division by zero.",
+      "Correct. Cosine similarity divides the dot product by the product of the norms.",
+      "A zero vector has zero dot product with every vector."
+    ],
+    "hint": "Check the denominator in the cosine similarity formula.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "EXT-026",
+    "number": 526,
+    "bank": "extension",
+    "topicId": "derivatives",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "What does a subgradient generalise?",
+    "options": [
+      "a second derivative for every matrix",
+      "a gradient that must be zero everywhere",
+      "a finite-difference approximation only",
+      "a derivative-like supporting slope for a convex function that may be non-differentiable at a point"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist.",
+    "optionExplanations": [
+      "Subgradients generalise first-order slopes.",
+      "A subgradient can be nonzero.",
+      "Subgradients are defined mathematically, not only numerically.",
+      "Correct. For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist."
+    ],
+    "hint": "Think of convex functions with corners, such as absolute value.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "EXT-027",
+    "number": 527,
+    "bank": "extension",
+    "topicId": "optimization-algorithms",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Why is momentum used in gradient-based optimisation?",
+    "options": [
+      "it accumulates a moving direction from past gradients to reduce oscillation and accelerate progress in consistent directions",
+      "it guarantees the global optimum for non-convex objectives",
+      "it removes the learning-rate parameter",
+      "it computes the exact Hessian inverse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Momentum combines current gradient information with a velocity-like running term.",
+    "optionExplanations": [
+      "Correct. Momentum combines current gradient information with a velocity-like running term.",
+      "Momentum does not guarantee global optimality.",
+      "Momentum methods still use a learning rate.",
+      "That is not what momentum does."
+    ],
+    "hint": "Look for a mechanism that smooths the update direction over iterations.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "EXT-028",
+    "number": 528,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "What is concept drift in a deployed predictive model?",
+    "options": [
+      "the relationship between input features and the target changes over time",
+      "the storage format changes from CSV to JSON only",
+      "the training file is compressed",
+      "the model parameters are stored in a database"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Concept drift occurs when the target relationship changes over time.",
+    "optionExplanations": [
+      "Correct. Concept drift occurs when the target relationship changes over time.",
+      "A format change alone is not concept drift.",
+      "Compression does not alter the underlying relationship.",
+      "Parameter storage is unrelated."
+    ],
+    "hint": "Look for a changing data-generating relationship, not just a file-format change.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-029",
+    "number": 529,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "In a separate applied setting, which property of a distributed data-processing system describes its ability to continue operating when a worker node fails?",
+    "options": [
+      "normalisation",
+      "fault tolerance",
+      "horizontal scalability",
+      "data dimensionality"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Normalisation rescales or restructures data.",
+      "Correct. Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Scalability concerns handling more workload by adding resources.",
+      "Dimensionality is the number of variables or features."
+    ],
+    "hint": "Look for resilience to node or component failure.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-030",
+    "number": 530,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "In a separate applied setting, what is the main purpose of cross-validation during model selection?",
+    "options": [
+      "increase the size of the final test set",
+      "guarantee that the selected model is unbiased",
+      "replace the need for a held-out final test",
+      "estimate how model performance varies across different train-validation splits"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Cross-validation rotates validation folds; it does not enlarge the final test set.",
+      "It helps estimate generalisation but does not guarantee unbiased selection.",
+      "A final untouched test can still be useful.",
+      "Correct. Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think about repeated data splits and model-selection stability.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-031",
+    "number": 531,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "In a separate applied setting, why is whitening after PCA different from merely projecting onto principal components?",
+    "options": [
+      "PCA projection always sets every component variance to one",
+      "whitening deletes every low-variance component automatically",
+      "whitening additionally rescales component scores to have unit variance under the fitted covariance model",
+      "whitening rotates the data but never rescales it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Projection alone preserves the component variances.",
+      "That is truncation, not the definition of whitening.",
+      "Correct. PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Whitening includes variance scaling."
+    ],
+    "hint": "Separate rotation/projection from variance rescaling.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-032",
+    "number": 532,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "In a separate applied setting, what does the condition number of a positive-definite Hessian suggest about local optimisation difficulty?",
+    "options": [
+      "a large condition number indicates elongated curvature and potentially slow progress for basic gradient descent",
+      "a zero condition number proves strict convexity",
+      "it counts the number of local minima",
+      "it is identical to the learning rate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A positive-definite matrix has positive eigenvalues and condition number at least one.",
+      "Condition number measures eigenvalue spread.",
+      "Learning rate is chosen separately."
+    ],
+    "hint": "Compare the largest and smallest Hessian eigenvalues.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-033",
+    "number": 533,
+    "bank": "extension",
+    "topicId": "vectors",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "In a separate applied setting, why can cosine similarity be misleading for vectors with zero norm?",
+    "options": [
+      "zero vectors are always identical to all vectors",
+      "the cosine function accepts only integer angles",
+      "the denominator contains the product of norms, so the expression is undefined when either vector is zero",
+      "the dot product becomes infinite"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Similarity is undefined, not universally maximal.",
+      "The issue is division by zero.",
+      "Correct. Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A zero vector has zero dot product with every vector."
+    ],
+    "hint": "Check the denominator in the cosine similarity formula.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "EXT-034",
+    "number": 534,
+    "bank": "extension",
+    "topicId": "derivatives",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "In a separate applied setting, what does a subgradient generalise?",
+    "options": [
+      "a second derivative for every matrix",
+      "a gradient that must be zero everywhere",
+      "a finite-difference approximation only",
+      "a derivative-like supporting slope for a convex function that may be non-differentiable at a point"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Subgradients generalise first-order slopes.",
+      "A subgradient can be nonzero.",
+      "Subgradients are defined mathematically, not only numerically.",
+      "Correct. For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think of convex functions with corners, such as absolute value.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "EXT-035",
+    "number": 535,
+    "bank": "extension",
+    "topicId": "optimization-algorithms",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "In a separate applied setting, why is momentum used in gradient-based optimisation?",
+    "options": [
+      "it accumulates a moving direction from past gradients to reduce oscillation and accelerate progress in consistent directions",
+      "it guarantees the global optimum for non-convex objectives",
+      "it removes the learning-rate parameter",
+      "it computes the exact Hessian inverse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Momentum does not guarantee global optimality.",
+      "Momentum methods still use a learning rate.",
+      "That is not what momentum does."
+    ],
+    "hint": "Look for a mechanism that smooths the update direction over iterations.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "EXT-036",
+    "number": 536,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "In a separate applied setting, what is concept drift in a deployed predictive model?",
+    "options": [
+      "the relationship between input features and the target changes over time",
+      "the storage format changes from CSV to JSON only",
+      "the training file is compressed",
+      "the model parameters are stored in a database"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A format change alone is not concept drift.",
+      "Compression does not alter the underlying relationship.",
+      "Parameter storage is unrelated."
+    ],
+    "hint": "Look for a changing data-generating relationship, not just a file-format change.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-037",
+    "number": 537,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-037: In a separate applied setting, which property of a distributed data-processing system describes its ability to continue operating when a worker node fails?",
+    "options": [
+      "normalisation",
+      "fault tolerance",
+      "horizontal scalability",
+      "data dimensionality"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Normalisation rescales or restructures data.",
+      "Correct. Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Scalability concerns handling more workload by adding resources.",
+      "Dimensionality is the number of variables or features."
+    ],
+    "hint": "Look for resilience to node or component failure.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-038",
+    "number": 538,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-038: In a separate applied setting, what is the main purpose of cross-validation during model selection?",
+    "options": [
+      "increase the size of the final test set",
+      "guarantee that the selected model is unbiased",
+      "replace the need for a held-out final test",
+      "estimate how model performance varies across different train-validation splits"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Cross-validation rotates validation folds; it does not enlarge the final test set.",
+      "It helps estimate generalisation but does not guarantee unbiased selection.",
+      "A final untouched test can still be useful.",
+      "Correct. Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think about repeated data splits and model-selection stability.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-039",
+    "number": 539,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Applied variant EXT-039: In a separate applied setting, why is whitening after PCA different from merely projecting onto principal components?",
+    "options": [
+      "PCA projection always sets every component variance to one",
+      "whitening deletes every low-variance component automatically",
+      "whitening additionally rescales component scores to have unit variance under the fitted covariance model",
+      "whitening rotates the data but never rescales it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Projection alone preserves the component variances.",
+      "That is truncation, not the definition of whitening.",
+      "Correct. PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Whitening includes variance scaling."
+    ],
+    "hint": "Separate rotation/projection from variance rescaling.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-040",
+    "number": 540,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-040: In a separate applied setting, what does the condition number of a positive-definite Hessian suggest about local optimisation difficulty?",
+    "options": [
+      "a large condition number indicates elongated curvature and potentially slow progress for basic gradient descent",
+      "a zero condition number proves strict convexity",
+      "it counts the number of local minima",
+      "it is identical to the learning rate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A positive-definite matrix has positive eigenvalues and condition number at least one.",
+      "Condition number measures eigenvalue spread.",
+      "Learning rate is chosen separately."
+    ],
+    "hint": "Compare the largest and smallest Hessian eigenvalues.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-041",
+    "number": 541,
+    "bank": "extension",
+    "topicId": "vectors",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-041: In a separate applied setting, why can cosine similarity be misleading for vectors with zero norm?",
+    "options": [
+      "zero vectors are always identical to all vectors",
+      "the cosine function accepts only integer angles",
+      "the denominator contains the product of norms, so the expression is undefined when either vector is zero",
+      "the dot product becomes infinite"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Similarity is undefined, not universally maximal.",
+      "The issue is division by zero.",
+      "Correct. Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A zero vector has zero dot product with every vector."
+    ],
+    "hint": "Check the denominator in the cosine similarity formula.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "EXT-042",
+    "number": 542,
+    "bank": "extension",
+    "topicId": "derivatives",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "Applied variant EXT-042: In a separate applied setting, what does a subgradient generalise?",
+    "options": [
+      "a second derivative for every matrix",
+      "a gradient that must be zero everywhere",
+      "a finite-difference approximation only",
+      "a derivative-like supporting slope for a convex function that may be non-differentiable at a point"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Subgradients generalise first-order slopes.",
+      "A subgradient can be nonzero.",
+      "Subgradients are defined mathematically, not only numerically.",
+      "Correct. For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think of convex functions with corners, such as absolute value.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "EXT-043",
+    "number": 543,
+    "bank": "extension",
+    "topicId": "optimization-algorithms",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-043: In a separate applied setting, why is momentum used in gradient-based optimisation?",
+    "options": [
+      "it accumulates a moving direction from past gradients to reduce oscillation and accelerate progress in consistent directions",
+      "it guarantees the global optimum for non-convex objectives",
+      "it removes the learning-rate parameter",
+      "it computes the exact Hessian inverse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Momentum does not guarantee global optimality.",
+      "Momentum methods still use a learning rate.",
+      "That is not what momentum does."
+    ],
+    "hint": "Look for a mechanism that smooths the update direction over iterations.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "EXT-044",
+    "number": 544,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-044: In a separate applied setting, what is concept drift in a deployed predictive model?",
+    "options": [
+      "the relationship between input features and the target changes over time",
+      "the storage format changes from CSV to JSON only",
+      "the training file is compressed",
+      "the model parameters are stored in a database"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A format change alone is not concept drift.",
+      "Compression does not alter the underlying relationship.",
+      "Parameter storage is unrelated."
+    ],
+    "hint": "Look for a changing data-generating relationship, not just a file-format change.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-045",
+    "number": 545,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Applied variant EXT-045: In a separate applied setting, which property of a distributed data-processing system describes its ability to continue operating when a worker node fails?",
+    "options": [
+      "normalisation",
+      "fault tolerance",
+      "horizontal scalability",
+      "data dimensionality"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Normalisation rescales or restructures data.",
+      "Correct. Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Scalability concerns handling more workload by adding resources.",
+      "Dimensionality is the number of variables or features."
+    ],
+    "hint": "Look for resilience to node or component failure.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-046",
+    "number": 546,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-046: In a separate applied setting, what is the main purpose of cross-validation during model selection?",
+    "options": [
+      "increase the size of the final test set",
+      "guarantee that the selected model is unbiased",
+      "replace the need for a held-out final test",
+      "estimate how model performance varies across different train-validation splits"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Cross-validation rotates validation folds; it does not enlarge the final test set.",
+      "It helps estimate generalisation but does not guarantee unbiased selection.",
+      "A final untouched test can still be useful.",
+      "Correct. Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think about repeated data splits and model-selection stability.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-047",
+    "number": 547,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-047: In a separate applied setting, why is whitening after PCA different from merely projecting onto principal components?",
+    "options": [
+      "PCA projection always sets every component variance to one",
+      "whitening deletes every low-variance component automatically",
+      "whitening additionally rescales component scores to have unit variance under the fitted covariance model",
+      "whitening rotates the data but never rescales it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Projection alone preserves the component variances.",
+      "That is truncation, not the definition of whitening.",
+      "Correct. PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Whitening includes variance scaling."
+    ],
+    "hint": "Separate rotation/projection from variance rescaling.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-048",
+    "number": 548,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "Applied variant EXT-048: In a separate applied setting, what does the condition number of a positive-definite Hessian suggest about local optimisation difficulty?",
+    "options": [
+      "a large condition number indicates elongated curvature and potentially slow progress for basic gradient descent",
+      "a zero condition number proves strict convexity",
+      "it counts the number of local minima",
+      "it is identical to the learning rate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A positive-definite matrix has positive eigenvalues and condition number at least one.",
+      "Condition number measures eigenvalue spread.",
+      "Learning rate is chosen separately."
+    ],
+    "hint": "Compare the largest and smallest Hessian eigenvalues.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-049",
+    "number": 549,
+    "bank": "extension",
+    "topicId": "vectors",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-049: In a separate applied setting, why can cosine similarity be misleading for vectors with zero norm?",
+    "options": [
+      "zero vectors are always identical to all vectors",
+      "the cosine function accepts only integer angles",
+      "the denominator contains the product of norms, so the expression is undefined when either vector is zero",
+      "the dot product becomes infinite"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Similarity is undefined, not universally maximal.",
+      "The issue is division by zero.",
+      "Correct. Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A zero vector has zero dot product with every vector."
+    ],
+    "hint": "Check the denominator in the cosine similarity formula.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "EXT-050",
+    "number": 550,
+    "bank": "extension",
+    "topicId": "derivatives",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-050: In a separate applied setting, what does a subgradient generalise?",
+    "options": [
+      "a second derivative for every matrix",
+      "a gradient that must be zero everywhere",
+      "a finite-difference approximation only",
+      "a derivative-like supporting slope for a convex function that may be non-differentiable at a point"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Subgradients generalise first-order slopes.",
+      "A subgradient can be nonzero.",
+      "Subgradients are defined mathematically, not only numerically.",
+      "Correct. For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think of convex functions with corners, such as absolute value.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "EXT-051",
+    "number": 551,
+    "bank": "extension",
+    "topicId": "optimization-algorithms",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Applied variant EXT-051: In a separate applied setting, why is momentum used in gradient-based optimisation?",
+    "options": [
+      "it accumulates a moving direction from past gradients to reduce oscillation and accelerate progress in consistent directions",
+      "it guarantees the global optimum for non-convex objectives",
+      "it removes the learning-rate parameter",
+      "it computes the exact Hessian inverse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Momentum does not guarantee global optimality.",
+      "Momentum methods still use a learning rate.",
+      "That is not what momentum does."
+    ],
+    "hint": "Look for a mechanism that smooths the update direction over iterations.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "EXT-052",
+    "number": 552,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-052: In a separate applied setting, what is concept drift in a deployed predictive model?",
+    "options": [
+      "the relationship between input features and the target changes over time",
+      "the storage format changes from CSV to JSON only",
+      "the training file is compressed",
+      "the model parameters are stored in a database"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A format change alone is not concept drift.",
+      "Compression does not alter the underlying relationship.",
+      "Parameter storage is unrelated."
+    ],
+    "hint": "Look for a changing data-generating relationship, not just a file-format change.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-053",
+    "number": 553,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-053: In a separate applied setting, which property of a distributed data-processing system describes its ability to continue operating when a worker node fails?",
+    "options": [
+      "normalisation",
+      "fault tolerance",
+      "horizontal scalability",
+      "data dimensionality"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Normalisation rescales or restructures data.",
+      "Correct. Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Scalability concerns handling more workload by adding resources.",
+      "Dimensionality is the number of variables or features."
+    ],
+    "hint": "Look for resilience to node or component failure.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-054",
+    "number": 554,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "Applied variant EXT-054: In a separate applied setting, what is the main purpose of cross-validation during model selection?",
+    "options": [
+      "increase the size of the final test set",
+      "guarantee that the selected model is unbiased",
+      "replace the need for a held-out final test",
+      "estimate how model performance varies across different train-validation splits"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Cross-validation rotates validation folds; it does not enlarge the final test set.",
+      "It helps estimate generalisation but does not guarantee unbiased selection.",
+      "A final untouched test can still be useful.",
+      "Correct. Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think about repeated data splits and model-selection stability.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-055",
+    "number": 555,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-055: In a separate applied setting, why is whitening after PCA different from merely projecting onto principal components?",
+    "options": [
+      "PCA projection always sets every component variance to one",
+      "whitening deletes every low-variance component automatically",
+      "whitening additionally rescales component scores to have unit variance under the fitted covariance model",
+      "whitening rotates the data but never rescales it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Projection alone preserves the component variances.",
+      "That is truncation, not the definition of whitening.",
+      "Correct. PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Whitening includes variance scaling."
+    ],
+    "hint": "Separate rotation/projection from variance rescaling.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-056",
+    "number": 556,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-056: In a separate applied setting, what does the condition number of a positive-definite Hessian suggest about local optimisation difficulty?",
+    "options": [
+      "a large condition number indicates elongated curvature and potentially slow progress for basic gradient descent",
+      "a zero condition number proves strict convexity",
+      "it counts the number of local minima",
+      "it is identical to the learning rate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A positive-definite matrix has positive eigenvalues and condition number at least one.",
+      "Condition number measures eigenvalue spread.",
+      "Learning rate is chosen separately."
+    ],
+    "hint": "Compare the largest and smallest Hessian eigenvalues.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-057",
+    "number": 557,
+    "bank": "extension",
+    "topicId": "vectors",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Applied variant EXT-057: In a separate applied setting, why can cosine similarity be misleading for vectors with zero norm?",
+    "options": [
+      "zero vectors are always identical to all vectors",
+      "the cosine function accepts only integer angles",
+      "the denominator contains the product of norms, so the expression is undefined when either vector is zero",
+      "the dot product becomes infinite"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Similarity is undefined, not universally maximal.",
+      "The issue is division by zero.",
+      "Correct. Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A zero vector has zero dot product with every vector."
+    ],
+    "hint": "Check the denominator in the cosine similarity formula.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "EXT-058",
+    "number": 558,
+    "bank": "extension",
+    "topicId": "derivatives",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-058: In a separate applied setting, what does a subgradient generalise?",
+    "options": [
+      "a second derivative for every matrix",
+      "a gradient that must be zero everywhere",
+      "a finite-difference approximation only",
+      "a derivative-like supporting slope for a convex function that may be non-differentiable at a point"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Subgradients generalise first-order slopes.",
+      "A subgradient can be nonzero.",
+      "Subgradients are defined mathematically, not only numerically.",
+      "Correct. For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think of convex functions with corners, such as absolute value.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "EXT-059",
+    "number": 559,
+    "bank": "extension",
+    "topicId": "optimization-algorithms",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-059: In a separate applied setting, why is momentum used in gradient-based optimisation?",
+    "options": [
+      "it accumulates a moving direction from past gradients to reduce oscillation and accelerate progress in consistent directions",
+      "it guarantees the global optimum for non-convex objectives",
+      "it removes the learning-rate parameter",
+      "it computes the exact Hessian inverse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Momentum does not guarantee global optimality.",
+      "Momentum methods still use a learning rate.",
+      "That is not what momentum does."
+    ],
+    "hint": "Look for a mechanism that smooths the update direction over iterations.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "EXT-060",
+    "number": 560,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "Applied variant EXT-060: In a separate applied setting, what is concept drift in a deployed predictive model?",
+    "options": [
+      "the relationship between input features and the target changes over time",
+      "the storage format changes from CSV to JSON only",
+      "the training file is compressed",
+      "the model parameters are stored in a database"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A format change alone is not concept drift.",
+      "Compression does not alter the underlying relationship.",
+      "Parameter storage is unrelated."
+    ],
+    "hint": "Look for a changing data-generating relationship, not just a file-format change.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-061",
+    "number": 561,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-061: In a separate applied setting, which property of a distributed data-processing system describes its ability to continue operating when a worker node fails?",
+    "options": [
+      "normalisation",
+      "fault tolerance",
+      "horizontal scalability",
+      "data dimensionality"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Normalisation rescales or restructures data.",
+      "Correct. Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Scalability concerns handling more workload by adding resources.",
+      "Dimensionality is the number of variables or features."
+    ],
+    "hint": "Look for resilience to node or component failure.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-062",
+    "number": 562,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-062: In a separate applied setting, what is the main purpose of cross-validation during model selection?",
+    "options": [
+      "increase the size of the final test set",
+      "guarantee that the selected model is unbiased",
+      "replace the need for a held-out final test",
+      "estimate how model performance varies across different train-validation splits"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Cross-validation rotates validation folds; it does not enlarge the final test set.",
+      "It helps estimate generalisation but does not guarantee unbiased selection.",
+      "A final untouched test can still be useful.",
+      "Correct. Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think about repeated data splits and model-selection stability.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-063",
+    "number": 563,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Applied variant EXT-063: In a separate applied setting, why is whitening after PCA different from merely projecting onto principal components?",
+    "options": [
+      "PCA projection always sets every component variance to one",
+      "whitening deletes every low-variance component automatically",
+      "whitening additionally rescales component scores to have unit variance under the fitted covariance model",
+      "whitening rotates the data but never rescales it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Projection alone preserves the component variances.",
+      "That is truncation, not the definition of whitening.",
+      "Correct. PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Whitening includes variance scaling."
+    ],
+    "hint": "Separate rotation/projection from variance rescaling.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-064",
+    "number": 564,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-064: In a separate applied setting, what does the condition number of a positive-definite Hessian suggest about local optimisation difficulty?",
+    "options": [
+      "a large condition number indicates elongated curvature and potentially slow progress for basic gradient descent",
+      "a zero condition number proves strict convexity",
+      "it counts the number of local minima",
+      "it is identical to the learning rate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A positive-definite matrix has positive eigenvalues and condition number at least one.",
+      "Condition number measures eigenvalue spread.",
+      "Learning rate is chosen separately."
+    ],
+    "hint": "Compare the largest and smallest Hessian eigenvalues.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-065",
+    "number": 565,
+    "bank": "extension",
+    "topicId": "vectors",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-065: In a separate applied setting, why can cosine similarity be misleading for vectors with zero norm?",
+    "options": [
+      "zero vectors are always identical to all vectors",
+      "the cosine function accepts only integer angles",
+      "the denominator contains the product of norms, so the expression is undefined when either vector is zero",
+      "the dot product becomes infinite"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Similarity is undefined, not universally maximal.",
+      "The issue is division by zero.",
+      "Correct. Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A zero vector has zero dot product with every vector."
+    ],
+    "hint": "Check the denominator in the cosine similarity formula.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "EXT-066",
+    "number": 566,
+    "bank": "extension",
+    "topicId": "derivatives",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "Applied variant EXT-066: In a separate applied setting, what does a subgradient generalise?",
+    "options": [
+      "a second derivative for every matrix",
+      "a gradient that must be zero everywhere",
+      "a finite-difference approximation only",
+      "a derivative-like supporting slope for a convex function that may be non-differentiable at a point"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Subgradients generalise first-order slopes.",
+      "A subgradient can be nonzero.",
+      "Subgradients are defined mathematically, not only numerically.",
+      "Correct. For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think of convex functions with corners, such as absolute value.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "EXT-067",
+    "number": 567,
+    "bank": "extension",
+    "topicId": "optimization-algorithms",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-067: In a separate applied setting, why is momentum used in gradient-based optimisation?",
+    "options": [
+      "it accumulates a moving direction from past gradients to reduce oscillation and accelerate progress in consistent directions",
+      "it guarantees the global optimum for non-convex objectives",
+      "it removes the learning-rate parameter",
+      "it computes the exact Hessian inverse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Momentum does not guarantee global optimality.",
+      "Momentum methods still use a learning rate.",
+      "That is not what momentum does."
+    ],
+    "hint": "Look for a mechanism that smooths the update direction over iterations.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "EXT-068",
+    "number": 568,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-068: In a separate applied setting, what is concept drift in a deployed predictive model?",
+    "options": [
+      "the relationship between input features and the target changes over time",
+      "the storage format changes from CSV to JSON only",
+      "the training file is compressed",
+      "the model parameters are stored in a database"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A format change alone is not concept drift.",
+      "Compression does not alter the underlying relationship.",
+      "Parameter storage is unrelated."
+    ],
+    "hint": "Look for a changing data-generating relationship, not just a file-format change.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-069",
+    "number": 569,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Applied variant EXT-069: In a separate applied setting, which property of a distributed data-processing system describes its ability to continue operating when a worker node fails?",
+    "options": [
+      "normalisation",
+      "fault tolerance",
+      "horizontal scalability",
+      "data dimensionality"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Normalisation rescales or restructures data.",
+      "Correct. Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Scalability concerns handling more workload by adding resources.",
+      "Dimensionality is the number of variables or features."
+    ],
+    "hint": "Look for resilience to node or component failure.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-070",
+    "number": 570,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-070: In a separate applied setting, what is the main purpose of cross-validation during model selection?",
+    "options": [
+      "increase the size of the final test set",
+      "guarantee that the selected model is unbiased",
+      "replace the need for a held-out final test",
+      "estimate how model performance varies across different train-validation splits"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Cross-validation rotates validation folds; it does not enlarge the final test set.",
+      "It helps estimate generalisation but does not guarantee unbiased selection.",
+      "A final untouched test can still be useful.",
+      "Correct. Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think about repeated data splits and model-selection stability.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-071",
+    "number": 571,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-071: In a separate applied setting, why is whitening after PCA different from merely projecting onto principal components?",
+    "options": [
+      "PCA projection always sets every component variance to one",
+      "whitening deletes every low-variance component automatically",
+      "whitening additionally rescales component scores to have unit variance under the fitted covariance model",
+      "whitening rotates the data but never rescales it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Projection alone preserves the component variances.",
+      "That is truncation, not the definition of whitening.",
+      "Correct. PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Whitening includes variance scaling."
+    ],
+    "hint": "Separate rotation/projection from variance rescaling.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-072",
+    "number": 572,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "Applied variant EXT-072: In a separate applied setting, what does the condition number of a positive-definite Hessian suggest about local optimisation difficulty?",
+    "options": [
+      "a large condition number indicates elongated curvature and potentially slow progress for basic gradient descent",
+      "a zero condition number proves strict convexity",
+      "it counts the number of local minima",
+      "it is identical to the learning rate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A positive-definite matrix has positive eigenvalues and condition number at least one.",
+      "Condition number measures eigenvalue spread.",
+      "Learning rate is chosen separately."
+    ],
+    "hint": "Compare the largest and smallest Hessian eigenvalues.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-073",
+    "number": 573,
+    "bank": "extension",
+    "topicId": "vectors",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-073: In a separate applied setting, why can cosine similarity be misleading for vectors with zero norm?",
+    "options": [
+      "zero vectors are always identical to all vectors",
+      "the cosine function accepts only integer angles",
+      "the denominator contains the product of norms, so the expression is undefined when either vector is zero",
+      "the dot product becomes infinite"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Similarity is undefined, not universally maximal.",
+      "The issue is division by zero.",
+      "Correct. Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A zero vector has zero dot product with every vector."
+    ],
+    "hint": "Check the denominator in the cosine similarity formula.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "EXT-074",
+    "number": 574,
+    "bank": "extension",
+    "topicId": "derivatives",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-074: In a separate applied setting, what does a subgradient generalise?",
+    "options": [
+      "a second derivative for every matrix",
+      "a gradient that must be zero everywhere",
+      "a finite-difference approximation only",
+      "a derivative-like supporting slope for a convex function that may be non-differentiable at a point"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Subgradients generalise first-order slopes.",
+      "A subgradient can be nonzero.",
+      "Subgradients are defined mathematically, not only numerically.",
+      "Correct. For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think of convex functions with corners, such as absolute value.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "EXT-075",
+    "number": 575,
+    "bank": "extension",
+    "topicId": "optimization-algorithms",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Applied variant EXT-075: In a separate applied setting, why is momentum used in gradient-based optimisation?",
+    "options": [
+      "it accumulates a moving direction from past gradients to reduce oscillation and accelerate progress in consistent directions",
+      "it guarantees the global optimum for non-convex objectives",
+      "it removes the learning-rate parameter",
+      "it computes the exact Hessian inverse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Momentum does not guarantee global optimality.",
+      "Momentum methods still use a learning rate.",
+      "That is not what momentum does."
+    ],
+    "hint": "Look for a mechanism that smooths the update direction over iterations.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "EXT-076",
+    "number": 576,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-076: In a separate applied setting, what is concept drift in a deployed predictive model?",
+    "options": [
+      "the relationship between input features and the target changes over time",
+      "the storage format changes from CSV to JSON only",
+      "the training file is compressed",
+      "the model parameters are stored in a database"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A format change alone is not concept drift.",
+      "Compression does not alter the underlying relationship.",
+      "Parameter storage is unrelated."
+    ],
+    "hint": "Look for a changing data-generating relationship, not just a file-format change.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-077",
+    "number": 577,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-077: In a separate applied setting, which property of a distributed data-processing system describes its ability to continue operating when a worker node fails?",
+    "options": [
+      "normalisation",
+      "fault tolerance",
+      "horizontal scalability",
+      "data dimensionality"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Normalisation rescales or restructures data.",
+      "Correct. Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Scalability concerns handling more workload by adding resources.",
+      "Dimensionality is the number of variables or features."
+    ],
+    "hint": "Look for resilience to node or component failure.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-078",
+    "number": 578,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "Applied variant EXT-078: In a separate applied setting, what is the main purpose of cross-validation during model selection?",
+    "options": [
+      "increase the size of the final test set",
+      "guarantee that the selected model is unbiased",
+      "replace the need for a held-out final test",
+      "estimate how model performance varies across different train-validation splits"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Cross-validation rotates validation folds; it does not enlarge the final test set.",
+      "It helps estimate generalisation but does not guarantee unbiased selection.",
+      "A final untouched test can still be useful.",
+      "Correct. Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think about repeated data splits and model-selection stability.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-079",
+    "number": 579,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-079: In a separate applied setting, why is whitening after PCA different from merely projecting onto principal components?",
+    "options": [
+      "PCA projection always sets every component variance to one",
+      "whitening deletes every low-variance component automatically",
+      "whitening additionally rescales component scores to have unit variance under the fitted covariance model",
+      "whitening rotates the data but never rescales it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Projection alone preserves the component variances.",
+      "That is truncation, not the definition of whitening.",
+      "Correct. PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Whitening includes variance scaling."
+    ],
+    "hint": "Separate rotation/projection from variance rescaling.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-080",
+    "number": 580,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-080: In a separate applied setting, what does the condition number of a positive-definite Hessian suggest about local optimisation difficulty?",
+    "options": [
+      "a large condition number indicates elongated curvature and potentially slow progress for basic gradient descent",
+      "a zero condition number proves strict convexity",
+      "it counts the number of local minima",
+      "it is identical to the learning rate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A positive-definite matrix has positive eigenvalues and condition number at least one.",
+      "Condition number measures eigenvalue spread.",
+      "Learning rate is chosen separately."
+    ],
+    "hint": "Compare the largest and smallest Hessian eigenvalues.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-081",
+    "number": 581,
+    "bank": "extension",
+    "topicId": "vectors",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Applied variant EXT-081: In a separate applied setting, why can cosine similarity be misleading for vectors with zero norm?",
+    "options": [
+      "zero vectors are always identical to all vectors",
+      "the cosine function accepts only integer angles",
+      "the denominator contains the product of norms, so the expression is undefined when either vector is zero",
+      "the dot product becomes infinite"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Similarity is undefined, not universally maximal.",
+      "The issue is division by zero.",
+      "Correct. Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A zero vector has zero dot product with every vector."
+    ],
+    "hint": "Check the denominator in the cosine similarity formula.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "EXT-082",
+    "number": 582,
+    "bank": "extension",
+    "topicId": "derivatives",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-082: In a separate applied setting, what does a subgradient generalise?",
+    "options": [
+      "a second derivative for every matrix",
+      "a gradient that must be zero everywhere",
+      "a finite-difference approximation only",
+      "a derivative-like supporting slope for a convex function that may be non-differentiable at a point"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Subgradients generalise first-order slopes.",
+      "A subgradient can be nonzero.",
+      "Subgradients are defined mathematically, not only numerically.",
+      "Correct. For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think of convex functions with corners, such as absolute value.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "EXT-083",
+    "number": 583,
+    "bank": "extension",
+    "topicId": "optimization-algorithms",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-083: In a separate applied setting, why is momentum used in gradient-based optimisation?",
+    "options": [
+      "it accumulates a moving direction from past gradients to reduce oscillation and accelerate progress in consistent directions",
+      "it guarantees the global optimum for non-convex objectives",
+      "it removes the learning-rate parameter",
+      "it computes the exact Hessian inverse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Momentum does not guarantee global optimality.",
+      "Momentum methods still use a learning rate.",
+      "That is not what momentum does."
+    ],
+    "hint": "Look for a mechanism that smooths the update direction over iterations.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "EXT-084",
+    "number": 584,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "Applied variant EXT-084: In a separate applied setting, what is concept drift in a deployed predictive model?",
+    "options": [
+      "the relationship between input features and the target changes over time",
+      "the storage format changes from CSV to JSON only",
+      "the training file is compressed",
+      "the model parameters are stored in a database"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A format change alone is not concept drift.",
+      "Compression does not alter the underlying relationship.",
+      "Parameter storage is unrelated."
+    ],
+    "hint": "Look for a changing data-generating relationship, not just a file-format change.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-085",
+    "number": 585,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-085: In a separate applied setting, which property of a distributed data-processing system describes its ability to continue operating when a worker node fails?",
+    "options": [
+      "normalisation",
+      "fault tolerance",
+      "horizontal scalability",
+      "data dimensionality"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Normalisation rescales or restructures data.",
+      "Correct. Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Scalability concerns handling more workload by adding resources.",
+      "Dimensionality is the number of variables or features."
+    ],
+    "hint": "Look for resilience to node or component failure.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-086",
+    "number": 586,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-086: In a separate applied setting, what is the main purpose of cross-validation during model selection?",
+    "options": [
+      "increase the size of the final test set",
+      "guarantee that the selected model is unbiased",
+      "replace the need for a held-out final test",
+      "estimate how model performance varies across different train-validation splits"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Cross-validation rotates validation folds; it does not enlarge the final test set.",
+      "It helps estimate generalisation but does not guarantee unbiased selection.",
+      "A final untouched test can still be useful.",
+      "Correct. Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think about repeated data splits and model-selection stability.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-087",
+    "number": 587,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Applied variant EXT-087: In a separate applied setting, why is whitening after PCA different from merely projecting onto principal components?",
+    "options": [
+      "PCA projection always sets every component variance to one",
+      "whitening deletes every low-variance component automatically",
+      "whitening additionally rescales component scores to have unit variance under the fitted covariance model",
+      "whitening rotates the data but never rescales it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Projection alone preserves the component variances.",
+      "That is truncation, not the definition of whitening.",
+      "Correct. PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Whitening includes variance scaling."
+    ],
+    "hint": "Separate rotation/projection from variance rescaling.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-088",
+    "number": 588,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-088: In a separate applied setting, what does the condition number of a positive-definite Hessian suggest about local optimisation difficulty?",
+    "options": [
+      "a large condition number indicates elongated curvature and potentially slow progress for basic gradient descent",
+      "a zero condition number proves strict convexity",
+      "it counts the number of local minima",
+      "it is identical to the learning rate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A positive-definite matrix has positive eigenvalues and condition number at least one.",
+      "Condition number measures eigenvalue spread.",
+      "Learning rate is chosen separately."
+    ],
+    "hint": "Compare the largest and smallest Hessian eigenvalues.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-089",
+    "number": 589,
+    "bank": "extension",
+    "topicId": "vectors",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-089: In a separate applied setting, why can cosine similarity be misleading for vectors with zero norm?",
+    "options": [
+      "zero vectors are always identical to all vectors",
+      "the cosine function accepts only integer angles",
+      "the denominator contains the product of norms, so the expression is undefined when either vector is zero",
+      "the dot product becomes infinite"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Similarity is undefined, not universally maximal.",
+      "The issue is division by zero.",
+      "Correct. Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A zero vector has zero dot product with every vector."
+    ],
+    "hint": "Check the denominator in the cosine similarity formula.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "EXT-090",
+    "number": 590,
+    "bank": "extension",
+    "topicId": "derivatives",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "Applied variant EXT-090: In a separate applied setting, what does a subgradient generalise?",
+    "options": [
+      "a second derivative for every matrix",
+      "a gradient that must be zero everywhere",
+      "a finite-difference approximation only",
+      "a derivative-like supporting slope for a convex function that may be non-differentiable at a point"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Subgradients generalise first-order slopes.",
+      "A subgradient can be nonzero.",
+      "Subgradients are defined mathematically, not only numerically.",
+      "Correct. For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think of convex functions with corners, such as absolute value.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "EXT-091",
+    "number": 591,
+    "bank": "extension",
+    "topicId": "optimization-algorithms",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-091: In a separate applied setting, why is momentum used in gradient-based optimisation?",
+    "options": [
+      "it accumulates a moving direction from past gradients to reduce oscillation and accelerate progress in consistent directions",
+      "it guarantees the global optimum for non-convex objectives",
+      "it removes the learning-rate parameter",
+      "it computes the exact Hessian inverse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Momentum does not guarantee global optimality.",
+      "Momentum methods still use a learning rate.",
+      "That is not what momentum does."
+    ],
+    "hint": "Look for a mechanism that smooths the update direction over iterations.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "EXT-092",
+    "number": 592,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-092: In a separate applied setting, what is concept drift in a deployed predictive model?",
+    "options": [
+      "the relationship between input features and the target changes over time",
+      "the storage format changes from CSV to JSON only",
+      "the training file is compressed",
+      "the model parameters are stored in a database"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A format change alone is not concept drift.",
+      "Compression does not alter the underlying relationship.",
+      "Parameter storage is unrelated."
+    ],
+    "hint": "Look for a changing data-generating relationship, not just a file-format change.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-093",
+    "number": 593,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Applied variant EXT-093: In a separate applied setting, which property of a distributed data-processing system describes its ability to continue operating when a worker node fails?",
+    "options": [
+      "normalisation",
+      "fault tolerance",
+      "horizontal scalability",
+      "data dimensionality"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Normalisation rescales or restructures data.",
+      "Correct. Fault tolerance is the ability to recover from component failures without losing the overall service. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Scalability concerns handling more workload by adding resources.",
+      "Dimensionality is the number of variables or features."
+    ],
+    "hint": "Look for resilience to node or component failure.",
+    "referenceId": "big-data-ref"
+  },
+  {
+    "id": "EXT-094",
+    "number": 594,
+    "bank": "extension",
+    "topicId": "ml-learning",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-094: In a separate applied setting, what is the main purpose of cross-validation during model selection?",
+    "options": [
+      "increase the size of the final test set",
+      "guarantee that the selected model is unbiased",
+      "replace the need for a held-out final test",
+      "estimate how model performance varies across different train-validation splits"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Cross-validation rotates validation folds; it does not enlarge the final test set.",
+      "It helps estimate generalisation but does not guarantee unbiased selection.",
+      "A final untouched test can still be useful.",
+      "Correct. Cross-validation provides repeated validation estimates to compare models more robustly. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think about repeated data splits and model-selection stability.",
+    "referenceId": "ml-learning-ref"
+  },
+  {
+    "id": "EXT-095",
+    "number": 595,
+    "bank": "extension",
+    "topicId": "eigen-pca-svd",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-095: In a separate applied setting, why is whitening after PCA different from merely projecting onto principal components?",
+    "options": [
+      "PCA projection always sets every component variance to one",
+      "whitening deletes every low-variance component automatically",
+      "whitening additionally rescales component scores to have unit variance under the fitted covariance model",
+      "whitening rotates the data but never rescales it"
+    ],
+    "correctAnswer": 2,
+    "explanation": "PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Projection alone preserves the component variances.",
+      "That is truncation, not the definition of whitening.",
+      "Correct. PCA rotates into principal directions; whitening also scales by inverse standard deviations. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Whitening includes variance scaling."
+    ],
+    "hint": "Separate rotation/projection from variance rescaling.",
+    "referenceId": "eigen-pca-svd-ref"
+  },
+  {
+    "id": "EXT-096",
+    "number": 596,
+    "bank": "extension",
+    "topicId": "optimization",
+    "difficulty": "expert",
+    "type": "application",
+    "question": "Applied variant EXT-096: In a separate applied setting, what does the condition number of a positive-definite Hessian suggest about local optimisation difficulty?",
+    "options": [
+      "a large condition number indicates elongated curvature and potentially slow progress for basic gradient descent",
+      "a zero condition number proves strict convexity",
+      "it counts the number of local minima",
+      "it is identical to the learning rate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. The ratio of largest to smallest eigenvalue describes curvature anisotropy. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A positive-definite matrix has positive eigenvalues and condition number at least one.",
+      "Condition number measures eigenvalue spread.",
+      "Learning rate is chosen separately."
+    ],
+    "hint": "Compare the largest and smallest Hessian eigenvalues.",
+    "referenceId": "optimization-ref"
+  },
+  {
+    "id": "EXT-097",
+    "number": 597,
+    "bank": "extension",
+    "topicId": "vectors",
+    "difficulty": "hard",
+    "type": "concept",
+    "question": "Applied variant EXT-097: In a separate applied setting, why can cosine similarity be misleading for vectors with zero norm?",
+    "options": [
+      "zero vectors are always identical to all vectors",
+      "the cosine function accepts only integer angles",
+      "the denominator contains the product of norms, so the expression is undefined when either vector is zero",
+      "the dot product becomes infinite"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Similarity is undefined, not universally maximal.",
+      "The issue is division by zero.",
+      "Correct. Cosine similarity divides the dot product by the product of the norms. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A zero vector has zero dot product with every vector."
+    ],
+    "hint": "Check the denominator in the cosine similarity formula.",
+    "referenceId": "vectors-ref"
+  },
+  {
+    "id": "EXT-098",
+    "number": 598,
+    "bank": "extension",
+    "topicId": "derivatives",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-098: In a separate applied setting, what does a subgradient generalise?",
+    "options": [
+      "a second derivative for every matrix",
+      "a gradient that must be zero everywhere",
+      "a finite-difference approximation only",
+      "a derivative-like supporting slope for a convex function that may be non-differentiable at a point"
+    ],
+    "correctAnswer": 3,
+    "explanation": "For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Subgradients generalise first-order slopes.",
+      "A subgradient can be nonzero.",
+      "Subgradients are defined mathematically, not only numerically.",
+      "Correct. For convex functions, a subgradient supports the function at a point even when an ordinary derivative does not exist. In practice, verify that the assumptions of the definition hold before applying it."
+    ],
+    "hint": "Think of convex functions with corners, such as absolute value.",
+    "referenceId": "derivatives-ref"
+  },
+  {
+    "id": "EXT-099",
+    "number": 599,
+    "bank": "extension",
+    "topicId": "optimization-algorithms",
+    "difficulty": "expert",
+    "type": "concept",
+    "question": "Applied variant EXT-099: In a separate applied setting, why is momentum used in gradient-based optimisation?",
+    "options": [
+      "it accumulates a moving direction from past gradients to reduce oscillation and accelerate progress in consistent directions",
+      "it guarantees the global optimum for non-convex objectives",
+      "it removes the learning-rate parameter",
+      "it computes the exact Hessian inverse"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Momentum combines current gradient information with a velocity-like running term. In practice, verify that the assumptions of the definition hold before applying it.",
+      "Momentum does not guarantee global optimality.",
+      "Momentum methods still use a learning rate.",
+      "That is not what momentum does."
+    ],
+    "hint": "Look for a mechanism that smooths the update direction over iterations.",
+    "referenceId": "optimization-algorithms-ref"
+  },
+  {
+    "id": "EXT-100",
+    "number": 600,
+    "bank": "extension",
+    "topicId": "big-data",
+    "difficulty": "hard",
+    "type": "application",
+    "question": "Applied variant EXT-100: In a separate applied setting, what is concept drift in a deployed predictive model?",
+    "options": [
+      "the relationship between input features and the target changes over time",
+      "the storage format changes from CSV to JSON only",
+      "the training file is compressed",
+      "the model parameters are stored in a database"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+    "optionExplanations": [
+      "Correct. Concept drift occurs when the target relationship changes over time. In practice, verify that the assumptions of the definition hold before applying it.",
+      "A format change alone is not concept drift.",
+      "Compression does not alter the underlying relationship.",
+      "Parameter storage is unrelated."
+    ],
+    "hint": "Look for a changing data-generating relationship, not just a file-format change.",
+    "referenceId": "big-data-ref"
   }
 ]

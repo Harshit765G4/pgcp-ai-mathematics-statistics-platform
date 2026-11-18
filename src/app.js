@@ -158,6 +158,7 @@ function profileStats() {
 function activeFilterConfig() {
   return {
     mode: $('modeSelect').value,
+    subject: $('subjectSelect').value,
     bank: $('bankSelect').value,
     topic: $('topicSelect').value,
     difficulty: $('difficultySelect').value,
@@ -178,6 +179,8 @@ function shuffleArray(items) {
 function getVisibleQuestions() {
   const f = activeFilterConfig();
   let result = questions.filter((q) => {
+    const section = topicById.get(q.topicId)?.section || '';
+    if (f.subject !== 'all' && section !== f.subject) return false;
     if (f.bank !== 'all' && q.bank !== f.bank) return false;
     if (f.topic !== 'all' && q.topicId !== f.topic) return false;
     if (f.difficulty !== 'all' && q.difficulty !== f.difficulty) return false;
@@ -489,6 +492,7 @@ function nextUnanswered() {
 
 function clearFilters() {
   $('modeSelect').value = 'all';
+  $('subjectSelect').value = 'all';
   $('bankSelect').value = 'all';
   $('topicSelect').value = 'all';
   $('difficultySelect').value = 'all';
@@ -687,7 +691,7 @@ function exportProgress() {
     exportedAt: new Date().toISOString(),
     candidateName: profileName,
     subject: 'Mathematics and Statistics for AI',
-    questionDataVersion: 'curated-135-v1',
+    questionDataVersion: '600-question-bank-v2',
     progress: {
       answers: progress.answers,
       flags: progress.flags,
@@ -797,7 +801,7 @@ function bindEvents() {
   $('themeSelect').addEventListener('change', (event) => setTheme(event.target.value));
   $('candidateName').addEventListener('change', (event) => switchProfile(event.target.value));
   $('candidateName').addEventListener('keydown', (event) => { if (event.key === 'Enter') event.target.blur(); });
-  ['modeSelect', 'bankSelect', 'topicSelect', 'difficultySelect', 'statusSelect'].forEach((id) => $(id).addEventListener('change', onFilterChange));
+  ['modeSelect', 'subjectSelect', 'bankSelect', 'topicSelect', 'difficultySelect', 'statusSelect'].forEach((id) => $(id).addEventListener('change', onFilterChange));
   $('searchInput').addEventListener('input', () => refreshVisibleQuestions(true));
   $('clearFilters').addEventListener('click', clearFilters);
   $('emptyClear').addEventListener('click', clearFilters);
